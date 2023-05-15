@@ -1,189 +1,360 @@
-$color_1: #000;
-$color_2: #fff;
-$color_3: #5F9ea0;
-$color_4: #5F9EA0;
-$color_5: slategrey;
-$color_6: #5F9EA0;
-$color_7: #cccccc;
-$font-family_1: 'Oswald', sans-serif;
-$font-family_2: 'Barlow Condensed', sans-serif;
-$background-color_1: #2996ac;
-$background-color_2: #2ec0c8;
-$background-color_3: #aaafaf;
-$background-color_4: #fff;
-$background-color_5: slategray;
-$background-color_6: rgb(201, 200, 206);
-$background-color_7: #141616;
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-body {
-	font-size: 16px;
-	line-height: 1.5;
-    height: 100%;
-	background-color: $background-color_2;	
-}
-ul {
-	list-style-type: none;
-}
-a {
-	text-decoration: none;
-}
-.menu {
-	grid-template-columns: repeat(5, 1fr);
-	display: grid;
-	gap: 2px;
-	background-color: $background-color_2;
-	color: $color_2;
-	font-family: $font-family_1;
-	font-size: 40px;
+$color_1: #3f3b3b;
+$color_2: #031a1d;
+$color_3: #fcfcfc;
+$color_4: #bababa;
+$color_5: #7a7a7a;
+$color_6: #e04a34;
+$font-family_1: "Poiret One", cursive;
+$font-family_2: "Patrick Hand SC", cursive;
+$background-color_1: #f7eff1;
+$background-color_2: #ea8576;
+$background-color_3: #067c87;
+$background-color_4: white;
+$background-color_5: #341604;
+$background-color_6: #667099;
+$background-color_7: #631A35;
+$background-color_8: #722fb4;
+$background-color_9: #ee998c;
+$background-color_10: #28746A;
+$background-color_11: #44beae;
+$background-color_12: #ffffff;
+$background-color_13: #a5ccd2;
+$background-color_14:#240503;
+$border-color_1: #E04A34;
+$border-color_2: #E0E0E0;
+$border-color_3: #067c87;
+$border-color_4: #ffffff;
 
-	li {
-		color: $color_2;
-	}	
+.header {
+	background-image: url("../img/camisetas-logo.png");
+	height: 230px;
+	background-size: cover;
+	background-position: center;
+	border: #031a1d;
 
-}
-.navbar {
-	grid-column-start: 4;
-	grid-column-end: 6;
-	height: 60px;
-	ul {
-		display: flex;
+	.logo {
+		margin-top: 70px;
+		margin-left: 8px;
+		height: 130px;
+		width: 130px;
+		border: 5px solid #053151;
+		border-radius: 18px;
 	}
-	a {
-		color: $color_2;
+}
+
+.Slogin {
+	float: right;
+	
+	.login {
+		margin-top: 40px;
+		margin-left: 8px;
+		border: 5px solid #053151;
+		border-radius: 18px;
+		color: $color_3;
+		font-family: $font-family_1;
+		text-decoration: none;
+		font-size: 40px;
 		padding: 10px;
-		margin: 0 5px;
-		font-size: 20px;
-		&:hover {
-			border-bottom: 3px solid #5F9EA0;
-			color: $color_3;
-		}
+		background-color: $background-color_2;
+
 	}
-}
-.logo {
-	grid-column-start: 1;
-	grid-column-end: 3;
-	font-family: $font-family_1;
-	font-size: 30px;
-	padding: 5px;
-	text-align: center;
-	color: $color_2;
-}
-.signup-btn {
-	background-color: $background-color_4;
-	padding: 10px 10px;
-	color: $color_4;
-	text-transform: uppercase;
-	border-radius: 3px;
-	box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.1);
-	text-decoration: none;
-	transition: 0.3s;
-	width: 5%;
-	text-align: center;
-	font-weight: bold;
-	width: 50%;
+
 }
 
-.signup {
-	input[type='text'] {
-		width: 70%;
-		color: $color_1;
+body {
+	background-color: $background-color_12;
+	position: relative;
+	padding-bottom: 0;
+	margin: 0;
+}
+
+.row {
+	margin: 0;
+}
+
+.nav {
+	padding-right: 0px;
+
+	ul {
+		display: block;
 		background-color: $background-color_3;
-		font-size: 20px;
-		border: 0;
-		border-bottom: 2px solid #5F9EA0;
-		padding: 3px;
-	}
+		margin-top: -14px;
+		border: 3px solid #fafafa;
+		border-radius: 13px 13px 0px 0px;
+		height: 71px;
+		padding-top: 20px;
+		padding-left: 0;
+		text-align: center !important;
 
-	input[type='email'] {
-		width: 70%;
-		color: $color_1;
-		background-color: $background-color_3;
-		font-size: 20px;
-		border: 0;
-		border-bottom: 2px solid #5F9EA0;
-		padding: 3px;
-	}
+		li {
+			display: inline;
+			list-style: none;
+			padding: 40px;
 
-	input[type='password'] {
-		width: 70%;
-		color: $color_1;
-		background-color: $background-color_3;
-		font-size: 20px;
-		border: 0;
-		border-bottom: 2px solid #5F9EA0;
-		padding: 3px;
-	}
-}
+			a {
+				color: $color_3;
+				font-family: $font-family_1;
+				font-size: 35px;
+				text-decoration: none;
+				padding-top: 25px;
+				padding-left: 10px;
+				padding-right: 10px;
 
-.popup {
-	width: 95%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	display: none;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}
-
-.footer {
-	background-color: $background-color_2;
-	color: $color_2;
-	font-size: 15px;
-	display: grid;
-	grid-template-columns: 3;
-	grid-template-rows: 2;
-	gap: 5px;
-	padding: 20px;
-
-	a {
-		color: $color_2;
-	}
-
-	.social-links {
-		a {
-			margin: 0 10px;
-
-			li {
-				color: $color_2;
+				&:hover {
+					background-color: $background-color_2;
+					color: $color_5;
+				}
 			}
 		}
 	}
 }
 
-.blogo {
-	grid-column-start: 1;
-	grid-column-end: 2;
-	margin-left: 10px;
-	text-align: center;
-}
+.navbar {
+	background-color: $background-color_3;
+	border: $border-color_4 solid 2px;
+	height: 60px;
 
-.bnav {
-	grid-column-start: 5;
-	grid-column-end: 6;
-}
-
-.social-links {
-	grid-column-start: 3;
-	grid-column-end: 4;
-}
-
-.bnav {
-	ul {
-		display: flex;
+	.navbar-nav {
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
-	a {
-		color: $color_2;
-		padding: 10px;
-		margin: 0 5px;
+
+	.navbar-nav li a {
+		color: #fff;
+		font-family: $font-family_1;
 		font-size: 20px;
+
 		&:hover {
-			border-bottom: 3px solid #5F9EA0;
-			color: $color_3;
+			color: #e04a34;
+		}
+	}
+
+
+}
+
+.mobileMenu {
+	display: none;
+}
+
+.mobileDropdown {
+	z-index: 9999;
+	display: inline-block;
+	position: relative;
+	top: 8px;
+	padding: 1px;
+	margin-left: 10px;
+
+	.mbtn {
+		background-color: $background-color_2;
+		color: white;
+	}
+
+	.mobileList {
+		li {
+			display: inline-block;
+			font-family: $font-family_1;
+			text-align: center;
+			padding: 5px;
+		}
+
+		a {
+			color: $color_2;
+			text-decoration: none;
+			font-size: 15px;
+			padding: 5px;
+
+			&:hover {
+				background-color: $background-color_2;
+				color: $color_5;
+			}
+		}
+
+		ul {
+			display: none;
+			position: absolute;
+			top: 8px;
+			padding: 1px;
+		}
+	}
+
+	&:hover {
+		.mobileList {
+			ul {
+				display: block;
+				border: solid 2px #e04a34;
+				background-color: $background-color_4;
+				height: 130px;
+				width: 80px;
+				border-radius: 5px;
+				margin-top: 23px;
+				margin-left: -8px;
+			}
 		}
 	}
 }
+p{
+	font-family: $font-family_1;
+	font-size: 20px;
+	color: $color_3;
+}
+.footerNav {
+	right: 0;
+	padding: 16px;
+	background-color: $background-color_13;
+	text-align: center;
+
+	ul {
+		background-color: $background-color_13;
+		border: 3px solid #fafafa;
+		border-radius: 13px 0px 0px 0px;
+		height: 40px;
+
+		li {
+			display: inline;
+			padding: 0px 22px;
+			font-size: 20px;
+			list-style: none;
+			text-align: center;
+
+			a {
+				color: $color_2;
+				font-family: $font-family_1;
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+
+// ************login***************
+.popup {
+	width: 50%;
+	height: 50%;
+	position: fixed;
+	top: 0;
+	left: 80;
+	z-index: 9999;
+	display: none;
+	align-items: center;
+
+	.signinform {
+		background-color: $background-color_13;
+		font-family: $font-family_1;
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 130%;
+		transform: translate(-50%, -50%);
+		width: 300px;
+		height: 350px;
+		padding: 80px 50px;
+		box-sizing: border-box;
+		border-radius: 10px solid $border-color_1;
+		input{
+			margin-bottom: 10px;
+			width: 200px;
+		}
+	}
+
+	i {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		color: #fff;
+		cursor: pointer;
+	}
+
+	h6 {
+		margin: 0;
+		padding: 0 0 20px;
+		font-weight: bold;
+		color: $color_2;
+	}
+}
+
+@media (max-width: 604px) {
+	.nav {
+		display: none;
+	}
+
+	img.teamPhoto {
+		width: 420px;
+		height: 215px;
+	}
+
+}
+
+@media (max-width: 440px) {
+	img.teamPhoto {
+		width: 229px;
+		height: 155px;
+	}
+}
+
+@media (max-width: 780px) {
+	.nav {
+		display: none;
+	}
+
+	.inputColumn {
+		padding-right: 60px;
+		padding-left: 60px;
+	}
+
+}
+
+@media (max-width: 439px) {
+	.totalTitle {
+		width: 289px;
+	}
+
+	.totalBox {
+		width: 289px;
+	}
+
+	.cartTitle {
+		width: 289px;
+	}
+
+	.cartBox {
+		width: 289px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.nav {
+		display: none;
+	}
+
+	.footerNav {
+		display: none;
+	}
+
+	.mobileMenu {
+		display: inline-block;
+		margin-top: 30px;
+
+		button {
+			position: relative;
+			color: $color_2;
+			font-family: $font-family_1;
+			font-size: 20px;
+			border-radius: 5px;
+		}
+	}
+}
+@media screen and (max-width: 1098px) {
+	.nav {
+		ul{
+			li{
+				padding:0%;
+				text-size-adjust: 10px;
+			}
+		}
+		
+	}
+
+}
+
+
+

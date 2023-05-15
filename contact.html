@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<link href="scss/main.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Shadows+Into+Light+Two|Poiret+One'
+		rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Patrick+Hand+SC' rel='stylesheet'
+		type='text/css'>
+	<script src="https://use.fontawesome.com/3bc19f98ca.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+		integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+		crossorigin="anonymous" />
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="header">
+				<div class="col-xs-6 col-md-6 left">
+					<img src="img/logo.jpg" class="logo">
+				</div>
+				<div class="col-xs-6 mobileMenu">
+					<div class="mobileDropdown">
+						<button class="mbtn">Menu</button>
+						<div class="mobileList">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="cuenta.html">Cuenta</a></li>
+								<li><a href="personalizar.html">Personalizar</a></li>
+								<li><a href="contact.html">Contacto</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="Slogin"><a href="#" class="login" id="navbtn">Login</div>
+			<div class="navbar">
+				<div class="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="cuenta.html">Cuenta</a></li>
+						<li><a href="personalizar.html">Personalizar</a></li>
+						<li><a href="contact.html">Contacto</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="contactPage">
+		<h1>Say Hello!</h1>
+		<div class="row">
+			<div class="col-md-4 locationColumn">
+				<i class="fa fa-map-pin pinIcon" aria-hidden="true"></i>
+				<h3>123 Rue del Percebe St.</h3>
+				<h3>Cincinnati, Ohio</h3>
+			</div>
+
+			<div class="col-md-4 phoneColumn">
+				<i class="fa fa-mobile mobileIcon" aria-hidden="true"></i>
+				<h3>Llámanos</h3>
+				<h3>(937) 689-0442</h3>
+			</div>
+
+			<div class="col-md-4 emailColumn">
+				<i class="fa fa-envelope-o emailIcon" aria-hidden="true"></i>
+				<h3>Email</h3>
+				<h3>micorreo@gmail.com</h3>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12 inputColumn">
+			<div class="form-group">
+				<input type="text" class="form-control" id="name" placeholder="Nombre">
+			</div>
+			<div class="form-group">
+				<input type="email" class="form-control" id="email" placeholder="Email">
+			</div>
+			<div class="form-group">
+				<textarea class="form-control" rows="5" id="commentArea" placeholder="Commentarios"></textarea>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 footerNav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="cuenta.html">Cuenta</a></li>
+				<li><a href="personalizar.html">Personalizar</a></li>
+				<li><a href="contact.html">Contacto</a></li>
+				<li><a href="#" class="login" id="navbtn">Login</a></li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<!--sign in pop up-->
+	<div class="popup">
+		<div class="signinform">
+			<i class="fa fa-times-circle" aria-hidden="true" id="close"></i>
+			<h6>Login</h6>
+			<input type="email" placeholder="email" required>
+			<input type="password" placeholder="password" required>
+			<a href="#" class="login" id="loginbtn">Login</a>
+			<br>
+			<br>
+			<h6>No tienes una cuenta aún?
+				<a href="cuenta.html">Crea una cuenta</a>
+			</h6>
+
+		</div>
+	</div>
+	<script>
+		document.getElementById("navbtn").addEventListener("click", function () {
+			document.querySelector(".popup").style.display = "flex";
+		})
+		document.getElementById("close").addEventListener("click", function () {
+			document.querySelector(".popup").style.display = "none";
+		})
+	</script>
+	<!-- <div class="Diseños">
+		<h1>Concurso y Diseños 2023</h1>
+		<p>Camietas comenzó en la casa de Ines, obligada por tener que hacer la recuperación de la asignatura y
+			rápidamente creció hasta convertirse en su propia tienda ubicada
+			en el centro de Cincinnati, Ohio. El objetivo es dar a los clientes la oportunidad de convertir su propia
+			creatividad en
+			algo que les encanta usar y están orgullosos de mostrar.
+		</p>
+		<p>Cred bigote sostenible, venmo XOXO helvetica salud estética gótica cray. Forraje ugh orillo, shoreditch
+			shabby chic brooklyn sostenible keffiyeh photobooth carnicero neutra heirloom pabst plaid. Mumblecore
+			sartorial café de origen único, brunch de humildad alardeado de cornhole profundo. fotomatón gochujang
+			schlitz año cuatro</p>
+	</div>
+	<div class="meetTeam">
+		<h2>Conócenos</h2>
+		<img src="img/camisetas-logo2.png" class="teamPhoto">
+		<p>Now that you know a little about Camisetas, it's time to meet the team behind the operation. Pictured from
+			left to right:</p>
+		<ul class="teamMembers">
+			<li>Diseño 1, Designer/Artist: The creative mind behind it all. If you need a little help or
+				inspiration, Grey is your guy.</li>
+			<li>Diseño 2, Head of Operations: The driving force behind the business. If there's things to be done, Rose
+				will make it happen.</li>
+			<li>Diseño 3, CEO/Owner: The founder of Urban Tees. Loves to be involved in all parts of the business.
+			</li>
+			<li>Conjunto, Head of Customer Service: The people pleaser. If you have questions or concerns, Sunni
+				is here to make sure your experience is outstanding.</li>
+			<li>Ines Ruiz, Assistant Designer: The second creative mind in the group. If Grey's inspiration isn't
+				enough, Sky has your back.</li>
+		</ul>
+	</div> -->
+</body>
+
+</html>

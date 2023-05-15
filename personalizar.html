@@ -1,196 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Oswald:wght@200;300&display=swap"
-        rel="stylesheet">
-    <title>Camisetas Personalizadas | Crear Diseño</title>
+	<title></title>
+	<link href="scss/main.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Shadows+Into+Light+Two|Poiret+One'
+		rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Patrick+Hand+SC' rel='stylesheet'
+		type='text/css'>
+	<script src="https://use.fontawesome.com/3bc19f98ca.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+		integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+		crossorigin="anonymous" />
+
 </head>
 
 <body>
-    <!--navbar-->
-    <section class="menu">
-        <div class="logo">
-            <h2>
-                <img src="./img/logo2.jpg" alt="logo" width="100px" height="100px">
-                Camisetas Personalizadas
-            </h2>
-        </div>
-        <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="personalizar.html">Crear</a></li>
-                    <li><a href="#" class="login" id="navbtn">Login</a></li>
-                    <li><a href="cuenta.html">Cuenta</a></li>
-                    <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i></a></li>
-                </ul>
-            </nav>
-        </div>
-    </section>
-    <div class="note">
-        <h5> <i class="fas fa-info"></i>Los diseños se ponen en la parte frontal de los artículos, tenlo en cuenta
-            para el diseño</h5>
-    </div>
-    <h3>Pon tu diseño en tu Camiseta</h3>
-    <section class="crearMark">
-        <section>
-            <form>
-                <div class="form-control">
-                    <label>Artículo:</label>
-                    <select title="tipo" id="merch">
-                        <option value="shirt">Camiseta</option>
-                        <option value="swater">Jersey</option>
-                        <option value="hoodie">Sudadera</option>
-                    </select>
-                    <label>Talla:</label>
-                    <select title="size" id="size">
-                        <option value="small">Pequeña</option>
-                        <option value="medium">Mediana</option>
-                        <option value="large">Grande</option>
-                        <option value="xlarge">XXL</option>
-                        <option value="na">NA</option>
-                    </select>
-                    <label>Color:</label>
-                    <select title="color" id="color">
-                        <option value="black">Negro</option>
-                        <option value="white">Blanco</option>
-                        <option value="gray">Gris</option>
-                        <option value="na">NA</option>
-                    </select>
-                    <label>Estilo:</label>
-                    <select title="genero" id="gender">
-                        <option value="male">Masculino</option>
-                        <option value="female">Femenino</option>
-                        <option value="boys">Niños</option>
-                        <option value="girls">Niñas</option>
-                        <option value="na">NA</option>
-                    </select>
-                    <label>Cantidad:</label>
-                    <select title="cantidad" id="quantity">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
-            </form>
-        </section>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="header">
+				<div class="col-xs-6 col-md-6 left">
+					<img src="img/logo.jpg" class="logo">
+				</div>
+				<div class="col-xs-6 mobileMenu">
+					<div class="mobileDropdown">
+						<button class="mbtn">Menu</button>
+						<div class="mobileList">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="cuenta.html">Cuenta</a></li>
+								<li><a href="personalizar.html">Personalizar</a></li>
+								<li><a href="contact.html">Contacto</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="Slogin"><a href="#" class="login" id="navbtn">Login</div>
+			<div class="navbar">
+				<div class="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="cuenta.html">Cuenta</a></li>
+						<li><a href="personalizar.html">Personalizar</a></li>
+						<li><a href="contact.html">Contacto</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="personalizar">
+		<div class="wrapper">
+			<div class="content">
+			  <div class="container">
+				<ul class="right">
+				  <li><i class="fa fa-undo"></i></li>
+				</ul>
+				<div class="card">
+				  <img src="images/blueshirtfront.jpg" class="front">
+				  <img src="images/blueshirtback.jpg" class="back">
+				</div>
+			  </div>
+		  
+			  <div class="footer">
+				<ul class="tools">
+				  <li><i class="fa fa-exchange"><span title="More"></span></i></li>
+				  <li><i class="fa fa-heart-o"></i></li>
+				  <li class="tooltip1">XL</li>
+				  <li class="tooltip2"><img src="images/blueswatch.jpg" style="border: 2px solid #FFFFFF;"></li>
+				  <li><i class="fa fa-shopping-cart"></i></li>
+				</ul>
+			  </div>
+			  <h2>Base Azul Cielo<span style="float: right"><strong>29€</strong></span></h2>
+			</div>
+		  
+		  <div class="content">
+			<div class="container">
+			  <ul class="right">
+				<li><i class="fa fa-undo"></i></li>
+			  </ul>
+			  <div class="card">
+				<img src="images/pinkshirtfront.jpg" class="front">
+				<img src="images/pinkshirtback.jpg" class="back">
+			  </div>
+			</div>
+		  
+			<div class="footer">
+			  <ul class="tools">
+				<li><i class="fa fa-exchange"><span title="More"></span></i></li>
+				<li><i class="fa fa-heart-o"></i></li>
+				<li class="tooltip3">XL</li>
+				<li class="tooltip4"><img src="images/pinkswatch.jpg" style="border: 2px solid #FFFFFF;"></li>
+				<li><i class="fa fa-shopping-cart"></i></li>
+			  </ul>
+			</div>
+			<h2>Base Nature Lover <span style="float: right"><strong>19€</strong></span></h2>
+		  </div>
+		  <div class="content">
+			<div class="container">
+			  <ul class="right">
+				<li><i class="fa fa-undo"></i></li>
+			  </ul>
+			  <div class="card">
+				<img src="images/yellowshirtfront.jpg" class="front">
+				<img src="images/yellowshirtback.jpg" class="back">
+			  </div>
+			</div>
+			<div class="footer">
+			  <ul class="tools">
+				<li><i class="fa fa-exchange"><span title="More"></span></i></li>
+				<li><i class="fa fa-heart-o"></i></li>
+				<li class="tooltip5">XL</li>
+				<li class="tooltip6"><img src="images/yellowswatch.jpg" style="border: 2px solid #FFFFFF;"></li>
+				<li><i class="fa fa-shopping-cart"></i></li>
+			  </ul>
+			</div>
+			<h2>Base Forrest Walk <span style="float: right"><strong>39€</strong></span></h2>
+		  </div>
+		  </div>  
+	</div>	
+	<div class="row">
+		<div class="col-md-12 footerNav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="cuenta.html">Cuenta</a></li>
+				<li><a href="personalizar.html">Personalizar</a></li>
+				<li><a href="contact.html">Contacto</a></li>
+				<li><a href="#" class="login">Login</a></li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<script src="./js/main.js"></script>
+	<!--sign in pop up-->
+	<div class="popup">
+		<div class="signinform">
+			<i class="fa fa-times-circle" aria-hidden="true" id="close"></i>
+			<h6>Login</h6>
+			<input type="email" placeholder="email" required>
+			<input type="password" placeholder="password" required>
+			<a href="#" class="login" id="loginbtn">Login</a>
+			<br>
+			<br>
+			<h6>No tienes una cuenta aún?
+				<a href="cuenta.html">Crea una cuenta</a>
+			</h6>
 
-        <!--file upload-->
-        <section class="fileup">
-            <input type="file" name="inpFile" id="inpFile" id="inpFile">
-            <div class="image-preview" id="imagePreview">
-                <img src="./img/icono_2.png" alt="Vista Previa" class="image-preview_image">
-                <span class="image-preview_default-text">Vista Previa</span>
-            </div>
+		</div>
+	</div>
+	<script>
+		document.getElementById("navbtn").addEventListener("click", function () {
+			document.querySelector(".popup").style.display = "flex";
+		})
+		document.getElementById("close").addEventListener("click", function () {
+			document.querySelector(".popup").style.display = "none";
+		})
+	</script>
 
-            <!-- <script>
-                const inpFile = document.getElementById("inpFile");
-                const previewContainer = document.getElementById("imagePreview");
-                const previewImage = previewContainer.querySelector(".image-preview_image");
-                const previewDefaultText = previewContainer.querySelector(".image-preview_default-text");
-                
-                inpFile.addEventListener("change", function () {
-                    const file = this.files[0];
-                    //console.log(file);
-                    if (file) {
-                        const reader = new FileReader();
-                        
-                        previewDefaultText.style.display = "none";
-                        previewImage.style.display = "block";
-                        
-                        reader.addEventListener("load", function () {
-                            
-                            previewImage.setAttribute("src", this.result);
-                        });
-                        reader.readAsDataURL(file);
-                        
-                    } else {
-                        previewDefaultText.style.display = null;
-                        previewImage.style.display = null;
-                        previewImage.setAttribute("src", "");
-                    }
-                });
-            </script> -->
-        <button type="submit" name="sumbit" class="btn">Sube la Imagen</button>
-        <button type="submit" name="sumbit" class="btn">Cancelar</button>
- 
-            <a href="checkout.html" name="checkout"class="btn2">Finalizar</a>
- 
-
-    </section>
-    <!--shop-->
-    <section class="shop">
-        <div class="shophead">
-            <h4>Ejemplos con los diseños de otros clientes</h4>
-        </div>
-        <div class="item1">
-            <img src="./img/9.jpg" alt="imagen de camiseta" width="350px" height="400px">
-        </div>
-        <div class="item2">
-            <img src="./img/7.jpg" alt="imagen de otros" width="350px" height="400px">
-        </div>
-        <div class="item3">
-            <img src="./img/6.jpg" alt="imagen de camiseta" width="340px" height="400px">
-        </div>
-    </section>
-    <!--sign in pop up-->
-    <div class="popup">
-        <div class="signinform">
-            <i class="fa fa-times-circle" aria-hidden="true" id="close"></i>
-            <h3 id="sihead">Login</h3>
-            <input type="email" placeholder="email" required>
-            <input type="password" placeholder="password" required>
-            <a href="#" class="login" id="loginbtn">Login</a>
-            <br>
-            <br>
-            <p>No tienes una cuenta aún?
-                <a href="cuenta.html">Crea una cuenta</a>
-            </p>
-
-        </div>
-    </div>
-    <script>
-        document.getElementById("navbtn").addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "flex";
-        })
-        document.getElementById("close").addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "none";
-        })
-    </script>
-    <!--footer-->
-    <footer class="footer">
-        <div class="blogo">
-            <p><img src="./img/logo2.jpg" alt="logo" width="100px" height="100px">
-                © 2023 Camisetas Personalizadas</p>
-            <p>Ines Ruiz</p>
-        </div>
-        <div class="bnav">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="personalizar.html">Crear</a></li>
-                    <li><a href="cuenta.html">Cuenta</a></li>
-                    <li><a href="carrito.html">Carrito</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="social-links">
-            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-        </div>
-    </footer>
 </body>
 
 </html>

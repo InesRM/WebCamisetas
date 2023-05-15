@@ -1,0 +1,145 @@
+.contactPage {
+    margin-bottom: 80px;
+}
+i.pinIcon {
+	font-size: 30px;
+	text-align: center;
+	color: $color_2;
+	margin: 0 auto;
+	display: block;
+}
+
+
+i.mobileIcon {
+	font-size: 30px;
+	text-align: center;
+	color: $color_2;
+	margin: 0 auto;
+	display: block;
+}
+
+.phoneColumn {
+	h3 {
+		font-size: 20px;
+		font-family: $font-family_1;
+		text-align: center;
+	}
+}
+
+i.emailIcon {
+	font-size: 30px;
+	text-align: center;
+	color: $color_2;
+	margin: 0 auto;
+	display: block;
+}
+
+.emailColumn {
+	h3 {
+		font-size: 20px;
+		font-family: $font-family_1;
+		text-align: center;
+	}
+}
+
+.locationColumn {
+	h3 {
+		font-size: 20px;
+		font-family: $font-family_1;
+		text-align: center;
+	}
+}
+
+.inputColumn {
+	height: 400px;
+	right: 0;
+	padding-top: 80px;
+	padding-left: 148px;
+	padding-right: 148px;
+	background-color: $background-color_3;
+    border-color: $border-color_4;
+    color: $color_3;
+    border: 3px solid #e04a34;
+    border-radius: 168px;
+    margin: 0 auto;
+}
+
+#name {
+	width: 50%;
+	margin-bottom: 20px;
+    font-family: $font-family_1;
+    font-size: 30px;
+}
+
+#email {
+	width: 50%;
+	margin-bottom: 20px;
+    font-family: $font-family_1;
+    font-size: 30px;
+}
+
+#commentArea {
+	width: 100%;
+	margin-bottom: 20px;
+	height: 150px;
+    font-family: $font-family_1;
+    font-size: 30px;
+}
+
+.borderContainer {
+	border: 2px solid;
+	border-color: $border-color_1;
+	height: 311px;
+	width: 264px;
+	margin-bottom: 15px;
+}
+
+.column {
+	box-sizing: border-box;
+	width: 256px;
+	margin: 0 auto;
+	display: block;
+	margin-top: 40px;
+	position: relative;
+
+	.box {
+		&:nth-child(5) {
+			border-right: none;
+		}
+
+		i {
+			text-align: center;
+			display: block;
+			margin: 13px;
+		}
+	}
+
+h1 {
+	font-family: $font-family_1;
+	text-align: center;
+	color: $color_1;
+	font-size: 80px;
+	margin: 40px;
+	margin-top: 65px;
+
+	&:hover {
+		color: $color_6;
+	}
+}
+
+h2 {
+	font-family: $font-family_2;
+	text-align: center;
+	color: $color_1;
+	font-size: 40px;
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+}
+
+
+
+
+   
+

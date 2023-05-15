@@ -1,0 +1,95 @@
+@import "normalize.css";
+@import "general","cuenta","contact","personalizar";
+
+.homePage {
+	background-color: $background-color_1;
+	color: $color_6;
+
+	.step {
+		margin-top: 50px;
+		margin-bottom: 50px;
+		text-align: center;
+		border: 20px solid $border-color_4;
+		border-radius: 28px;
+
+		h6 {
+			font-family: $font-family_1;
+			font-size: 24px;
+
+		}
+
+		h3 {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			font-family: $font-family_1;
+			font-size: 34px;
+
+		}
+
+		&:hover {
+			background-color: $background-color_2;
+			border-color: $border-color_4;
+			color: $color_3;
+
+		}
+	}
+}
+
+.camiseta{
+
+	height: 300px;
+	border: 3px solid #e04a34;
+	border-radius: 168px;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 53px;
+
+}
+
+.colorPaleta {
+	height: 300px;
+	border: 3px solid #e04a34;
+	border-radius: 168px;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 53px;
+}
+
+.design {
+	height: 300px;
+	border: 3px solid #e04a34;
+	border-radius: 168px;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 53px;
+}
+h1 {
+	font-family: $font-family_1;
+	text-align: center;
+	color: $color_1;
+	font-size: 80px;
+	margin: 40px;
+	margin-top: 65px;
+
+	&:hover {
+		color: $color_6;
+	}
+}
+
+h2 {
+	font-family: $font-family_2;
+	text-align: center;
+	color: $color_1;
+	font-size: 40px;
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: $font-family_1;
+    font-size: 34px;
+
+}
+

@@ -95,19 +95,13 @@ h3 {
 }
 .shop {
 	background-color: $background-color_2;
-
-	img {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
 }
 .shophead {
 	font-family: $font-family_1;
-	grid-column-start: 1;
-	grid-column-end: 4;
-	grid-row-start: 1;
-	grid-row-end: 2;
+	// grid-column-start: 1;
+	// grid-column-end: 4;
+	// grid-row-start: 1;
+	// grid-row-end: 2;
 	
 }
 .form-control{
@@ -152,7 +146,7 @@ h3 {
 	
 	#inpFile {
 		padding: 5px;
-		align-content: left;
+		align-content: center;
 		width: 100%;
 	}
 	

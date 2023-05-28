@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
 		integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
 		crossorigin="anonymous" />
-
+		<script src="./js/javascript.js"></script>
 </head>
 
 <body>
@@ -49,6 +49,106 @@
 			</div>
 		</div>
 	</div>
+	<!-- aqui va el contenido 1 -->
+	<!-- personalizar manga, largo y tipo de cuello-->
+	<h1>Personalizar Estilo</h1>
+	<h2>Puedes elegir el tipo de estilo, manga, cuello, o largo para tu diseño base</h2>
+	<br><br>
+	<div class="options">
+		<table class="styletable">
+			<div class="neckline">
+				<tr class="neat">
+					<th></th>
+					<th><button onclick="randomAll()">PULSAR AQUÍ PARA MODIFICAR</button></th>
+					<th></th>
+				</tr>
+				<tr class="neat">
+					<th class="left">Neckline Style:</th>
+					<th><select id="neckStyle" onchange="neckDisplay()">
+							<option value="./img/neck/asymmetric.jpg">Asymmetric</option>
+							<option value="./img/neck/bateau.jpg">Bateau</option>
+							<option value="./img/neck/cowl.jpg">Cowl</option>
+							<option value="./img/neck/grecian.jpg">Grecian</option>
+							<option value="./img/neck/halter.jpg">Halter</option>
+							<option value="./img/neck/halterstrap.jpg">Halter Strap</option>
+							<option value="./img/neck/highneck.jpg">High Neck</option>
+							<option value="./img/neck/illusion.jpg">Illusion</option>
+							<option value="./img/neck/jewel.jpg">Jewel</option>
+							<option value="./img/neck/offshoulder.jpg">Offshoulder</option>
+							<option value="./img/neck/queenanne.jpg">Queen Anne</option>
+							<option value="./img/neck/sabrina.jpg">Sabrina</option>
+							<option value="./img/neck/scoop.jpg">Scoop</option>
+							<option value="./img/neck/spaghettistrap.jpg">Spaghetti Strap</option>
+							<option value="./img/neck/square.jpg">Square</option>
+							<option value="./img/neck/straight.jpg">Straight</option>
+							<option value="./img/neck/sweetheart.jpg">Sweetheart</option>
+							<option value="./img/neck/vneck.jpg">V Neck</option>
+						</select></th>
+					<th><button onclick="randomNeck()">MODIFICAR</button></th>
+				</tr>
+			</div>
+			<div class="sleeve">
+				<tr class="neat">
+					<th class="left">Sleeve Style:</th>
+					<th><select id="sleeveStyle" onchange="sleeveDisplay()">
+							<option value="./img/sleeve/batwing.jpg">Batwing</option>
+							<option value="./img/sleeve/bell.jpg">Bell</option>
+							<option value="./img/sleeve/bishop.jpg">Bishop</option>
+							<option value="./img/sleeve/bracelet.jpg">Bracelet</option>
+							<option value="./img/sleeve/butterfly.jpg">Butterfly</option>
+							<option value="./img/sleeve/buttontab.jpg">Button Tab</option>
+							<option value="./img/sleeve/cape.jpg">Cape</option>
+							<option value="./img/sleeve/circularcap.jpg">Circular Cap</option>
+							<option value="./img/sleeve/cowl.jpg">Cowl</option>
+							<option value="./img/sleeve/dropshoulder.jpg">Drop Shoulder</option>
+							<option value="./img/sleeve/french.jpg">French</option>
+							<option value="./img/sleeve/juliet.jpg">Juliet</option>
+							<option value="./img/sleeve/kimono.jpg">Kimono</option>
+							<option value="./img/sleeve/lantern.jpg">Lantern</option>
+							<option value="./img/sleeve/layered.jpg">Layered</option>
+							<option value="./img/sleeve/marie.jpg">Marie</option>
+							<option value="./img/sleeve/muttonleg.jpg">Mutton Leg</option>
+							<option value="./img/none.jpg">None</option>
+							<option value="./img/sleeve/peasant.jpg">Peasant</option>
+							<option value="./img/sleeve/petal.jpg">Petal</option>
+							<option value="./img/sleeve/poet.jpg">Poet</option>
+							<option value="./img/sleeve/puffed.jpg">Puffed</option>
+							<option value="./img/sleeve/raglan.jpg">Raglan</option>
+							<option value="./img/sleeve/rollup.jpg">Rollup</option>
+							<option value="./img/sleeve/shirt.jpg">Shirt</option>
+						</select></th>
+					<th><button onclick="randomSleeve()">MODIFICAR</button></th>
+				</tr>
+			</div>
+			<div class="top">
+				<tr class="neat">
+					<th class="left">Top Length:</th>
+					<th><select id="topStyle" onchange="topDisplay()">
+							<option value="./img/top/crop.jpg">Crop</option>
+							<option value="./img/top/normal.jpg">Normal</option>
+							<option value="./img/top/long.jpg">Long</option>
+						</select></th>
+					<th><button onclick="randomTop()">MODIFICAR</button></th>
+				</tr>
+			</div>
+		</table>
+	</div>
+	<div class="outfitdisplay">
+		<table class="tableborder">
+			<tr>
+				<th></th>
+				<th id="neckImage">Neckline</th>
+				<th></th>
+			</tr>
+			<tr>
+				<th id="sleeveImage2" class="sleeveFlip">Sleeve</th>
+				<th id="topImage">Top</th>
+				<th id="sleeveImage">Sleeve</th>
+			</tr>
+		</table>
+	</div>
+	<!-- personalizar manga, largo y tipo de cuello--FIN -->
+	<h1>EJEMPLOS DE DISEÑOS Y LOGOS</h1>
 	<div class="personalizar">
 		<div class="wrapper">
 			<div class="content">
@@ -67,7 +167,8 @@
 						<li><i class="fa fa-exchange"><span title="More"></span></i></li>
 						<li><i class="fa fa-heart-o"></i></li>
 						<li class="tooltip1">XL</li>
-						<li class="tooltip2"><img src="images/blueswatch.jpg" alt= "camiseta ejemplo" style="border: 2px solid #FFFFFF;"></li>
+						<li class="tooltip2"><img src="images/blueswatch.jpg" alt="camiseta ejemplo"
+								style="border: 2px solid #FFFFFF;"></li>
 						<li><i class="fa fa-shopping-cart"></i></li>
 					</ul>
 				</div>
@@ -90,7 +191,8 @@
 						<li><i class="fa fa-exchange"><span title="More"></span></i></li>
 						<li><i class="fa fa-heart-o"></i></li>
 						<li class="tooltip3">XL</li>
-						<li class="tooltip4"><img src="images/pinkswatch.jpg" alt="camiseta ejemplo" style="border: 2px solid #FFFFFF;"></li>
+						<li class="tooltip4"><img src="images/pinkswatch.jpg" alt="camiseta ejemplo"
+								style="border: 2px solid #FFFFFF;"></li>
 						<li><i class="fa fa-shopping-cart"></i></li>
 					</ul>
 				</div>
@@ -111,7 +213,8 @@
 						<li><i class="fa fa-exchange"><span title="More"></span></i></li>
 						<li><i class="fa fa-heart-o"></i></li>
 						<li class="tooltip5">XL</li>
-						<li class="tooltip6"><img src="images/yellowswatch.jpg" alt="camiseta ejemplo" style="border: 2px solid #FFFFFF;"></li>
+						<li class="tooltip6"><img src="images/yellowswatch.jpg" alt="camiseta ejemplo"
+								style="border: 2px solid #FFFFFF;"></li>
 						<li><i class="fa fa-shopping-cart"></i></li>
 					</ul>
 				</div>

@@ -439,6 +439,64 @@ i.emailIcon {
   margin-bottom: 60px;
 }
 
+.styletable {
+  align-items: center;
+  margin-left: 150px;
+  margin-right: 50px;
+}
+
+th {
+  height: 100px;
+  width: 100px;
+}
+
+tr.neat > th {
+  height: 30px;
+  width: auto;
+  padding: 5px;
+  border: 3px solid #5CA4D7;
+}
+
+#swap {
+  border: none;
+  background-color: #f7eff1;
+  display: inline-block;
+  cursor: pointer;
+}
+
+div.outfitdisplay table {
+  display: inline-block;
+  margin: 10px;
+  margin-left: 150px;
+}
+
+div.options {
+  float: left;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+}
+table th {
+  font-weight: normal;
+  font-size: 20px;
+  font-family: "Poiret One", cursive;
+  color: #084068;
+}
+
+select {
+  width: 130px;
+}
+
+.left {
+  text-align: left;
+}
+
+.sleeveFlip > img {
+  transform: scaleX(-1);
+}
+
 .personalizar {
   display: flex;
   justify-content: center;

@@ -3,18 +3,21 @@
 
 .homePage {
 	background-color: $background-color_1;
-	color: $color_6;
-
-	.step {
+	
+}
+	.steps {
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;
 		margin-top: 50px;
 		margin-bottom: 50px;
 		text-align: center;
 		border: 20px solid $border-color_4;
 		border-radius: 28px;
-
+		color: $color_6;
+		
 		h6 {
 			font-family: $font-family_1;
-			font-size: 24px;
+			font-size: 20px;
 
 		}
 
@@ -22,18 +25,18 @@
 			margin-top: 20px;
 			margin-bottom: 20px;
 			font-family: $font-family_1;
-			font-size: 34px;
+			font-size: 20px;
 
 		}
 
 		&:hover {
-			background-color: $background-color_2;
+			background-color: $background-color_9;
 			border-color: $border-color_4;
-			color: $color_3;
+			color: $color_2;
 
 		}
 	}
-}
+
 
 .camiseta{
 
@@ -67,9 +70,10 @@ h1 {
 	font-family: $font-family_1;
 	text-align: center;
 	color: $color_1;
-	font-size: 80px;
+	font-size: 40px;
 	margin: 40px;
 	margin-top: 65px;
+	padding:2%;
 
 	&:hover {
 		color: $color_6;
@@ -80,7 +84,7 @@ h2 {
 	font-family: $font-family_2;
 	text-align: center;
 	color: $color_1;
-	font-size: 40px;
+	font-size: 30px;
 	margin-top: 30px;
 	margin-bottom: 60px;
 }
@@ -89,7 +93,62 @@ h3 {
     margin-top: 20px;
     margin-bottom: 20px;
     font-family: $font-family_1;
-    font-size: 34px;
+    font-size: 14px;
 
 }
+
+@media screen and (max-width: 868px) {
+	.steps{
+	
+		display:grid;
+		grid-template-columns: 1fr;
+		float:left;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		text-align: center;
+		border: 20px solid $border-color_4;
+		border-radius: 28px;
+		color: $color_6;
+		
+	}
+	.nav {
+		display: none;
+	}
+
+	.footerNav {
+		display: none;
+	}
+
+	.mobileMenu {
+		display: inline-block;
+		margin-top: 30px;
+
+		button {
+			position: relative;
+			color: $color_2;
+			font-family: $font-family_1;
+			font-size: 20px;
+			border-radius: 5px;
+		}
+	}
+
+}
+
+@media screen and (min-width: 868px) {
+	.steps{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (min-width: 968px) {
+	.steps{
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		
+	}
+}
+	
+
+
 

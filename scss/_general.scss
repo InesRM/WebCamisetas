@@ -14,7 +14,7 @@ $background-color_5: #341604;
 $background-color_6: #667099;
 $background-color_7: #631A35;
 $background-color_8: #722fb4;
-$background-color_9: #ee998c;
+$background-color_9: #e5bdb7;
 $background-color_10: #28746A;
 $background-color_11: #44beae;
 $background-color_12: #ffffff;
@@ -42,24 +42,26 @@ $border-color_4: #ffffff;
 	}
 }
 
-.Slogin {
-	float: right;
+//Botón eliminado de login naranja
+
+// .Slogin {
+// 	float: right;
 	
-	.login {
-		margin-top: 40px;
-		margin-left: 8px;
-		border: 5px solid #053151;
-		border-radius: 18px;
-		color: $color_3;
-		font-family: $font-family_1;
-		text-decoration: none;
-		font-size: 40px;
-		padding: 10px;
-		background-color: $background-color_2;
+// 	.login {
+// 		margin-top: 40px;
+// 		margin-left: 8px;
+// 		border: 5px solid #053151;
+// 		border-radius: 18px;
+// 		color: $color_3;
+// 		font-family: $font-family_1;
+// 		text-decoration: none;
+// 		font-size: 20px;
+// 		padding: 10px;
+// 		background-color: $background-color_2;
 
-	}
+// 	}
 
-}
+// }
 
 body {
 	background-color: $background-color_12;
@@ -69,7 +71,7 @@ body {
 }
 
 .row {
-	margin: 0;
+	margin: 5px;
 }
 
 .nav {
@@ -94,9 +96,9 @@ body {
 			a {
 				color: $color_3;
 				font-family: $font-family_1;
-				font-size: 35px;
+				font-size: 20px;
 				text-decoration: none;
-				padding-top: 25px;
+				// padding-top: 35px;
 				padding-left: 10px;
 				padding-right: 10px;
 
@@ -272,54 +274,49 @@ p{
 	}
 }
 
-@media (max-width: 604px) {
-	.nav {
-		display: none;
-	}
+// @media (max-width: 604px) {
+// 	.nav {
+// 		display: none;
+// 	}
 
-	img.teamPhoto {
-		width: 420px;
-		height: 215px;
-	}
+// 	img.teamPhoto {
+// 		width: 420px;
+// 		height: 215px;
+// 	}
 
-}
+// }
 
-@media (max-width: 440px) {
-	img.teamPhoto {
-		width: 229px;
-		height: 155px;
-	}
-}
 
-@media (max-width: 780px) {
-	.nav {
-		display: none;
-	}
 
-	.inputColumn {
-		padding-right: 60px;
-		padding-left: 60px;
-	}
+// @media (max-width: 780px) {
+// 	.nav {
+// 		display: none;
+// 	}
 
-}
+// 	.inputColumn {
+// 		padding-right: 60px;
+// 		padding-left: 60px;
+// 	}
 
-@media (max-width: 439px) {
-	.totalTitle {
-		width: 289px;
-	}
+// }
 
-	.totalBox {
-		width: 289px;
-	}
+// @media (max-width: 439px) {
+// 	.totalTitle {
+// 		width: 289px;
+// 	}
 
-	.cartTitle {
-		width: 289px;
-	}
+// 	.totalBox {
+// 		width: 289px;
+// 	}
 
-	.cartBox {
-		width: 289px;
-	}
-}
+// 	.cartTitle {
+// 		width: 289px;
+// 	}
+
+// 	.cartBox {
+// 		width: 289px;
+// 	}
+// }
 
 @media screen and (max-width: 768px) {
 	.nav {
@@ -343,7 +340,7 @@ p{
 		}
 	}
 }
-@media screen and (max-width: 1098px) {
+@media (max-width: 1098px) {
 	.nav {
 		ul{
 			li{

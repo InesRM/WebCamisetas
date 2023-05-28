@@ -15,22 +15,6 @@
   border-radius: 18px;
 }
 
-.Slogin {
-  float: right;
-}
-.Slogin .login {
-  margin-top: 40px;
-  margin-left: 8px;
-  border: 5px solid #053151;
-  border-radius: 18px;
-  color: #fcfcfc;
-  font-family: "Poiret One", cursive;
-  text-decoration: none;
-  font-size: 40px;
-  padding: 10px;
-  background-color: #ea8576;
-}
-
 body {
   background-color: #ffffff;
   position: relative;
@@ -39,7 +23,7 @@ body {
 }
 
 .row {
-  margin: 0;
+  margin: 5px;
 }
 
 .nav {
@@ -64,9 +48,8 @@ body {
 .nav ul li a {
   color: #fcfcfc;
   font-family: "Poiret One", cursive;
-  font-size: 35px;
+  font-size: 20px;
   text-decoration: none;
-  padding-top: 25px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -215,44 +198,6 @@ p {
   color: #031a1d;
 }
 
-@media (max-width: 604px) {
-  .nav {
-    display: none;
-  }
-  img.teamPhoto {
-    width: 420px;
-    height: 215px;
-  }
-}
-@media (max-width: 440px) {
-  img.teamPhoto {
-    width: 229px;
-    height: 155px;
-  }
-}
-@media (max-width: 780px) {
-  .nav {
-    display: none;
-  }
-  .inputColumn {
-    padding-right: 60px;
-    padding-left: 60px;
-  }
-}
-@media (max-width: 439px) {
-  .totalTitle {
-    width: 289px;
-  }
-  .totalBox {
-    width: 289px;
-  }
-  .cartTitle {
-    width: 289px;
-  }
-  .cartBox {
-    width: 289px;
-  }
-}
 @media screen and (max-width: 768px) {
   .nav {
     display: none;
@@ -272,7 +217,7 @@ p {
     border-radius: 5px;
   }
 }
-@media screen and (max-width: 1098px) {
+@media (max-width: 1098px) {
   .nav ul li {
     padding: 0%;
     -webkit-text-size-adjust: 10px;
@@ -281,7 +226,7 @@ p {
   }
 }
 .cuenta {
-  background: #ee998c;
+  background: #e5bdb7;
   height: 97vh;
   display: flex;
   align-items: center;
@@ -771,29 +716,32 @@ li.tooltip6:hover:before {
 }
 .homePage {
   background-color: #f7eff1;
-  color: #e04a34;
 }
-.homePage .step {
+
+.steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
   border: 20px solid #ffffff;
   border-radius: 28px;
+  color: #e04a34;
 }
-.homePage .step h6 {
+.steps h6 {
   font-family: "Poiret One", cursive;
-  font-size: 24px;
+  font-size: 20px;
 }
-.homePage .step h3 {
+.steps h3 {
   margin-top: 20px;
   margin-bottom: 20px;
   font-family: "Poiret One", cursive;
-  font-size: 34px;
+  font-size: 20px;
 }
-.homePage .step:hover {
-  background-color: #ea8576;
+.steps:hover {
+  background-color: #e5bdb7;
   border-color: #ffffff;
-  color: #fcfcfc;
+  color: #031a1d;
 }
 
 .camiseta {
@@ -827,9 +775,10 @@ h1 {
   font-family: "Poiret One", cursive;
   text-align: center;
   color: #3f3b3b;
-  font-size: 80px;
+  font-size: 40px;
   margin: 40px;
   margin-top: 65px;
+  padding: 2%;
 }
 h1:hover {
   color: #e04a34;
@@ -839,7 +788,7 @@ h2 {
   font-family: "Patrick Hand SC", cursive;
   text-align: center;
   color: #3f3b3b;
-  font-size: 40px;
+  font-size: 30px;
   margin-top: 30px;
   margin-bottom: 60px;
 }
@@ -848,5 +797,48 @@ h3 {
   margin-top: 20px;
   margin-bottom: 20px;
   font-family: "Poiret One", cursive;
-  font-size: 34px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 868px) {
+  .steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    float: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    border: 20px solid #ffffff;
+    border-radius: 28px;
+    color: #e04a34;
+  }
+  .nav {
+    display: none;
+  }
+  .footerNav {
+    display: none;
+  }
+  .mobileMenu {
+    display: inline-block;
+    margin-top: 30px;
+  }
+  .mobileMenu button {
+    position: relative;
+    color: #031a1d;
+    font-family: "Poiret One", cursive;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+}
+@media screen and (min-width: 868px) {
+  .steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 968px) {
+  .steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }/*# sourceMappingURL=main.css.map */

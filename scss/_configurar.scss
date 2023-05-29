@@ -1,0 +1,126 @@
+.l-main{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+
+    h1{
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+       margin-left: 100px;
+    }
+  
+}
+
+.button{
+    display: inline-block;
+    background-color: $background-color_4;
+    color: #fff;
+    padding: .75rem 2.5rem;
+    border-radius: .5rem; 
+
+    &:hover{
+        box-shadow: 0px 10px 36px rgba(0,0,0,.15);
+    }
+}
+
+.about{
+    &__container{
+        row-gap: 2rem;
+        text-align: center;
+    }
+    &__subtitle{
+        margin-bottom: 20px;
+    }
+
+    &__img{
+        justify-self: center;
+        margin-left:30px;
+        
+        & img{
+            width: 200px;
+            border-radius: .5rem;
+        }
+    }
+}
+.work{
+    &__container{
+        row-gap: 2rem;
+        text-align: center;
+    }
+    &__img{
+        box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15); 
+        border-radius: .5rem;
+        overflow: hidden;
+        max-width: 500px;
+        height: 300px;
+        margin-left: 10px; 
+    
+        & img{
+            transition: 1s;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: .5rem;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+.bd-grid{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 2rem;
+   
+    margin-left: 50px;
+    margin-right: 50px;
+
+
+   &__data{
+         display: grid;
+         grid-template-columns: 100%;
+         grid-row-gap: 2rem;
+         text-align: center;
+    }
+}
+
+.btn_edit{
+    display: inline-block;
+
+    background-color: $background-color_9;
+    color:$color_2;
+    padding: .75rem 2.5rem;
+    border-radius: .5rem; 
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 50%;
+    &:hover{
+        box-shadow: 0px 10px 36px rgba(0,0,0,.15);
+    }
+}
+@media screen and (min-width: 1024px) {
+    .bd-grid {
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+
+  @media screen and (max-width: 724px) {
+    .bd-grid {
+        grid-template-columns: auto auto;
+        grid-column-gap: 2rem;
+    }
+    
+  }
+
+    @media screen and (max-width: 524px) {
+        .bd-grid {
+            grid-template-columns: auto;
+            grid-column-gap: 2rem;
+        }
+        
+    }

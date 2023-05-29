@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
+
+<head>
 	<title>Camisetas</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="content-type" content="text/html charset=utf-8">
@@ -15,6 +16,7 @@
 		crossorigin="anonymous" />
 	<script src="./js/javascript.js"></script>
 </head>
+
 <body>
 	<div class="container-fluid">
 		<div class="row">
@@ -30,6 +32,8 @@
 								<li><a href="index.html">Home</a></li>
 								<li><a href="cuenta.html">Cuenta</a></li>
 								<li><a href="personalizar.html">Personalizar</a></li>
+								<li><a href="concurso.html">Concurso</a></li>
+								<li><a href="tienda.html">Tienda</a></li>
 								<li><a href="contact.html">Contacto</a></li>
 								<li><a href="login.html">Login</a></li>
 							</ul>
@@ -43,6 +47,8 @@
 						<li><a href="index.html">Home</a></li>
 						<li><a href="cuenta.html">Cuenta</a></li>
 						<li><a href="personalizar.html">Personalizar</a></li>
+						<li><a href="concurso.html">Concurso</a></li>
+						<li><a href="tienda.html">Tienda</a></li>
 						<li><a href="contact.html">Contacto</a></li>
 						<li><a href="login.html">Login</a></li>
 					</ul>
@@ -52,7 +58,7 @@
 	</div>
 	<!-- aqui va el contenido 1 -->
 	<!-- personalizar manga, largo y tipo de cuello-->
-	<h1>Personalizar Estilo</h1>
+	<h1>1. Personalizar Estilo</h1>
 	<h2>Puedes elegir el tipo de estilo, manga, cuello, o largo para tu diseño base</h2>
 	<br><br>
 	<div class="options">
@@ -149,16 +155,45 @@
 		</table>
 	</div>
 	<!-- =======FIN===personalizar manga, largo y tipo de cuello================= -->
-	<!-- =======INICIO===VENDE TUS DISEÑOS================ -->
-	<h2>EJEMPLOS DE DISEÑOS Y LOGOS</h2>
+	<!-- =======INICIO===SUBE TU DISEÑO================ -->
+	<h1>2. Sube tu diseño</h1>
+	<section class="upload" title="upload">
+		<div class="container">
+			<div class="title_form">
+				<div>
+					<div class="form-group files">
+						<input type="file" class="form-control" multiple="">
+					</div>
+				</div>
+			</div>
+			<div class="datos">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Nombre del diseño">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Descripción">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Precio de venta al público">
+				</div>
+			</div>
+			<div class="boton">
+				<button type="button" class="btn-upload">Subir diseño</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- =======INICIO===MUESTRA TUS DISEÑOS================ -->
+	<h1>3. Muestra tus diseños y llega a otros compradores</h1>
 	<section class="section benefits" title="beneficios">
-        <div class="benefits-grid box">
-			<h2>Muestra tus diseños y llega a otros compradores</h2>
-            <div class="image">
-                <img src="./img/lapiz.jpg" alt="diseño imagen">
-            </div>
-        </div>
-    </section>
+		<div class="benefits-grid box">
+			<div class="image">
+				<img src="./img/lapiz.jpg" alt="diseño imagen">
+				<a href="./configurar.html" class="btn-galeria">Configurar</a>
+			</div>
+		</div>
+	</section>
+	<h2>EJEMPLOS DE DISEÑOS Y LOGOS</h2>
 	<div class="personalizar">
 		<div class="wrapper">
 			<div class="content">

@@ -4,6 +4,7 @@ $color_3: #fcfcfc;
 $color_4: #bababa;
 $color_5: #7a7a7a;
 $color_6: #e04a34;
+$color_7: #a5ccd2;;
 $font-family_1: "Poiret One", cursive;
 $font-family_2: "Patrick Hand SC", cursive;
 $background-color_1: #f7eff1;
@@ -42,36 +43,11 @@ $border-color_4: #ffffff;
 	}
 }
 
-//Botón eliminado de login naranja
-
-// .Slogin {
-// 	float: right;
-	
-// 	.login {
-// 		margin-top: 40px;
-// 		margin-left: 8px;
-// 		border: 5px solid #053151;
-// 		border-radius: 18px;
-// 		color: $color_3;
-// 		font-family: $font-family_1;
-// 		text-decoration: none;
-// 		font-size: 20px;
-// 		padding: 10px;
-// 		background-color: $background-color_2;
-
-// 	}
-
-// }
-
 body {
 	background-color: $background-color_12;
 	position: relative;
 	padding-bottom: 0;
 	margin: 0;
-}
-
-.row {
-	margin: 5px;
 }
 
 .nav {
@@ -143,7 +119,7 @@ body {
 	display: inline-block;
 	position: relative;
 	top: 8px;
-	padding: 1px;
+	padding: 4px;
 	margin-left: 10px;
 
 	.mbtn {
@@ -185,8 +161,8 @@ body {
 				display: block;
 				border: solid 2px #e04a34;
 				background-color: $background-color_4;
-				height: 130px;
-				width: 80px;
+				// height: 130px;
+				// width: 100px;
 				border-radius: 5px;
 				margin-top: 23px;
 				margin-left: -8px;
@@ -274,50 +250,6 @@ p{
 	}
 }
 
-// @media (max-width: 604px) {
-// 	.nav {
-// 		display: none;
-// 	}
-
-// 	img.teamPhoto {
-// 		width: 420px;
-// 		height: 215px;
-// 	}
-
-// }
-
-
-
-// @media (max-width: 780px) {
-// 	.nav {
-// 		display: none;
-// 	}
-
-// 	.inputColumn {
-// 		padding-right: 60px;
-// 		padding-left: 60px;
-// 	}
-
-// }
-
-// @media (max-width: 439px) {
-// 	.totalTitle {
-// 		width: 289px;
-// 	}
-
-// 	.totalBox {
-// 		width: 289px;
-// 	}
-
-// 	.cartTitle {
-// 		width: 289px;
-// 	}
-
-// 	.cartBox {
-// 		width: 289px;
-// 	}
-// }
-
 @media screen and (max-width: 768px) {
 	.nav {
 		display: none;
@@ -330,6 +262,8 @@ p{
 	.mobileMenu {
 		display: inline-block;
 		margin-top: 30px;
+		margin-left: 10px;	
+	}
 
 		button {
 			position: relative;
@@ -339,7 +273,7 @@ p{
 			border-radius: 5px;
 		}
 	}
-}
+
 @media (max-width: 1098px) {
 	.nav {
 		ul{

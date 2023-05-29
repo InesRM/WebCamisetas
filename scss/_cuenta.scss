@@ -1,12 +1,12 @@
 .cuenta {
     background: $background-color_9;
-    height: 97vh;
+    height: 99vh;
     display: flex;
     align-items: center;
     justify-content: center;
         &:hover {
             color:$color_3;
-            background-color: $background-color_5;
+            background-color: $background-color_13;
         }
     .profile-wrapper {
         box-shadow: 0px 0px 5px 0.5px rgb(255, 255, 255);
@@ -17,7 +17,7 @@
         background-image: linear-gradient(top, #fff 50%, #240503 50%);
         border-radius: 0.5em;
         width: calc(100% - 70%);
-        height: 65vh;
+        height: 79vh;
         padding: 1em;
 
         .img-container {
@@ -50,7 +50,7 @@
         .contents {
             font-size: 1.1em;
             padding: 1em 0.7em;
-            color: #fff;
+            color: $color_3;
         }
 
         .footer-content {

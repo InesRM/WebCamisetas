@@ -1,0 +1,210 @@
+a {
+    text-decoration: none;
+}
+
+
+.login__register {
+
+    align-items: center;
+    background-color: $background-color_13;
+    width: 400px;
+    height: 400px;
+}
+
+.login {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-left: 1.5rem;
+    margin-right: 4.5rem;
+
+    &__content {
+        display: grid;
+    }
+
+    &__img {
+        justify-self: center;
+
+        & img {
+            width: 310px;
+            margin-top: 1.5rem;
+        }
+    }
+
+    &__forms {
+        position: relative;
+        height: 368px;
+    }
+
+    &__registre,
+    &__create {
+        position: absolute;
+        bottom: 1rem;
+        width: 100%;
+        background-color: $background-color_4;
+        padding: 2rem 1rem;
+        border-radius: 1rem;
+        text-align: center;
+        box-shadow: 0 8px 20px rgba(35, 0, 77, .2);
+        animation-duration: .4s;
+        animation-name: animate-login;
+
+        @keyframes animate-login {
+            0% {
+                transform: scale(1, 1);
+            }
+
+            50% {
+                transform: scale(1.1, 1.1);
+            }
+
+            100% {
+                transform: scale(1, 1);
+            }
+        }
+    }
+
+    &__title {
+        font-size: var(--h1-font-size);
+        color: $color_2;
+        margin: 2rem;
+    }
+
+    &__box {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        column-gap: .5rem;
+        padding: 1.125rem 1rem;
+        background-color: #FFF;
+        margin: 30px;
+        border-radius: .5rem;
+
+    }
+
+    &__icon {
+        font-size: 1.5rem;
+        color: $color_2;
+    }
+
+    &__input {
+        border: none;
+        outline: none;
+        font-size: var(--normal-font-size);
+        font-weight: 700;
+        color: $color_2;
+
+        &::placeholder {
+            font-size: var(--normal-font-size);
+            font-family: var(--body-font);
+            color: $color_2;
+        }
+    }
+
+    &__forgot {
+        display: block;
+        width: max-content;
+        margin: 2rem;
+        font-size: var(--small-font-size);
+        font-weight: 600;
+        color: $color_2;
+    }
+
+    &__button {
+        display: block;
+        padding: 1rem;
+        margin: 1rem 0;
+        background-color: $background-color_3;
+        color: $color_3;
+        font-weight: 600;
+        text-align: center;
+        border-radius: .5rem;
+        transition: .3s;
+        width: 150px;
+        margin-left: 70px;
+
+        &:hover {
+            background-color: $background-color_4;
+            color: $color_2
+        }
+    }
+
+    &__account,
+    &__signin,
+    &__signup {
+        font-weight: 600;
+        font-size: var(--small-font-size);
+        margin-left: 4rem;
+
+    }
+
+    &__account {
+        color: $color_2;
+    }
+
+    &__signin,
+    &__signup {
+        color: $color_2;
+        cursor: pointer;
+    }
+
+    &__social {
+        margin-top: 2rem;
+
+        &-icon {
+            font-size: 1.5rem;
+            color: $color_2;
+            margin: 0 1.5rem;
+        }
+    }
+}
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+@media screen and (min-width: 576px) {
+    .login {
+        &__forms {
+            width: 348px;
+            justify-self: center;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .login {
+        overflow: hidden;
+
+        &__content {
+            grid-template-columns: repeat(2, max-content);
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__img {
+            display: flex;
+            width: 800px;
+            height: 588px;
+            border-radius: 1rem;
+
+            & img {
+                width: 890px;
+            }
+        }
+
+    }
+}
+
+.login {
+    --h1-font-size: 1.5rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+
+    @media screen and (min-width: 768px) {
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+    }
+}

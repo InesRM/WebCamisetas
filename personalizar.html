@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-	<title></title>
+	<head>
+	<title>Camisetas</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="content-type" content="text/html charset=utf-8">
 	<link href="scss/main.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Shadows+Into+Light+Two|Poiret+One'
 		rel='stylesheet' type='text/css'>
@@ -12,9 +13,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
 		integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
 		crossorigin="anonymous" />
-		<script src="./js/javascript.js"></script>
+	<script src="./js/javascript.js"></script>
 </head>
-
 <body>
 	<div class="container-fluid">
 		<div class="row">
@@ -31,6 +31,7 @@
 								<li><a href="cuenta.html">Cuenta</a></li>
 								<li><a href="personalizar.html">Personalizar</a></li>
 								<li><a href="contact.html">Contacto</a></li>
+								<li><a href="login.html">Login</a></li>
 							</ul>
 						</div>
 					</div>
@@ -43,7 +44,7 @@
 						<li><a href="cuenta.html">Cuenta</a></li>
 						<li><a href="personalizar.html">Personalizar</a></li>
 						<li><a href="contact.html">Contacto</a></li>
-						<li><a href="#" class="login" id="navbtn">Login</a></li>
+						<li><a href="login.html">Login</a></li>
 					</ul>
 				</div>
 			</div>
@@ -63,8 +64,8 @@
 					<th></th>
 				</tr>
 				<tr class="neat">
-					<th class="left">Neckline Style:</th>
-					<th><select id="neckStyle" onchange="neckDisplay()">
+					<th class="left">Tipo de Cuello:</th>
+					<th><select title="cuello" id="neckStyle" onchange="neckDisplay()">
 							<option value="./img/neck/asymmetric.jpg">Asymmetric</option>
 							<option value="./img/neck/bateau.jpg">Bateau</option>
 							<option value="./img/neck/cowl.jpg">Cowl</option>
@@ -89,8 +90,8 @@
 			</div>
 			<div class="sleeve">
 				<tr class="neat">
-					<th class="left">Sleeve Style:</th>
-					<th><select id="sleeveStyle" onchange="sleeveDisplay()">
+					<th class="left">Tipo de Manga:</th>
+					<th><select title="manga" id="sleeveStyle" onchange="sleeveDisplay()">
 							<option value="./img/sleeve/batwing.jpg">Batwing</option>
 							<option value="./img/sleeve/bell.jpg">Bell</option>
 							<option value="./img/sleeve/bishop.jpg">Bishop</option>
@@ -122,8 +123,8 @@
 			</div>
 			<div class="top">
 				<tr class="neat">
-					<th class="left">Top Length:</th>
-					<th><select id="topStyle" onchange="topDisplay()">
+					<th class="left">Largo:</th>
+					<th><select title="cuerpo" id="topStyle" onchange="topDisplay()">
 							<option value="./img/top/crop.jpg">Crop</option>
 							<option value="./img/top/normal.jpg">Normal</option>
 							<option value="./img/top/long.jpg">Long</option>
@@ -137,18 +138,27 @@
 		<table class="tableborder">
 			<tr>
 				<th></th>
-				<th id="neckImage">Neckline</th>
+				<th id="neckImage">Cuello</th>
 				<th></th>
 			</tr>
 			<tr>
-				<th id="sleeveImage2" class="sleeveFlip">Sleeve</th>
+				<th id="sleeveImage2" class="sleeveFlip">Manga</th>
 				<th id="topImage">Top</th>
-				<th id="sleeveImage">Sleeve</th>
+				<th id="sleeveImage">Manga</th>
 			</tr>
 		</table>
 	</div>
-	<!-- personalizar manga, largo y tipo de cuello--FIN -->
-	<h1>EJEMPLOS DE DISEÑOS Y LOGOS</h1>
+	<!-- =======FIN===personalizar manga, largo y tipo de cuello================= -->
+	<!-- =======INICIO===VENDE TUS DISEÑOS================ -->
+	<h2>EJEMPLOS DE DISEÑOS Y LOGOS</h2>
+	<section class="section benefits" title="beneficios">
+        <div class="benefits-grid box">
+			<h2>Muestra tus diseños y llega a otros compradores</h2>
+            <div class="image">
+                <img src="./img/lapiz.jpg" alt="diseño imagen">
+            </div>
+        </div>
+    </section>
 	<div class="personalizar">
 		<div class="wrapper">
 			<div class="content">
@@ -229,7 +239,7 @@
 				<li><a href="cuenta.html">Cuenta</a></li>
 				<li><a href="personalizar.html">Personalizar</a></li>
 				<li><a href="contact.html">Contacto</a></li>
-				<li><a href="#" class="login">Login</a></li>
+				<li><a href="login.html">Login</a></li>
 			</ul>
 		</div>
 	</div>
@@ -246,7 +256,7 @@
 			<br>
 			<br>
 			<h6>No tienes una cuenta aún?
-				<a href="cuenta.html">Crea una cuenta</a>
+				<a href="login.html">Crea una cuenta</a>
 			</h6>
 
 		</div>

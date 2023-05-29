@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html charset=utf-8">
+    <link rel="stylesheet" href="./scss/main.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Shadows+Into+Light+Two|Poiret+One'
+        rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Patrick+Hand+SC' rel='stylesheet'
+        type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <title>Formulario de Login y Registro</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="header">
+            <div class="col-xs-6 col-md-6 left">
+                <img src="img/logo.jpg" alt="logotipo" class="logo">
+            </div>
+            <div class="col-xs-6 mobileMenu">
+                <div class="mobileDropdown">
+                    <button class="mbtn">Menu</button>
+                    <div class="mobileList">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="cuenta.html">Cuenta</a></li>
+                            <li><a href="personalizar.html">Personalizar</a></li>
+                            <li><a href="contact.html">Contacto</a></li>
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="Slogin"><a href="#" class="login" id="navbtn">Login</div> -->
+        <div class="navbar">
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cuenta.html">Cuenta</a></li>
+                    <li><a href="personalizar.html">Personalizar</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="login">
+        <div class="login__content">
+            <div class="login__img">
+                <img src="./img/img-login.jpeg" alt="logo-login">
+            </div>
+
+            <div class="login__forms">
+                <form action="" class="login__register" id="login-in">
+                    <h1 class="login__title">Login</h1>
+
+                    <div class="login__box">
+                        <i class='bx bx-user login__icon'></i>
+                        <input type="text" placeholder="Username" class="login__input">
+                    </div>
+
+                    <div class="login__box">
+                        <i class='bx bx-lock-alt login__icon'></i>
+                        <input type="password" placeholder="Password" class="login__input">
+                    </div>
+
+                    <a href="#" class="login__forgot">¿Olvidaste tu contraseña?</a>         
+                    
+                    <a href="#" class="login__button">Login</a>
+                    
+                    <span class="login__account">¿No tienes aún cuenta?</span>
+                    <span class="login__signIn" id="sign-up">Registro</span>
+                    <br>
+                </form>
+
+                <form action="" class="login__create none" id="login-up">
+                    <h1 class="login__title">Crear Cuenta</h1>
+
+                    <div class="login__box">
+                        <i class='bx bx-user login__icon'></i>
+                        <input type="text" placeholder="Username" class="login__input">
+                    </div>
+
+                    <div class="login__box">
+                        <i class='bx bx-at login__icon'></i>
+                        <input type="text" placeholder="Email" class="login__input">
+                    </div>
+
+                    <div class="login__box">
+                        <i class='bx bx-lock-alt login__icon'></i>
+                        <input type="password" placeholder="Password" class="login__input">
+                    </div>
+
+                    <a href="#" class="login__button">Registro</a>
+
+                    <div>
+                        <span class="login__account">¿Tienes ya una cuenta?</span>
+                        <span class="login__signUp" id="sign-in">Login</span>
+                    </div>
+
+                    <div class="login__social">
+                        <a href="#" class="login__social-icon"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="login__social-icon"><i class='bx bxl-twitter'></i></a>
+                        <a href="#" class="login__social-icon"><i class='bx bxl-google'></i></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cuenta.html">Cuenta</a></li>
+                <li><a href="personalizar.html">Personalizar</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

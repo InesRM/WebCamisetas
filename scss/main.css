@@ -22,10 +22,6 @@ body {
   margin: 0;
 }
 
-.row {
-  margin: 5px;
-}
-
 .nav {
   padding-right: 0px;
 }
@@ -85,7 +81,7 @@ body {
   display: inline-block;
   position: relative;
   top: 8px;
-  padding: 1px;
+  padding: 4px;
   margin-left: 10px;
 }
 .mobileDropdown .mbtn {
@@ -118,8 +114,6 @@ body {
   display: block;
   border: solid 2px #e04a34;
   background-color: white;
-  height: 130px;
-  width: 80px;
   border-radius: 5px;
   margin-top: 23px;
   margin-left: -8px;
@@ -208,8 +202,9 @@ p {
   .mobileMenu {
     display: inline-block;
     margin-top: 30px;
+    margin-left: 10px;
   }
-  .mobileMenu button {
+  button {
     position: relative;
     color: #031a1d;
     font-family: "Poiret One", cursive;
@@ -225,223 +220,137 @@ p {
             text-size-adjust: 10px;
   }
 }
-.cuenta {
-  background: #e5bdb7;
-  height: 97vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.div_principal {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 50%;
 }
-.cuenta:hover {
-  color: #fcfcfc;
-  background-color: #341604;
-}
-.cuenta .profile-wrapper {
-  box-shadow: 0px 0px 5px 0.5px rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(top, #fff 50%, #240503 50%);
-  border-radius: 0.5em;
-  width: 30%;
-  height: 65vh;
-  padding: 1em;
-}
-.cuenta .profile-wrapper .img-container {
-  position: absolute;
-  margin-top: -29em;
-  border-radius: 50%;
-  background-image: url("../img/myAvatar.png");
-  background-size: cover;
-  height: 180px;
-  width: 180px;
-  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
-}
-.cuenta .profile-wrapper h3 {
-  margin-top: 2.1em;
-  font-weight: 600;
-  font-size: 1.5em;
-  margin-left: 1em;
-}
-.cuenta .profile-wrapper .share-icons {
-  width: 100%;
-  height: 3em;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  font-size: 2em;
-}
-.cuenta .profile-wrapper .contents {
-  font-size: 1.1em;
-  padding: 1em 0.7em;
-  color: #fff;
-}
-.cuenta .profile-wrapper .footer-content {
-  font-weight: 500;
-}
-.cuenta .profile-wrapper .footer-content p {
-  margin-top: 2em;
-  font-size: 1.2em;
-}
-.cuenta .profile-wrapper .footer-content p span,
-.cuenta .profile-wrapper .footer-content p i {
-  color: #4d4646;
-}
-.cuenta:hover .profile-wrapper {
-  box-shadow: 0px 0px 20px 1px rgba(5, 5, 5, 0.2);
-}
-
-@media screen and (max-width: 768px) {
-  .profile-wrapper {
-    width: 100%;
-  }
-  .img-container {
-    height: 150px;
-    width: 150px;
-  }
-  .share-icons {
-    font-size: 1.5em;
-    margin-top: 10px;
-  }
-  .h3 {
-    font-size: 0.8em;
-    padding: 0.5em 0.7em;
-  }
-  p {
-    margin-top: 110px;
-    font-size: 0.8em;
-  }
-}
-.contactPage {
-  margin-bottom: 80px;
-}
-
-i.pinIcon {
-  font-size: 30px;
-  text-align: center;
-  color: #031a1d;
-  margin: 0 auto;
-  display: block;
-}
-
-i.mobileIcon {
-  font-size: 30px;
-  text-align: center;
-  color: #031a1d;
-  margin: 0 auto;
-  display: block;
-}
-
-.phoneColumn h3 {
-  font-size: 20px;
-  font-family: "Poiret One", cursive;
-  text-align: center;
-}
-
-i.emailIcon {
-  font-size: 30px;
-  text-align: center;
-  color: #031a1d;
-  margin: 0 auto;
-  display: block;
-}
-
-.emailColumn h3 {
-  font-size: 20px;
-  font-family: "Poiret One", cursive;
-  text-align: center;
-}
-
-.locationColumn h3 {
-  font-size: 20px;
-  font-family: "Poiret One", cursive;
-  text-align: center;
-}
-
-.inputColumn {
-  height: 400px;
-  right: 0;
-  padding-top: 80px;
-  padding-left: 148px;
-  padding-right: 148px;
-  background-color: #067c87;
-  border-color: #ffffff;
-  color: #fcfcfc;
-  border: 3px solid #e04a34;
-  border-radius: 168px;
-  margin: 0 auto;
-}
-
-#name {
-  width: 50%;
-  margin-bottom: 20px;
-  font-family: "Poiret One", cursive;
-  font-size: 30px;
-}
-
-#email {
-  width: 50%;
-  margin-bottom: 20px;
-  font-family: "Poiret One", cursive;
-  font-size: 30px;
-}
-
-#commentArea {
-  width: 100%;
-  margin-bottom: 20px;
-  height: 150px;
-  font-family: "Poiret One", cursive;
-  font-size: 30px;
-}
-
-.borderContainer {
-  border: 2px solid;
-  border-color: #E04A34;
-  height: 311px;
-  width: 264px;
-  margin-bottom: 15px;
-}
-
-.column {
-  box-sizing: border-box;
-  width: 256px;
-  margin: 0 auto;
-  display: block;
-  margin-top: 40px;
+.div_principal .info > #formulario {
   position: relative;
 }
-.column .box:nth-child(5) {
-  border-right: none;
+.div_principal .info .div_info {
+  margin: 5px;
 }
-.column .box i {
-  text-align: center;
-  display: block;
-  margin: 13px;
-}
-.column h1 {
-  font-family: "Poiret One", cursive;
-  text-align: center;
-  color: #3f3b3b;
-  font-size: 80px;
-  margin: 40px;
-  margin-top: 65px;
-}
-.column h1:hover {
+.div_principal .info .div_info .text_title {
   color: #e04a34;
-}
-.column h2 {
-  font-family: "Patrick Hand SC", cursive;
   text-align: center;
-  color: #3f3b3b;
-  font-size: 40px;
-  margin-top: 30px;
-  margin-bottom: 60px;
+  font-size: 1.5rem;
+}
+.div_principal #informacion {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
+.div_input .input,
+.div_input textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #fcfcfc;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
+.div_input .input::-moz-placeholder, .div_input textarea::-moz-placeholder {
+  color: #c5ecfd;
+}
+.div_input .input::placeholder,
+.div_input textarea::placeholder {
+  color: #c5ecfd;
+}
+
+#formulario_es {
+  background: rgba(7, 104, 117, 0.9);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 700pxS;
+  height: 500px;
+  margin-right: 5rem;
+  display: flex;
+  align-items: center;
+}
+#formulario_es form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4rem;
+}
+#formulario_es form .title_form {
+  color: #c5ecfd;
+  text-align: center;
+  font-size: 3.5rem;
+}
+#formulario_es form .div_input {
+  display: flex;
+}
+#formulario_es form .div_input .input_fields {
+  margin-right: 4rem;
+  width: 48%;
+}
+#formulario_es form .div_input .input_fields input {
+  font-size: 1rem;
+}
+#formulario_es form .div_input .msg {
+  display: inherit;
+  width: 48%;
+  flex-direction: column;
+}
+#formulario_es form .div_input .msg textarea {
+  font-size: 1rem;
+  height: 242px;
+}
+#formulario_es .btn_submit {
+  background: #a5ccd2;
+  text-align: center;
+  padding: 10px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  color: #031a1d;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+#formulario_es .btn_submit:hover {
+  background: #186177;
+  color: #fcfcfc;
+}
+
+@media (max-width: 768px) {
+  .div_principal {
+    grid-template-columns: auto;
+  }
+  #formulario_es {
+    width: 100%;
+    height: 100%;
+    margin: 3px;
+    padding: 0;
+  }
+  #formulario_es .form {
+    padding: 0;
+    margin: 0;
+  }
+  #formulario_es .form .div_input .input_fields {
+    margin-right: 0;
+    width: 100%;
+  }
+  #formulario_es .form .div_input .msg {
+    width: 100%;
+  }
+  #formulario_es .btn_submit {
+    width: 100%;
+    font-size: 15px;
+  }
+  .section {
+    height: 100%;
+    font-size: small;
+  }
+}
 .styletable {
   align-items: center;
-  margin-left: 150px;
+  margin-left: 325px;
   margin-right: 50px;
 }
 
@@ -450,10 +359,10 @@ th {
   width: 100px;
 }
 
-tr.neat > th {
+tr.neat th {
   height: 30px;
   width: auto;
-  padding: 5px;
+  padding: 2px;
   border: 3px solid #5CA4D7;
 }
 
@@ -467,7 +376,9 @@ tr.neat > th {
 div.outfitdisplay table {
   display: inline-block;
   margin: 10px;
-  margin-left: 150px;
+}
+div.outfitdisplay table th {
+  border: 3px solid #5CA4D7;
 }
 
 div.options {
@@ -491,6 +402,7 @@ select {
 
 .left {
   text-align: left;
+  font-size: medium;
 }
 
 .sleeveFlip > img {
@@ -764,14 +676,320 @@ li.tooltip6:hover:before {
   border-style: solid;
 }
 
-@media screen and (max-width: 768px) {
+.benefits {
+  background-color: #e5bdb7;
+}
+.benefits .benefits-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5px;
+  padding: 10px 0;
+  margin: 0 auto;
+  max-width: 400px;
+}
+.benefits .content-benefits {
+  display: grid;
+  grid-gap: 5px;
+}
+.benefits .image {
+  width: 100%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+}
+.benefits .image:hover {
+  transform: rotate(9deg) scale(1.1);
+}
+
+@media screen and (max-width: 1200px) {
   .wrapper {
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  .styletable {
+    width: 50%;
+    margin-left: 70px;
+  }
+  .outfitdisplay {
+    width: 88%;
+    margin-left: 60px;
+  }
+  .outfitdisplay img {
+    width: 100%;
+    height: 100%;
+  }
 }
+.cuenta {
+  background: #e5bdb7;
+  height: 99vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cuenta:hover {
+  color: #fcfcfc;
+  background-color: #a5ccd2;
+}
+.cuenta .profile-wrapper {
+  box-shadow: 0px 0px 5px 0.5px rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(top, #fff 50%, #240503 50%);
+  border-radius: 0.5em;
+  width: 30%;
+  height: 79vh;
+  padding: 1em;
+}
+.cuenta .profile-wrapper .img-container {
+  position: absolute;
+  margin-top: -29em;
+  border-radius: 50%;
+  background-image: url("../img/myAvatar.png");
+  background-size: cover;
+  height: 180px;
+  width: 180px;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+}
+.cuenta .profile-wrapper h3 {
+  margin-top: 2.1em;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-left: 1em;
+}
+.cuenta .profile-wrapper .share-icons {
+  width: 100%;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 2em;
+}
+.cuenta .profile-wrapper .contents {
+  font-size: 1.1em;
+  padding: 1em 0.7em;
+  color: #fcfcfc;
+}
+.cuenta .profile-wrapper .footer-content {
+  font-weight: 500;
+}
+.cuenta .profile-wrapper .footer-content p {
+  margin-top: 2em;
+  font-size: 1.2em;
+}
+.cuenta .profile-wrapper .footer-content p span,
+.cuenta .profile-wrapper .footer-content p i {
+  color: #4d4646;
+}
+.cuenta:hover .profile-wrapper {
+  box-shadow: 0px 0px 20px 1px rgba(5, 5, 5, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .profile-wrapper {
+    width: 100%;
+  }
+  .img-container {
+    height: 150px;
+    width: 150px;
+  }
+  .share-icons {
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+  .h3 {
+    font-size: 0.8em;
+    padding: 0.5em 0.7em;
+  }
+  p {
+    margin-top: 110px;
+    font-size: 0.8em;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+.login__register {
+  align-items: center;
+  background-color: #a5ccd2;
+  width: 400px;
+  height: 400px;
+}
+
+.login {
+  display: grid;
+  grid-template-columns: 100%;
+  margin-left: 1.5rem;
+  margin-right: 4.5rem;
+}
+.login__content {
+  display: grid;
+}
+.login__img {
+  justify-self: center;
+}
+.login__img img {
+  width: 310px;
+  margin-top: 1.5rem;
+}
+.login__forms {
+  position: relative;
+  height: 368px;
+}
+.login__registre, .login__create {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  background-color: white;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(35, 0, 77, 0.2);
+  animation-duration: 0.4s;
+  animation-name: animate-login;
+}
+@keyframes animate-login {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.login__title {
+  font-size: var(--h1-font-size);
+  color: #031a1d;
+  margin: 2rem;
+}
+.login__box {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  padding: 1.125rem 1rem;
+  background-color: #FFF;
+  margin: 30px;
+  border-radius: 0.5rem;
+}
+.login__icon {
+  font-size: 1.5rem;
+  color: #031a1d;
+}
+.login__input {
+  border: none;
+  outline: none;
+  font-size: var(--normal-font-size);
+  font-weight: 700;
+  color: #031a1d;
+}
+.login__input::-moz-placeholder {
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  color: #031a1d;
+}
+.login__input::placeholder {
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  color: #031a1d;
+}
+.login__forgot {
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 2rem;
+  font-size: var(--small-font-size);
+  font-weight: 600;
+  color: #031a1d;
+}
+.login__button {
+  display: block;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #067c87;
+  color: #fcfcfc;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  width: 150px;
+  margin-left: 70px;
+}
+.login__button:hover {
+  background-color: white;
+  color: #031a1d;
+}
+.login__account, .login__signin, .login__signup {
+  font-weight: 600;
+  font-size: var(--small-font-size);
+  margin-left: 4rem;
+}
+.login__account {
+  color: #031a1d;
+}
+.login__signin, .login__signup {
+  color: #031a1d;
+  cursor: pointer;
+}
+.login__social {
+  margin-top: 2rem;
+}
+.login__social-icon {
+  font-size: 1.5rem;
+  color: #031a1d;
+  margin: 0 1.5rem;
+}
+
+.block {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+@media screen and (min-width: 576px) {
+  .login__forms {
+    width: 348px;
+    justify-self: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .login {
+    overflow: hidden;
+  }
+  .login__content {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    align-items: center;
+  }
+  .login__img {
+    display: flex;
+    width: 800px;
+    height: 588px;
+    border-radius: 1rem;
+  }
+  .login__img img {
+    width: 890px;
+  }
+}
+.login {
+  --h1-font-size: 1.5rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+}
+@media screen and (min-width: 768px) {
+  .login {
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+  }
+}
+
 .homePage {
   background-color: #f7eff1;
 }

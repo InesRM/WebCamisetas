@@ -2,7 +2,9 @@
 <html lang="es">
 
 <head>
-	<title></title>
+	<title>Camisetas</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="content-type" content="text/html charset=utf-8">
 	<link href="scss/main.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Shadows+Into+Light+Two|Poiret+One'
 		rel='stylesheet' type='text/css'>
@@ -30,6 +32,7 @@
 								<li><a href="cuenta.html">Cuenta</a></li>
 								<li><a href="personalizar.html">Personalizar</a></li>
 								<li><a href="contact.html">Contacto</a></li>
+								<li><a href="login.html">Login</a></li>
 							</ul>
 						</div>
 					</div>
@@ -43,48 +46,50 @@
 						<li><a href="cuenta.html">Cuenta</a></li>
 						<li><a href="personalizar.html">Personalizar</a></li>
 						<li><a href="contact.html">Contacto</a></li>
-						<li><a href="#" class="login" id="navbtn">Login</a></li>
+						<li><a href="login.html">Login</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="contactPage">
-		<h1>Say Hello!</h1>
-		<div class="row">
-			<div class="col-md-4 locationColumn">
-				<i class="fa fa-map-pin pinIcon" aria-hidden="true"></i>
-				<h3>123 Rue del Percebe St.</h3>
-				<h3>Cincinnati, Ohio</h3>
-			</div>
+	<!--====== CONTACTO EMPIEZA ======-->
+	<h2>Envíanos tus dudas o consultas</h2>
+	<section>
+        <div class="div_principal">
+            <div class="info">
+                <div class="div_info">
+                    <div class="telefono">
+                        <h2 class="text_title">Llámanos</h2>
+                        <h2>1(123)-456-789</h2>
+                    </div>
+                    <div class="ubicacion">
+                        <h2 class="text_title">Ubicación</h2>
+                        <h2>121 Rue del percebe, Nueva York,</h2>
+						<h2>NY 92103-9000</h2>
+                    </div>
+                </div>
+            </div>
+            <div id="formulario_es" class="info">
+                <form action="" id="formulario" >
+                    <h2 class="title_form">Formulario</h2>
+                    <div class="div_input">
+                        <div class="input_fields">
+                            <input id="nombre" type="text" class="input" placeholder="Nombre" name="nombre">
+                            <input id="email" type="email" name="email" class="input" placeholder="Email">
+                            <input id="telefono" type="text" class="input" placeholder="Telefono" name="telefono">
+                            <input id="asunto" type="text" class="input" placeholder="Asunto" name="asunto">
+                        </div>
+                        <div class="msg">
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"name="mensaje"></textarea>
+                            <button class="btn_submit" type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+	</section>
 
-			<div class="col-md-4 phoneColumn">
-				<i class="fa fa-mobile mobileIcon" aria-hidden="true"></i>
-				<h3>Llámanos</h3>
-				<h3>(937) 689-0442</h3>
-			</div>
-
-			<div class="col-md-4 emailColumn">
-				<i class="fa fa-envelope-o emailIcon" aria-hidden="true"></i>
-				<h3>Email</h3>
-				<h3>micorreo@gmail.com</h3>
-			</div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-md-12 inputColumn">
-			<div class="form-group">
-				<input type="text" class="form-control" id="name" placeholder="Nombre">
-			</div>
-			<div class="form-group">
-				<input type="email" class="form-control" id="email" placeholder="Email">
-			</div>
-			<div class="form-group">
-				<textarea class="form-control" rows="5" id="commentArea" placeholder="Commentarios"></textarea>
-			</div>
-		</div>
-	</div>
+	<!--====== CONTACTO ACABA ======-->
 	<div class="row">
 		<div class="col-md-12 footerNav">
 			<ul>
@@ -92,7 +97,7 @@
 				<li><a href="cuenta.html">Cuenta</a></li>
 				<li><a href="personalizar.html">Personalizar</a></li>
 				<li><a href="contact.html">Contacto</a></li>
-				<li><a href="#" class="login" id="navbtn">Login</a></li>
+				<li><a href="login.html">Login</a></li>
 			</ul>
 		</div>
 	</div>
@@ -108,7 +113,7 @@
 			<br>
 			<br>
 			<h6>No tienes una cuenta aún?
-				<a href="cuenta.html">Crea una cuenta</a>
+				<a href="login.html">Crea una cuenta</a>
 			</h6>
 
 		</div>

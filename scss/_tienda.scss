@@ -1,0 +1,117 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    padding: 2rem 0;
+}
+
+
+.bd-grid {
+	display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+	max-width: 1200px;
+	margin-left: 2.5rem;
+	margin-right: 2.5rem;
+	align-items: center;
+
+}
+.Tcard {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1.5rem 2rem;
+	border-radius: 1rem;
+	overflow: hidden;
+	&:hover {
+		box-shadow: 0 .5rem 1rem #D1D9E6;
+		.Tcard__name {
+			left: 0;
+		}
+		.Tcard__img {
+			transform: rotate(30deg);
+			margin-left: 3.5rem;
+		}
+		.Tcard__precis {
+			margin-left: 3.5rem;
+			padding: 0 1.5rem;
+		}
+	}
+}
+article {
+	&:nth-child(1) {
+		background-color: $background-color_2;
+	}
+	&:nth-child(2) {
+		background-color: $background-color_9;
+	}
+	&:nth-child(3) {
+		background-color: $background-color_8;
+	}
+	&:nth-child(4) {
+		background-color: $background-color_3;
+	}
+}
+.Tcard__img {
+	width: 140px;
+	height: auto;
+	padding: 3rem 0;
+	transition: .5s;
+}
+.Tcard__name {
+	position: absolute;
+	left: -25%;
+	top: 0;
+	width: 3.5rem;
+	height: 100%;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	text-align: center;
+	background-color: $background-color_13;
+	color: $color_1;
+	font-weight: bold;
+	transition: .5s;
+}
+.Tcard__icon {
+	font-size: 1.5rem;
+	color: $color_2;
+	&:hover {
+		color: $color_2;
+	}
+}
+.Tcard__precis {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	transition: .5s;
+}
+.Tcard__preci {
+	display: block;
+	text-align: center;
+}
+.Tcard__preci--before {
+	font-size: 20px;
+	color: $color_2;
+	margin-bottom: .25rem;
+}
+.Tcard__preci--now {
+	font-size: 30px;
+	font-weight: bold;
+}
+@media screen and (min-width: 1200px) {
+	body {
+		margin: 3rem 0 0 0;
+	}
+	.bd-grid {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

@@ -2,6 +2,7 @@
   align-items: center;
   margin-left: 325px;
   margin-right: 50px;
+  margin-bottom: 10px;
 
 }
 
@@ -29,9 +30,9 @@ tr.neat {
 div.outfitdisplay {
   table {
     display: inline-block;
-    margin: 10px;
+    // margin: 10px;
 
-    // margin-left:70px;
+    margin-left:10px;
     th {
       border: 3px solid #5CA4D7;
     }

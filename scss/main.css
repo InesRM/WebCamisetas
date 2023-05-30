@@ -1,7 +1,7 @@
 @import "normalize.css";
 .header {
   background-image: url("../img/camisetas-logo.png");
-  height: 230px;
+  height: 100%;
   background-size: cover;
   background-position: center;
   border: #031a1d;
@@ -352,6 +352,7 @@ p {
   align-items: center;
   margin-left: 325px;
   margin-right: 50px;
+  margin-bottom: 10px;
 }
 
 th {
@@ -375,7 +376,7 @@ tr.neat th {
 
 div.outfitdisplay table {
   display: inline-block;
-  margin: 10px;
+  margin-left: 10px;
 }
 div.outfitdisplay table th {
   border: 3px solid #5CA4D7;
@@ -1084,7 +1085,7 @@ a {
   justify-self: center;
   margin-left: 30px;
 }
-.about__img img {
+.about__img __img {
   width: 200px;
   border-radius: 0.5rem;
 }
@@ -1098,19 +1099,18 @@ a {
   border-radius: 0.5rem;
   overflow: hidden;
   max-width: 500px;
-  height: 300px;
+  height: 80%;
   margin-left: 10px;
 }
-.work__img img {
+.work__img __img {
   transition: 1s;
   cursor: pointer;
-  width: 100%;
-  height: 100%;
+  height: 80%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.5rem;
 }
-.work__img img:hover {
+.work__img __img:hover {
   transform: scale(1.1);
 }
 
@@ -1159,6 +1159,129 @@ a {
   .bd-grid {
     grid-template-columns: auto;
     grid-column-gap: 2rem;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  padding: 2rem 0;
+}
+
+.bd-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+  max-width: 1200px;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  align-items: center;
+}
+
+.Tcard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.Tcard:hover {
+  box-shadow: 0 0.5rem 1rem #D1D9E6;
+}
+.Tcard:hover .Tcard__name {
+  left: 0;
+}
+.Tcard:hover .Tcard__img {
+  transform: rotate(30deg);
+  margin-left: 3.5rem;
+}
+.Tcard:hover .Tcard__precis {
+  margin-left: 3.5rem;
+  padding: 0 1.5rem;
+}
+
+article:nth-child(1) {
+  background-color: #ea8576;
+}
+article:nth-child(2) {
+  background-color: #e5bdb7;
+}
+article:nth-child(3) {
+  background-color: #722fb4;
+}
+article:nth-child(4) {
+  background-color: #067c87;
+}
+
+.Tcard__img {
+  width: 140px;
+  height: auto;
+  padding: 3rem 0;
+  transition: 0.5s;
+}
+
+.Tcard__name {
+  position: absolute;
+  left: -25%;
+  top: 0;
+  width: 3.5rem;
+  height: 100%;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: center;
+  background-color: #a5ccd2;
+  color: #3f3b3b;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.Tcard__icon {
+  font-size: 1.5rem;
+  color: #031a1d;
+}
+.Tcard__icon:hover {
+  color: #031a1d;
+}
+
+.Tcard__precis {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  transition: 0.5s;
+}
+
+.Tcard__preci {
+  display: block;
+  text-align: center;
+}
+
+.Tcard__preci--before {
+  font-size: 20px;
+  color: #031a1d;
+  margin-bottom: 0.25rem;
+}
+
+.Tcard__preci--now {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    margin: 3rem 0 0 0;
+  }
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .homePage {

@@ -13,7 +13,7 @@ $background-color_3: #067c87;
 $background-color_4: white;
 $background-color_5: #341604;
 $background-color_6: #667099;
-$background-color_7: #631A35;
+$background-color_7: #e45c8e;
 $background-color_8: #722fb4;
 $background-color_9: #e5bdb7;
 $background-color_10: #28746A;
@@ -26,10 +26,11 @@ $border-color_2: #E0E0E0;
 $border-color_3: #067c87;
 $border-color_4: #ffffff;
 
+
 .header {
 	background-image: url("../img/camisetas-logo.png");
-	height: 230px;
-	background-size: cover;
+	height:100%;
+	background-size:cover;
 	background-position: center;
 	border: #031a1d;
 

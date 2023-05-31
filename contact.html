@@ -29,12 +29,13 @@
 						<div class="mobileList">
 							<ul>
 								<li><a href="index.html">Home</a></li>
-								<li><a href="cuenta.html">Cuenta</a></li>
 								<li><a href="personalizar.html">Personalizar</a></li>
 								<li><a href="concurso.html">Concurso</a></li>
 								<li><a href="tienda.html">Tienda</a></li>
-								<li><a href="contact.html">Contacto</a></li>
+								<li><a href="cuenta.html">Cuenta</a></li>
 								<li><a href="login.html">Login</a></li>
+								<!-- <li id="lg-bag"><a href="cart.html"><i class="fal fa-shopping-bag"></i></a></li> -->
+								<li><a href="contact.html">Contacto</a></li>
 							</ul>
 						</div>
 					</div>
@@ -56,6 +57,32 @@
 			</div>
 		</div>
 	</div>
+	<section class="section-p1">
+        <div class="fe-box">
+           <a href="envio.html"> <img src="img/features/f1.png" alt="envios gratis">
+            <h6>Envio Gratis</h6></a>
+        </div>
+        <div class="fe-box">
+            <a href="cart.html"><img src="img/features/f2.png" alt="pedidos online">
+            <h6>Pedidos Online</h6></a>
+        </div>
+        <div class="fe-box">
+            <a href="tienda.html"><img src="img/features/f3.png" alt="Ahorro">
+            <h6>Ahorro</h6></a>
+        </div>
+        <div class="fe-box">
+            <a href="promociones.html"><img src="img/features/f4.png" alt="Promociones">
+            <h6>Promociones</h6></a>
+        </div>
+        <div class="fe-box">
+            <a href="concurso.html"><img src="img/features/f5.png" alt="Satisfacción">
+            <h6>Vende</h6></a>
+        </div>
+        <div class="fe-box">
+           <a href="atención.html"><img src="img/features/f6.png" alt="Soporte">
+            <h6>F24/7 Soporte</h6></a>
+        </div>
+    </section>
 	<!--====== CONTACTO EMPIEZA ======-->
 	<h2>Envíanos tus dudas o consultas</h2>
 	<section>
@@ -107,30 +134,6 @@
 		</div>
 	</div>
 	</div>
-	<!--sign in pop up-->
-	<div class="popup">
-		<div class="signinform">
-			<i class="fa fa-times-circle" aria-hidden="true" id="close"></i>
-			<h6>Login</h6>
-			<input type="email" placeholder="email" required>
-			<input type="password" placeholder="password" required>
-			<a href="#" class="login" id="loginbtn">Login</a>
-			<br>
-			<br>
-			<h6>No tienes una cuenta aún?
-				<a href="login.html">Crea una cuenta</a>
-			</h6>
-
-		</div>
-	</div>
-	<script>
-		document.getElementById("navbtn").addEventListener("click", function () {
-			document.querySelector(".popup").style.display = "flex";
-		})
-		document.getElementById("close").addEventListener("click", function () {
-			document.querySelector(".popup").style.display = "none";
-		})
-	</script>
 </body>
 
 </html>

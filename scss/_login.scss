@@ -4,12 +4,26 @@ a {
 
 
 .login__register {
-
     align-items: center;
     background-color: $background-color_13;
     width: 400px;
     height: 400px;
+    cursor: pointer;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(35, 0, 77, .2);
+    transition: all .4s ease-in-out;
 }
+.login__create {
+    align-items: center;
+    background-color: $background-color_13;
+    width: 400px;
+    height: 500px;
+    cursor: pointer;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(35, 0, 77, .2);
+    transition: all .4s ease-in-out;
+}
+
 
 .login {
     display: grid;
@@ -94,7 +108,7 @@ a {
 
         &::placeholder {
             font-size: var(--normal-font-size);
-            font-family: var(--body-font);
+            font-family: $font-family_1;
             color: $color_2;
         }
     }

@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #f7eff1;
   position: relative;
   padding-bottom: 0;
   margin: 0;
@@ -119,6 +119,42 @@ body {
   margin-left: -8px;
 }
 
+.section-p1 {
+  justify-content: space-between;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  font-family: "Poiret One", cursive;
+  text-align: center;
+  -webkit-text-decoration: #067c87;
+          text-decoration: #067c87;
+  cursor: pointer;
+}
+.section-p1 a {
+  text-decoration: none;
+  color: #031a1d;
+}
+.section-p1 a:hover {
+  color: #fcfcfc;
+}
+.section-p1 .fe-box:hover {
+  background-color: #a5ccd2;
+  border: 2px solid #067c87;
+}
+.section-p1 .fe-box h3 {
+  font-size: 20px;
+  color: #fcfcfc;
+  text-align: center;
+}
+.section-p1 .fe-box p {
+  font-size: 15px;
+  color: #fcfcfc;
+  text-align: center;
+}
+
 p {
   font-family: "Poiret One", cursive;
   font-size: 20px;
@@ -150,46 +186,16 @@ p {
   font-size: 15px;
 }
 
-.popup {
-  width: 50%;
-  height: 50%;
-  position: fixed;
-  top: 0;
-  left: 80;
-  z-index: 9999;
-  display: none;
-  align-items: center;
-}
-.popup .signinform {
-  background-color: #a5ccd2;
-  font-family: "Poiret One", cursive;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 130%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 350px;
-  padding: 80px 50px;
-  box-sizing: border-box;
-  border-radius: 10px solid #E04A34;
-}
-.popup .signinform input {
-  margin-bottom: 10px;
-  width: 200px;
-}
-.popup i {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: #fff;
-  cursor: pointer;
-}
-.popup h6 {
-  margin: 0;
-  padding: 0 0 20px;
-  font-weight: bold;
+button {
+  background-color: #ea8576;
   color: #031a1d;
+  font-family: "Poiret One", cursive;
+  font-size: 20px;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #f7eff1;
+  color: #7a7a7a;
 }
 
 @media screen and (max-width: 768px) {
@@ -352,6 +358,7 @@ p {
   align-items: center;
   margin-left: 325px;
   margin-right: 50px;
+  margin-bottom: 10px;
 }
 
 th {
@@ -375,7 +382,7 @@ tr.neat th {
 
 div.outfitdisplay table {
   display: inline-block;
-  margin: 10px;
+  margin-left: 10px;
 }
 div.outfitdisplay table th {
   border: 3px solid #5CA4D7;
@@ -877,6 +884,21 @@ a {
   background-color: #a5ccd2;
   width: 400px;
   height: 400px;
+  cursor: pointer;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(35, 0, 77, 0.2);
+  transition: all 0.4s ease-in-out;
+}
+
+.login__create {
+  align-items: center;
+  background-color: #a5ccd2;
+  width: 400px;
+  height: 500px;
+  cursor: pointer;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(35, 0, 77, 0.2);
+  transition: all 0.4s ease-in-out;
 }
 
 .login {
@@ -950,12 +972,12 @@ a {
 }
 .login__input::-moz-placeholder {
   font-size: var(--normal-font-size);
-  font-family: var(--body-font);
+  font-family: "Poiret One", cursive;
   color: #031a1d;
 }
 .login__input::placeholder {
   font-size: var(--normal-font-size);
-  font-family: var(--body-font);
+  font-family: "Poiret One", cursive;
   color: #031a1d;
 }
 .login__forgot {
@@ -1098,14 +1120,13 @@ a {
   border-radius: 0.5rem;
   overflow: hidden;
   max-width: 500px;
-  height: 300px;
+  height: 80%;
   margin-left: 10px;
 }
 .work__img img {
   transition: 1s;
   cursor: pointer;
-  width: 100%;
-  height: 100%;
+  height: 80%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.5rem;
@@ -1161,6 +1182,204 @@ a {
     grid-column-gap: 2rem;
   }
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  padding: 2rem 0;
+}
+
+.bd-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+  max-width: 1200px;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  align-items: center;
+}
+
+.Tcard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.Tcard:hover {
+  box-shadow: 0 0.5rem 1rem #D1D9E6;
+}
+.Tcard:hover .Tcard__name {
+  left: 0;
+}
+.Tcard:hover .Tcard__img {
+  transform: rotate(30deg);
+  margin-left: 3.5rem;
+}
+.Tcard:hover .Tcard__precis {
+  margin-left: 3.5rem;
+  padding: 0 1.5rem;
+}
+
+article:nth-child(1) {
+  background-color: #ea8576;
+}
+article:nth-child(2) {
+  background-color: #e5bdb7;
+}
+article:nth-child(3) {
+  background-color: #722fb4;
+}
+article:nth-child(4) {
+  background-color: #067c87;
+}
+
+.Tcard__img {
+  width: 140px;
+  height: auto;
+  padding: 3rem 0;
+  transition: 0.5s;
+}
+
+.Tcard__name {
+  position: absolute;
+  left: -25%;
+  top: 0;
+  width: 3.5rem;
+  height: 100%;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: center;
+  background-color: #a5ccd2;
+  color: #3f3b3b;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.Tcard__icon {
+  font-size: 1.5rem;
+  color: #031a1d;
+}
+.Tcard__icon:hover {
+  color: #031a1d;
+}
+
+.Tcard__precis {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  transition: 0.5s;
+}
+
+.Tcard__preci {
+  display: block;
+  text-align: center;
+}
+
+.Tcard__preci--before {
+  font-size: 20px;
+  color: #031a1d;
+  margin-bottom: 0.25rem;
+}
+
+.Tcard__preci--now {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1200px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+#cart-add {
+  display: flex;
+  flex-direction: column;
+}
+
+#coupan {
+  width: 100%;
+}
+
+#subtotal {
+  width: 100%;
+  padding: 20px;
+}
+
+#total {
+  width: 100%;
+  padding: 20px;
+}
+
+#cart {
+  width: 100%;
+  padding: 20px;
+}
+
+#cart-item {
+  width: 100%;
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #a5ccd2;
+  font-family: "Poiret One", cursive;
+  padding: 20px;
+}
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+footer .logo {
+  margin-bottom: 30px;
+}
+footer h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+footer a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 10px;
+}
+footer .follow {
+  margin-top: 20px;
+}
+footer .install .row img {
+  border: 1px solid #088178;
+  border-radius: 6px;
+}
+footer .install img {
+  margin: 10px 0 15px 0;
+}
+footer .icon i:hover,
+footer footer a:hover {
+  color: #088178;
+}
+footer .copyright {
+  width: 100%;
+  text-align: center;
+}
+
 .homePage {
   background-color: #f7eff1;
 }

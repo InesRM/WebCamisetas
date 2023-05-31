@@ -1,7 +1,7 @@
 @import "normalize.css";
 .header {
   background-image: url("../img/camisetas-logo.png");
-  height: 230px;
+  height: 100%;
   background-size: cover;
   background-position: center;
   border: #031a1d;
@@ -358,6 +358,7 @@ button:hover {
   align-items: center;
   margin-left: 325px;
   margin-right: 50px;
+  margin-bottom: 10px;
   margin-bottom: 10px;
 }
 
@@ -1106,7 +1107,7 @@ a {
   justify-self: center;
   margin-left: 30px;
 }
-.about__img img {
+.about__img __img {
   width: 200px;
   border-radius: 0.5rem;
 }
@@ -1123,7 +1124,7 @@ a {
   height: 80%;
   margin-left: 10px;
 }
-.work__img img {
+.work__img __img {
   transition: 1s;
   cursor: pointer;
   height: 80%;
@@ -1131,7 +1132,7 @@ a {
      object-fit: cover;
   border-radius: 0.5rem;
 }
-.work__img img:hover {
+.work__img __img:hover {
   transform: scale(1.1);
 }
 

@@ -4,7 +4,8 @@ $color_3: #fcfcfc;
 $color_4: #bababa;
 $color_5: #7a7a7a;
 $color_6: #e04a34;
-$color_7: #a5ccd2;;
+$color_7: #a5ccd2;
+$color_8: #041e42;
 $font-family_1: "Poiret One", cursive;
 $font-family_2: "Patrick Hand SC", cursive;
 $background-color_1: #f7eff1;
@@ -20,7 +21,7 @@ $background-color_10: #28746A;
 $background-color_11: #44beae;
 $background-color_12: #ffffff;
 $background-color_13: #a5ccd2;
-$background-color_14:#240503;
+$background-color_14:#041e42;
 $border-color_1: #E04A34;
 $border-color_2: #E0E0E0;
 $border-color_3: #067c87;
@@ -99,7 +100,7 @@ body {
 	}
 
 	.navbar-nav li a {
-		color: #fff;
+		color: $color_3;	
 		font-family: $font-family_1;
 		font-size: 20px;
 
@@ -214,32 +215,116 @@ p{
 	font-size: 20px;
 	color: $color_3;
 }
-.footerNav {
-	right: 0;
-	padding: 16px;
-	background-color: $background-color_13;
-	text-align: center;
 
-	ul {
-		background-color: $background-color_13;
-		border: 3px solid #fafafa;
-		border-radius: 13px 0px 0px 0px;
-		height: 40px;
+.newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: $background-color_13;
 
-		li {
-			display: inline;
-			padding: 0px 22px;
-			font-size: 20px;
-			list-style: none;
-			text-align: center;
-
-			a {
-				color: $color_2;
-				font-family: $font-family_1;
-				font-size: 15px;
-			}
-		}
+	.form{
+		display: flex;
+		width: 40%;
 	}
+	h3{
+		font-size: 22px;
+		font-weight: 700;
+		color:$color_8;
+	}
+	p{
+		font-size: 19px;
+		font-weight: 600;
+	}
+	input{
+		height: 3.125rem;
+		padding: 0 1.25em;
+		font-size: 14px;
+		width: 50%;
+		border: 1px solid transparent;
+		border-radius: 4px;
+		// outline: none;
+		border-bottom-right-radius: 5px;
+		border-top-right-radius: 6px;
+	}
+	button{
+		background-color:$color_8;
+		color: $color_3;
+		white-space: nowrap;
+		border-bottom-left-radius: 0;
+		border-top-left-radius: 0;
+	}
+}
+
+   
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: $background-color_14;
+    font-family: $font-family_1;
+    padding: 20px;
+
+   .col{
+       
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+   }
+
+    .logo{
+        margin-bottom: 30px;
+    }
+
+    h4{
+        font-size: 20px;
+        padding-bottom: 15px;
+		color: $color_7;
+		font-weight: 600;
+    }
+
+    p{
+        font-size: 17px;
+        margin: 0 0 8px 0;
+    }
+    a{
+        font-size: 20px;
+        text-decoration: none;
+        color: $color_3;
+        margin-bottom: 10px;
+    }
+    .follow{
+    margin-top: 15px;
+    
+}
+
+.install .row img{
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+.install img{
+    margin: 10px 0 15px 0;
+}
+.icon{
+	margin: 0 10px;
+	font-size: 25px;
+	color: $color_3;
+}
+
+.icon i:hover,
+footer a:hover{
+    color: $color_7;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+}
+
 }
 
 button{
@@ -260,7 +345,7 @@ button{
 		display: none;
 	}
 
-	.footerNav {
+	.footer{
 		display: none;
 	}
 
@@ -276,6 +361,26 @@ button{
 			font-family: $font-family_1;
 			font-size: 20px;
 			border-radius: 5px;
+		}
+
+		.newsletter{
+			
+			.form{
+				display: flex;
+				width: 100%;
+				flex-direction: column;
+				align-items: center;
+			}
+			h3{
+				font-size: 18px;
+				font-weight: 700;
+				color:$color_8;
+			}
+			p{
+				font-size: 17px;
+				font-weight: 600;
+			}
+			
 		}
 	}
 

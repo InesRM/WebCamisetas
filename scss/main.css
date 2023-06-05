@@ -185,7 +185,7 @@ p {
   font-weight: 600;
 }
 .newsletter input {
-  height: 3.125rem;
+  height: 2.125rem;
   padding: 0 1.25em;
   font-size: 14px;
   width: 50%;
@@ -195,11 +195,13 @@ p {
   border-top-right-radius: 6px;
 }
 .newsletter button {
-  background-color: #041e42;
+  background-color: #ea8576;
+  font-family: "Poiret One", cursive;
+  font-size: 20px;
   color: #fcfcfc;
   white-space: nowrap;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
+  border-bottom-left-radius: 2;
+  border-top-left-radius: 2;
 }
 
 footer {
@@ -256,18 +258,6 @@ footer footer a:hover {
 footer .copyright {
   width: 100%;
   text-align: center;
-}
-
-button {
-  background-color: #ea8576;
-  color: #031a1d;
-  font-family: "Poiret One", cursive;
-  font-size: 20px;
-  border-radius: 5px;
-}
-button:hover {
-  background-color: #f7eff1;
-  color: #7a7a7a;
 }
 
 @media screen and (max-width: 768px) {
@@ -442,6 +432,14 @@ button:hover {
     font-size: small;
   }
 }
+.__section {
+  background-color: white;
+  font-family: "Poiret One", cursive;
+  font-size: 20px;
+  border: 2px solid #ffffff;
+  padding: 20px;
+}
+
 .styletable {
   align-items: center;
   margin-left: 325px;
@@ -458,7 +456,7 @@ tr.neat th {
   height: 30px;
   width: auto;
   padding: 2px;
-  border: 3px solid #5CA4D7;
+  border: 3px solid #28746A;
 }
 
 #swap {
@@ -473,7 +471,7 @@ div.outfitdisplay table {
   margin-left: 10px;
 }
 div.outfitdisplay table th {
-  border: 3px solid #5CA4D7;
+  border: 3px solid #28746A;
 }
 
 div.options {
@@ -485,10 +483,11 @@ table {
   border-collapse: collapse;
 }
 table th {
-  font-weight: normal;
+  background-color: #f7eff1;
+  font-weight: bold;
   font-size: 20px;
   font-family: "Poiret One", cursive;
-  color: #084068;
+  color: #031a1d;
 }
 
 select {
@@ -524,7 +523,7 @@ select {
 }
 
 .container {
-  border: 3px solid #5CA4D7;
+  border: 3px solid #28746A;
   height: 324px;
   width: 335px;
   margin: auto;
@@ -566,9 +565,9 @@ select {
 .footer {
   margin: 0 auto;
   width: 335px;
-  border-right: 3px solid #5CA4D7;
-  border-left: 3px solid #5CA4D7;
-  border-bottom: 3px solid #5CA4D7;
+  border-right: 3px solid #28746A;
+  border-left: 3px solid #28746A;
+  border-bottom: 3px solid #28746A;
 }
 
 ul.right {
@@ -626,9 +625,9 @@ li.tooltip1:hover:after {
   left: 123px;
   color: #fff;
   content: url(../Images/shirtsizes.jpg);
-  border-top: 2px solid #5CA4D7;
-  border-right: 2px solid #5CA4D7;
-  border-left: 2px solid #5CA4D7;
+  border-top: 2px solid #45a7e8;
+  border-right: 2px solid #45a7e8;
+  border-left: 2px solid #45a7e8;
   position: absolute;
   z-index: 98;
 }
@@ -651,9 +650,9 @@ li.tooltip2:hover:after {
   left: 190px;
   color: #fff;
   content: url(../Images/blueshirtback.jpg);
-  border-top: 2px solid #5CA4D7;
-  border-right: 2px solid #5CA4D7;
-  border-left: 2px solid #5CA4D7;
+  border-top: 2px solid #45a7e8;
+  border-right: 2px solid #45a7e8;
+  border-left: 2px solid #45a7e8;
   position: absolute;
   z-index: 98;
 }
@@ -677,9 +676,9 @@ li.tooltip3:hover:after {
   left: 123px;
   color: #fff;
   content: url(../Images/shirtsizes.jpg);
-  border-top: 2px solid #5CA4D7;
-  border-right: 2px solid #5CA4D7;
-  border-left: 2px solid #5CA4D7;
+  border-top: 2px solid #45a7e8;
+  border-right: 2px solid #45a7e8;
+  border-left: 2px solid #45a7e8;
   position: absolute;
   z-index: 98;
 }
@@ -702,9 +701,9 @@ li.tooltip4:hover:after {
   left: 190px;
   color: #fff;
   content: url(../Images/colorswatches.jpg);
-  border-top: 2px solid #5CA4D7;
-  border-right: 2px solid #5CA4D7;
-  border-left: 2px solid #5CA4D7;
+  border-top: 2px solid #45a7e8;
+  border-right: 2px solid #45a7e8;
+  border-left: 2px solid #45a7e8;
   position: absolute;
   z-index: 98;
 }
@@ -728,9 +727,9 @@ li.tooltip5:hover:after {
   left: 123px;
   color: #fff;
   content: url(../Images/shirtsizes.jpg);
-  border-top: 2px solid #5CA4D7;
-  border-right: 2px solid #5CA4D7;
-  border-left: 2px solid #5CA4D7;
+  border-top: 2px solid #45a7e8;
+  border-right: 2px solid #45a7e8;
+  border-left: 2px solid #45a7e8;
   position: absolute;
   z-index: 98;
 }
@@ -753,9 +752,9 @@ li.tooltip6:hover:after {
   left: 190px;
   color: #fff;
   content: url(../Images/colorswatches.jpg);
-  border-top: 2px solid #5CA4D7;
-  border-right: 2px solid #5CA4D7;
-  border-left: 2px solid #5CA4D7;
+  border-top: 2px solid #45a7e8;
+  border-right: 2px solid #45a7e8;
+  border-left: 2px solid #45a7e8;
   position: absolute;
   z-index: 98;
 }
@@ -765,7 +764,7 @@ li.tooltip6:hover:before {
   margin: 0 auto;
   border-style: solid;
   border-width: 10px 10px 0 10px;
-  border-color: #FFFFFF transparent transparent transparent;
+  border-color: #ffffff transparent transparent transparent;
   position: absolute;
   top: -3px;
   border-style: solid;
@@ -774,43 +773,39 @@ li.tooltip6:hover:before {
 .upload {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 20px;
+  justify-content: center;
 }
-.upload .files {
-  margin: 20px;
-}
-.upload .title_form {
+.upload .upload-title {
+  margin-top: 20px;
+  margin-left: 90px;
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 20px;
+  font-family: "Poiret One", cursive;
 }
-.upload .datos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
+.upload .form-group {
+  margin-top: 20px;
 }
-.upload .form-control {
+.upload .form-group .form-control {
   width: 300px;
-  height: 20px;
+  height: 30px;
   margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Poiret One", cursive;
 }
 .upload .btn-upload {
   width: 150px;
   height: 40px;
   margin-left: 90px;
-  background-color: #5CA4D7;
+  background-color: #ea8576;
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
+  font-family: "Poiret One", cursive;
 }
 
 .benefits {
@@ -840,14 +835,69 @@ li.tooltip6:hover:before {
   justify-content: center;
   width: 150px;
   height: 60px;
-  background-color: #5CA4D7;
-  color: white;
+  background-color: #45a7e8;
+  color: #fcfcfc;
   border: none;
   border-radius: 5px;
   font-size: 20px;
   font-weight: bold;
   margin: 20px;
   padding: 2%;
+}
+
+.btn-m {
+  font-weight: bold;
+  background-color: #ea8576;
+  color: #fcfcfc;
+  font-family: "Poiret One", cursive;
+}
+.btn-m:hover {
+  background-color: #5CA4D7;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* End Global Rules  */
+.colores {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.image_colores {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_colores img {
+  width: 400px;
+  display: block;
+  background-color: var(--color);
+}
+
+.colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.colors ul li {
+  width: 30px;
+  height: 30px;
+  /* background-color:var(--color) ; */
+  display: inline-block;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
@@ -963,10 +1013,6 @@ li.tooltip6:hover:before {
     font-size: 0.8em;
   }
 }
-a {
-  text-decoration: none;
-}
-
 .login__register {
   align-items: center;
   background-color: #a5ccd2;
@@ -1276,6 +1322,10 @@ img {
 }
 
 a {
+  font-family: "Poiret One", cursive;
+  font-size: 20px;
+  color: #fcfcfc;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -1301,6 +1351,7 @@ a {
   padding: 1.5rem 2rem;
   border-radius: 1rem;
   overflow: hidden;
+  transition: 0.5s;
 }
 .Tcard:hover {
   box-shadow: 0 0.5rem 1rem #D1D9E6;
@@ -1318,13 +1369,13 @@ a {
 }
 
 article:nth-child(1) {
-  background-color: #ea8576;
+  background-color: #667099;
 }
 article:nth-child(2) {
   background-color: #e5bdb7;
 }
 article:nth-child(3) {
-  background-color: #722fb4;
+  background-color: #45a7e8;
 }
 article:nth-child(4) {
   background-color: #067c87;
@@ -1347,7 +1398,7 @@ article:nth-child(4) {
   transform: rotate(180deg);
   text-align: center;
   background-color: #a5ccd2;
-  color: #3f3b3b;
+  color: #fcfcfc;
   font-weight: bold;
   transition: 0.5s;
 }
@@ -1375,15 +1426,14 @@ article:nth-child(4) {
 
 .Tcard__preci--before {
   font-size: 20px;
-  color: #031a1d;
+  color: #fcfcfc;
   margin-bottom: 0.25rem;
 }
 
-.Tcard__preci--now {
-  font-size: 20px;
-  font-weight: bold;
+.mas {
+  width: 80px;
+  margin: 10px;
   background-color: #a5ccd2;
-  color: #e04a34;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1508,7 +1558,7 @@ article:nth-child(4) {
   font-size: 26px;
 }
 #prodetails .single-pro-details select {
-  display: block;
+  display: inline-block;
   padding: 5px 10px;
   margin-bottom: 10px;
 }
@@ -1516,14 +1566,17 @@ article:nth-child(4) {
   outline: none;
 }
 #prodetails .single-pro-details input {
-  width: 50px;
-  height: 47px;
+  width: 40px;
   padding-left: 10px;
   font-size: 16px;
   margin-right: 10px;
 }
 #prodetails .single-pro-details input:focus {
   outline: none;
+}
+#prodetails .single-pro-details .btn-comprar {
+  background: #45a7e8;
+  color: #fcfcfc;
 }
 #prodetails .single-pro-details span {
   line-height: 25px;
@@ -1540,7 +1593,18 @@ article:nth-child(4) {
 }
 
 .homePage {
-  background-color: #f7eff1;
+  background-color: white;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 20px;
+  border: 20px solid #ffffff;
+}
+.homePage:hover {
+  background-color: #e5bdb7;
 }
 
 .steps {
@@ -1598,10 +1662,11 @@ article:nth-child(4) {
 
 h1 {
   font-family: "Poiret One", cursive;
+  font-weight: bolder;
   text-align: center;
   color: #3f3b3b;
   font-size: 40px;
-  margin: 40px;
+  margin: 30px;
   margin-top: 65px;
   padding: 2%;
 }
@@ -1617,10 +1682,13 @@ h2 {
   margin-top: 30px;
   margin-bottom: 60px;
 }
+h2:hover {
+  color: #e04a34;
+}
 
 h3 {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
   font-family: "Poiret One", cursive;
   font-size: 14px;
 }

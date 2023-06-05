@@ -6,6 +6,8 @@ $color_5: #7a7a7a;
 $color_6: #e04a34;
 $color_7: #a5ccd2;
 $color_8: #041e42;
+$color_9: #45a7e8;
+$color_10: #28746A;
 $font-family_1: "Poiret One", cursive;
 $font-family_2: "Patrick Hand SC", cursive;
 $background-color_1: #f7eff1;
@@ -22,6 +24,7 @@ $background-color_11: #44beae;
 $background-color_12: #ffffff;
 $background-color_13: #a5ccd2;
 $background-color_14:#041e42;
+$background-color_15:#45a7e8;
 $border-color_1: #E04A34;
 $border-color_2: #E0E0E0;
 $border-color_3: #067c87;
@@ -240,7 +243,7 @@ p{
 		font-weight: 600;
 	}
 	input{
-		height: 3.125rem;
+		height: 2.125rem;
 		padding: 0 1.25em;
 		font-size: 14px;
 		width: 50%;
@@ -251,13 +254,17 @@ p{
 		border-top-right-radius: 6px;
 	}
 	button{
-		background-color:$color_8;
+		background-color:$background-color_2;
+		font-family: $font-family_1;
+		font-size: 20px;
 		color: $color_3;
 		white-space: nowrap;
-		border-bottom-left-radius: 0;
-		border-top-left-radius: 0;
+		border-bottom-left-radius: 2;
+		border-top-left-radius: 2;
 	}
 }
+
+
 
    
 footer{
@@ -327,17 +334,15 @@ footer a:hover{
 
 }
 
-button{
-	background-color: $background-color_2;
-	color: $color_2;
-	font-family: $font-family_1;
-	font-size: 20px;
-	border-radius: 5px;
-	&:hover{
-		background-color: $background-color_1;
-		color: $color_5;
-	}
-}
+// button{
+// 	background-color: $background-color_14;
+
+// 	border-radius: 5px;
+// 	&:hover{
+// 		background-color: $background-color_1;
+// 		color: $color_8;
+// 	}
+// }
 
 
 @media screen and (max-width: 768px) {

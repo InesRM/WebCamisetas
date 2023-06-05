@@ -1,3 +1,13 @@
+.__section{
+    background-color: $background-color_4;
+    font-family: $font-family_1;
+    font-size: 20px;
+   
+    border: 2px solid $border-color_4;
+    padding: 20px;
+
+}
+
 .styletable {
   align-items: center;
   margin-left: 325px;
@@ -15,7 +25,7 @@ tr.neat {
     height: 30px;
     width: auto;
     padding: 2px;
-    border: 3px solid #5CA4D7;
+    border: 3px solid $color_10;
   }
 }
 
@@ -33,7 +43,7 @@ div.outfitdisplay {
 
     margin-left:10px;
     th {
-      border: 3px solid #5CA4D7;
+      border: 3px solid $color_10;
     }
 
   }
@@ -48,10 +58,11 @@ table {
   border-collapse: collapse;
 
   th {
-    font-weight: normal;
+    background-color: $background-color_1;
+    font-weight: bold;
     font-size: 20px;
     font-family: $font-family_1;
-    color: #084068;
+    color: $color_2;
   }
 }
 
@@ -92,7 +103,7 @@ select {
 }
 
 .container {
-  border: 3px solid #5CA4D7;
+  border: 3px solid $color_10;
   height: 324px;
   width: 335px;
   margin: auto;
@@ -134,9 +145,9 @@ select {
 .footer {
   margin: 0 auto;
   width: 335px;
-  border-right: 3px solid #5CA4D7;
-  border-left: 3px solid #5CA4D7;
-  border-bottom: 3px solid #5CA4D7;
+  border-right: 3px solid $color_10;
+  border-left: 3px solid $color_10;
+  border-bottom: 3px solid $color_10;
 }
 
 ul.right {
@@ -198,9 +209,9 @@ li.tooltip1:hover:after {
   left: 123px;
   color: #fff;
   content: url(../Images/shirtsizes.jpg);
-  border-top: 2px solid #5CA4D7;
-  border-right: 2px solid #5CA4D7;
-  border-left: 2px solid #5CA4D7;
+  border-top: 2px solid $color_9;
+  border-right: 2px solid $color_9;
+  border-left: 2px solid $color_9;
   position: absolute;
 
   z-index: 98;
@@ -224,9 +235,9 @@ li.tooltip2:hover:after {
   left: 190px;
   color: #fff;
   content: url(../Images/blueshirtback.jpg);
-  border-top: 2px solid #5CA4D7;
-  border-right: 2px solid #5CA4D7;
-  border-left: 2px solid #5CA4D7;
+  border-top: 2px solid $color_9;
+  border-right: 2px solid $color_9;
+  border-left: 2px solid $color_9;
   position: absolute;
   z-index: 98;
 }
@@ -251,9 +262,9 @@ li.tooltip3:hover:after {
   left: 123px;
   color: #fff;
   content: url(../Images/shirtsizes.jpg);
-  border-top: 2px solid #5CA4D7;
-  border-right: 2px solid #5CA4D7;
-  border-left: 2px solid #5CA4D7;
+  border-top: 2px solid $color_9;
+  border-right: 2px solid $color_9;
+  border-left: 2px solid $color_9;
   position: absolute;
 
   z-index: 98;
@@ -277,9 +288,9 @@ li.tooltip4:hover:after {
   left: 190px;
   color: #fff;
   content: url(../Images/colorswatches.jpg);
-  border-top: 2px solid #5CA4D7;
-  border-right: 2px solid #5CA4D7;
-  border-left: 2px solid #5CA4D7;
+  border-top: 2px solid $color_9;
+  border-right: 2px solid $color_9;
+  border-left: 2px solid $color_9;
   position: absolute;
 
   z-index: 98;
@@ -304,9 +315,9 @@ li.tooltip5:hover:after {
   left: 123px;
   color: #fff;
   content: url(../Images/shirtsizes.jpg);
-  border-top: 2px solid #5CA4D7;
-  border-right: 2px solid #5CA4D7;
-  border-left: 2px solid #5CA4D7;
+  border-top: 2px solid $color_9;
+  border-right: 2px solid $color_9;
+  border-left: 2px solid $color_9;
   position: absolute;
 
   z-index: 98;
@@ -330,9 +341,9 @@ li.tooltip6:hover:after {
   left: 190px;
   color: #fff;
   content: url(../Images/colorswatches.jpg);
-  border-top: 2px solid #5CA4D7;
-  border-right: 2px solid #5CA4D7;
-  border-left: 2px solid #5CA4D7;
+  border-top: 2px solid $color_9;
+  border-right: 2px solid $color_9;
+  border-left: 2px solid $color_9;
   position: absolute;
 
   z-index: 98;
@@ -343,58 +354,55 @@ li.tooltip6:hover:before {
   margin: 0 auto;
   border-style: solid;
   border-width: 10px 10px 0 10px;
-  border-color: #FFFFFF transparent transparent transparent;
+  border-color: #ffffff transparent transparent transparent;
   position: absolute;
   top: -3px;
   border-style: solid;
 }
 
-.upload {
-  display: flex;
+//formulario de subida de archivos
+
+.upload{
+ display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 20px;
-
-  .files{
-    margin:20px;
-  }
-
-  .title_form {
+  justify-content: center;
+  .upload-title{
+    margin-top: 20px;
+    margin-left: 90px;
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 20px;
+    font-family: $font-family_1;
   }
 
-  .datos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  .form-control{
-    width: 300px;
-    height: 20px;
-    margin-bottom: 20px;
-    
+  .form-group{
+    margin-top: 20px;
+    // margin-left: 90px;
+    .form-control{
+      width: 300px;
+      height: 30px;
+      margin-bottom: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: $font-family_1;}
   }
 
-  .btn-upload{
-    width: 150px;
-    height: 40px;
-    margin-left: 90px;
-    background-color: #5CA4D7;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    .btn-upload{
+      width: 150px;
+      height: 40px;
+      margin-left: 90px;
+      background-color: $background-color_2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      font-family: $font-family_1;
+    }
+  
   }
-}
+
 .benefits {
   background-color: $background-color_9;
 
@@ -426,8 +434,8 @@ li.tooltip6:hover:before {
     justify-content: center;
     width: 150px;
     height: 60px;
-    background-color: #5CA4D7;
-    color: white;
+    background-color:$background-color_15;
+    color:$color_3;
     border: none;
     border-radius: 5px;
     font-size: 20px;
@@ -435,6 +443,59 @@ li.tooltip6:hover:before {
     margin:20px;
     padding: 2%;
   }
+}
+.btn-m{
+  font-weight: bold;
+  background-color: $background-color_2;
+  color:$color_3;
+  font-family: $font-family_1;
+
+  &:hover {
+    background-color: #5CA4D7;
+    color: white;
+  }
+ 
+}
+//3. colores===============================
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* End Global Rules  */
+.colores{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.image_colores{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image_colores img{
+  width: 400px;
+  display: block;
+  background-color: var(--color);
+}
+.colors{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+.colors ul li{
+ width: 30px;
+ height: 30px;
+ /* background-color:var(--color) ; */
+ display: inline-block;
+ cursor: pointer;
+
 }
 
 

@@ -3,7 +3,19 @@
 @import "general","contact","personalizar","cuenta","login","configurar","tienda","cart","producto";
 
 .homePage {
-	background-color: $background-color_1;
+	background-color: $background-color_4;
+	height: 450px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	padding: 0 20px;
+	border: 20px solid $border-color_4;
+
+	&:hover {
+		background-color: $background-color_9;
+	}
 	
 }
 	.steps {
@@ -69,10 +81,11 @@
 }
 h1 {
 	font-family: $font-family_1;
+	font-weight:bolder;
 	text-align: center;
 	color: $color_1;
 	font-size: 40px;
-	margin: 40px;
+	margin: 30px;
 	margin-top: 65px;
 	padding:2%;
 
@@ -88,15 +101,20 @@ h2 {
 	font-size: 30px;
 	margin-top: 30px;
 	margin-bottom: 60px;
+
+	&:hover {
+		color: $color_6;
+	}
 }
 
 h3 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     font-family: $font-family_1;
     font-size: 14px;
 
 }
+
 
 @media screen and (max-width: 868px) {
 	.steps{

@@ -15,7 +15,7 @@
 			font-size: 26px;
 		}
 		select {
-			display: block;
+			display: inline-block;
 			padding: 5px 10px;
 			margin-bottom: 10px;
 			&:focus {
@@ -23,8 +23,7 @@
 			}
 		}
 		input {
-			width: 50px;
-			height: 47px;
+			width: 40px;
 			padding-left: 10px;
 			font-size: 16px;
 			margin-right: 10px;
@@ -32,10 +31,12 @@
 				outline: none;
 			}
 		}
-		// button {
-		// 	background: #088178;
-		// 	color: $color_1;
-		// }
+	
+		.btn-comprar {
+			background: $background-color_15;
+			color: $color_3;
+		
+	}
 		span {
 			line-height: 25px;
 		}

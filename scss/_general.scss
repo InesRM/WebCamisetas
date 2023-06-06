@@ -57,6 +57,7 @@ body {
 
 .nav {
 	padding-right: 0px;
+	text-align: center;
 
 	ul {
 		display: block;
@@ -64,10 +65,9 @@ body {
 		margin-top: -14px;
 		border: 3px solid #fafafa;
 		border-radius: 13px 13px 0px 0px;
-		height: 71px;
+		height: 40px;
 		padding-top: 20px;
-		padding-left: 0;
-		text-align: center !important;
+		padding-left: 0px;
 
 		li {
 			display: inline;
@@ -87,6 +87,27 @@ body {
 					background-color: $background-color_2;
 					color: $color_5;
 				}
+			}
+		}
+	}
+
+	li {
+		display: inline;
+		list-style: none;
+		padding: 40px;
+
+		a {
+			color: $color_3;
+			font-family: $font-family_1;
+			font-size: 20px;
+			text-decoration: none;
+			// padding-top: 35px;
+			padding-left: 10px;
+			padding-right: 10px;
+
+			&:hover {
+				background-color: $background-color_2;
+				color: $color_5;
 			}
 		}
 	}
@@ -175,6 +196,30 @@ body {
 		}
 	}
 }
+
+.dropdown {
+
+    .dropdown-menu {
+        display: none;
+    }
+
+
+	&:hover {
+		.dropdown-menu {
+			display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 275px;
+            width: 50%;
+			padding: 0.8em 0;
+			align-self: start;	
+		}
+
+	}
+
+}
+
+
 .section-p1{
 	justify-content: space-between;
 	padding: 20px;
@@ -272,7 +317,7 @@ footer{
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: $background-color_14;
-    font-family: $font-family_1;
+    // font-family: $font-family_1;
     padding: 20px;
 
    .col{
@@ -288,18 +333,18 @@ footer{
     }
 
     h4{
-        font-size: 20px;
+        font-size: 15px;
         padding-bottom: 15px;
 		color: $color_7;
 		font-weight: 600;
     }
 
     p{
-        font-size: 17px;
+        font-size: 10px;
         margin: 0 0 8px 0;
     }
     a{
-        font-size: 20px;
+        font-size: 15px;
         text-decoration: none;
         color: $color_3;
         margin-bottom: 10px;
@@ -334,15 +379,6 @@ footer a:hover{
 
 }
 
-// button{
-// 	background-color: $background-color_14;
-
-// 	border-radius: 5px;
-// 	&:hover{
-// 		background-color: $background-color_1;
-// 		color: $color_8;
-// 	}
-// }
 
 
 @media screen and (max-width: 768px) {
@@ -367,7 +403,7 @@ footer a:hover{
 			font-size: 20px;
 			border-radius: 5px;
 		}
-
+		
 		.newsletter{
 			
 			.form{

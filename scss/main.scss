@@ -1,57 +1,86 @@
 @import "normalize.css";
 
-@import "general","contact","personalizar","cuenta","login","configurar","tienda","cart","producto";
+@import "general", "contact", "personalizar", "cuenta", "login", "configurar", "tienda", "cart", "producto";
 
 .homePage {
 	background-color: $background-color_4;
 	height: 450px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	flex-direction: column;
-	text-align: center;
+	// text-align: center;
 	padding: 0 20px;
 	border: 20px solid $border-color_4;
 
 	&:hover {
 		background-color: $background-color_9;
 	}
+
 	
 }
-	.steps {
-		display:grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		margin-top: 50px;
-		margin-bottom: 50px;
-		text-align: center;
-		border: 20px solid $border-color_4;
-		border-radius: 28px;
+
+.instructions {
+	display: grid;
+	grid-template-columns: 1fr;
+	// margin-top: 50px;
+	// margin-bottom: 50px;
+	border: 20px solid $border-color_4;
+	padding: 2%;
+	background-color: $background-color_9;
+	margin: 20px;
+	border-radius: 28px;
+	color: $color_2;
+	letter-spacing: 1px;
+	
+	.instructionsText{
+		font-size: 20px;
+		font-weight: bold;
+		text-align: left;
+		font-family: $font-family_1;
+		margin-left: 40px;
+	}
+	&:hover {
+		background-color: $background-color_1;
 		color: $color_6;
-		
-		h6 {
-			font-family: $font-family_1;
-			font-size: 20px;
+	}
+}
 
-		}
 
-		h3 {
-			margin-top: 20px;
-			margin-bottom: 20px;
-			font-family: $font-family_1;
-			font-size: 20px;
 
-		}
+.steps {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	border: 20px solid $border-color_4;
+	border-radius: 28px;
+	color: $color_6;
 
-		&:hover {
-			background-color: $background-color_9;
-			border-color: $border-color_4;
-			color: $color_2;
+	h6 {
+		font-family: $font-family_1;
+		font-size: 20px;
 
-		}
 	}
 
+	h3 {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-family: $font-family_1;
+		font-size: 20px;
 
-.camiseta{
+	}
+
+	&:hover {
+		background-color: $background-color_9;
+		border-color: $border-color_4;
+		color: $color_2;
+
+	}
+}
+
+
+.camiseta {
 
 	height: 300px;
 	border: 3px solid #e04a34;
@@ -79,15 +108,16 @@
 	display: block;
 	margin-bottom: 53px;
 }
+
 h1 {
 	font-family: $font-family_1;
-	font-weight:bolder;
+	font-weight: bolder;
 	text-align: center;
 	color: $color_1;
 	font-size: 40px;
 	margin: 30px;
 	margin-top: 65px;
-	padding:2%;
+	padding: 2%;
 
 	&:hover {
 		color: $color_6;
@@ -108,28 +138,45 @@ h2 {
 }
 
 h3 {
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-family: $font-family_1;
-    font-size: 14px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	font-family: $font-family_1;
+	font-size: 14px;
 
 }
 
-
 @media screen and (max-width: 868px) {
-	.steps{
-	
-		display:grid;
+	.homePage {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		padding: 0 20px;
+		border: 20px solid $border-color_4;
+	}
+
+	.instructionsText {
+		text-size-adjust: 10px;
+		margin-left: 10px;
+		margin-bottom: 20px;
+	}
+
+	.steps {
+
+		display: grid;
 		grid-template-columns: 1fr;
-		float:left;
+		float: left;
 		margin-top: 50px;
 		margin-bottom: 50px;
 		text-align: center;
 		border: 20px solid $border-color_4;
 		border-radius: 28px;
 		color: $color_6;
-		
+
 	}
+
 	.nav {
 		display: none;
 	}
@@ -154,20 +201,18 @@ h3 {
 }
 
 @media screen and (min-width: 868px) {
-	.steps{
-		display:grid;
+
+	.steps {
+		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
 }
 
 @media screen and (min-width: 968px) {
-	.steps{
-		display:grid;
+
+	.steps {
+		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		
+
 	}
 }
-	
-
-
-

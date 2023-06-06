@@ -24,6 +24,7 @@ body {
 
 .nav {
   padding-right: 0px;
+  text-align: center;
 }
 .nav ul {
   display: block;
@@ -31,10 +32,9 @@ body {
   margin-top: -14px;
   border: 3px solid #fafafa;
   border-radius: 13px 13px 0px 0px;
-  height: 71px;
+  height: 40px;
   padding-top: 20px;
-  padding-left: 0;
-  text-align: center !important;
+  padding-left: 0px;
 }
 .nav ul li {
   display: inline;
@@ -50,6 +50,23 @@ body {
   padding-right: 10px;
 }
 .nav ul li a:hover {
+  background-color: #ea8576;
+  color: #7a7a7a;
+}
+.nav li {
+  display: inline;
+  list-style: none;
+  padding: 40px;
+}
+.nav li a {
+  color: #fcfcfc;
+  font-family: "Poiret One", cursive;
+  font-size: 20px;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.nav li a:hover {
   background-color: #ea8576;
   color: #7a7a7a;
 }
@@ -117,6 +134,19 @@ body {
   border-radius: 5px;
   margin-top: 23px;
   margin-left: -8px;
+}
+
+.dropdown .dropdown-menu {
+  display: none;
+}
+.dropdown:hover .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 275px;
+  width: 50%;
+  padding: 0.8em 0;
+  align-self: start;
 }
 
 .section-p1 {
@@ -209,7 +239,6 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: #041e42;
-  font-family: "Poiret One", cursive;
   padding: 20px;
 }
 footer .col {
@@ -221,17 +250,17 @@ footer .logo {
   margin-bottom: 30px;
 }
 footer h4 {
-  font-size: 20px;
+  font-size: 15px;
   padding-bottom: 15px;
   color: #a5ccd2;
   font-weight: 600;
 }
 footer p {
-  font-size: 17px;
+  font-size: 10px;
   margin: 0 0 8px 0;
 }
 footer a {
-  font-size: 20px;
+  font-size: 15px;
   text-decoration: none;
   color: #fcfcfc;
   margin-bottom: 10px;
@@ -857,7 +886,6 @@ li.tooltip6:hover:before {
 }
 
 ul {
-  list-style-type: none;
   padding: 0;
   margin: 0;
 }
@@ -1240,8 +1268,8 @@ ul {
   justify-self: center;
   margin-left: 30px;
 }
-.about__img __img {
-  width: 200px;
+.about__img .perfil {
+  width: 100px;
   border-radius: 0.5rem;
 }
 
@@ -1322,8 +1350,6 @@ img {
 }
 
 a {
-  font-family: "Poiret One", cursive;
-  font-size: 20px;
   color: #fcfcfc;
   font-weight: bold;
   text-decoration: none;
@@ -1597,14 +1623,35 @@ article:nth-child(4) {
   height: 450px;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
-  text-align: center;
   padding: 0 20px;
   border: 20px solid #ffffff;
 }
 .homePage:hover {
   background-color: #e5bdb7;
+}
+
+.instructions {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 20px solid #ffffff;
+  padding: 2%;
+  background-color: #e5bdb7;
+  margin: 20px;
+  border-radius: 28px;
+  color: #031a1d;
+  letter-spacing: 1px;
+}
+.instructions .instructionsText {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  font-family: "Poiret One", cursive;
+  margin-left: 40px;
+}
+.instructions:hover {
+  background-color: #f7eff1;
+  color: #e04a34;
 }
 
 .steps {
@@ -1694,6 +1741,23 @@ h3 {
 }
 
 @media screen and (max-width: 868px) {
+  .homePage {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+    border: 20px solid #ffffff;
+  }
+  .instructionsText {
+    -webkit-text-size-adjust: 10px;
+       -moz-text-size-adjust: 10px;
+            text-size-adjust: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
   .steps {
     display: grid;
     grid-template-columns: 1fr;

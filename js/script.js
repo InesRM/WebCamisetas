@@ -10,3 +10,5 @@ listElements.forEach(element => {
         
     })
 });
+
+// Path: js\script.js   

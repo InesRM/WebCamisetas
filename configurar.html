@@ -18,10 +18,10 @@
     <div class="container-fluid">
         <div class="row">
             <div class="header">
-                <div class="col-xs-6 col-md-6 left">
+                <div class="left">
                     <img src="img/logo.jpg" alt="logotipo" class="logo">
                 </div>
-                <div class="col-xs-6 mobileMenu">
+                <div class="mobileMenu">
                     <div class="mobileDropdown">
                         <button class="mbtn">Menu</button>
                         <div class="mobileList">
@@ -39,73 +39,89 @@
                 </div>
             </div>
             <div class="navbar">
-                <div class="nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="cuenta.html">Cuenta</a></li>
-                        <li><a href="personalizar.html">Personalizar</a></li>
-                        <li><a href="concurso.html">Concurso</a></li>
-                        <li><a href="tienda.html">Tienda</a></li>
-                        <!-- <li><a href="contact.html">Contacto</a></li> -->
-                        <li><a href="login.html">Login</a></li>
-                    </ul>
-                </div>
-            </div>
+				<div class="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li class="dropdown"><a href="cuenta.html">Cuenta&nbsp;<i class="fa fa-caret-down"></i></a>
+
+							<div class="dropdown-menu">
+								<ul class="dropdown-item">
+									<li><a href="galeria.html">Mi Galería</a></li>
+									<li><a href="configurar.html">Mis Diseños</a></li>
+									<li><a href="concurso.html">Ranking</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="personalizar.html">Personalizar</a></li>
+						<li><a href="concurso.html">Concurso</a></li>
+						<li><a href="tienda.html">Tienda</a></li>
+						<!-- <li><a href="contact.html">Contacto</a></li> -->
+						<li><a href="login.html">Login</a></li>
+					</ul>
+				</div>
+			</div>
         </div>
         <main class="l-main">
-            <section class="home bd-grid">
-                <div class="home__data">
-                    <!-- <h1 class="home__title">Hola,<br>aquí <span class="home__title-color">puedes configurar</span><br>
-                        Tu galería de diseños</h1> -->
-                    <h1>Hola, aquí puedes configurar <br>tu Galería de Diseños</h1>
+            <section>
+                <div>
+                    <h1>Hola, aquí puedes configurar tu Galería de diseños y perfil personal</h1>
                 </div>
             </section>
 
-            <section class="about section " id="about">
-                <h2 class="section-title">Sobre Mí</h2>
-
+            <section class="about-section ">
+                <h2 class="__title">Sobre Mí</h2>
                 <div class="about__container bd-grid">
                     <div class="about__img">
                         <img class="perfil" src="img/myAvatar.png" alt="imagen de perfil">
+                        <button class="editar" type="submit">Editar</button>
                         <div class="msg">
                             <textarea name="editar" placeholder="Ocupación" name="mensaje"></textarea>
-                            <button class="btn_submit" type="submit">Editar</button>
+                            <button class="editar" type="submit">Editar</button>
+                        </div>
+                        <div class="msg">
+                            <textarea name="editar" placeholder="nombre" name="mensaje"></textarea>
+                            <button class="editar" type="submit">Editar</button>
+                        </div>
+                        <div class="msg">
+                            <textarea name="editar" placeholder="password" name="mensaje"></textarea>
+                            <button class="editar" type="submit">Editar</button>
                         </div>
                     </div>
 
-                    <div>
-                        <h2 class="about__subtitle">Breve Presentación</h2>
+                    <div class="presentacion">
+                        <h3>Breve Presentación</h3>
                         <div class="msg">
                             <textarea name="descripcion" cols="30" rows="10" placeholder="Mi Descripcion"
                                 name="descripcion"></textarea>
                         </div>
                     </div>
+                    <button class="guardar" type="submit">Modificar Perfil</button>
                 </div>
 
-                <button type="submit">Guardar</button>
 
             </section>
 
-            <section class="work section" id="work">
-                <h2 class="section-title">Diseños</h2>
-
+            <section class="work-section">
+                <h2>Diseños</h2>
                 <div class="work__container bd-grid">
+                  
                     <div class="work__img">
+                        <button class="galery" type="submit">Modificar</button>
                         <img src="img/10.jpg" alt="diseño 1">
                     </div>
                     <div class="work__img">
+                        <button class="galery" type="submit">Modificar</button>
                         <img src="img/11.jpg" alt="diseño 2">
                     </div>
                     <div class="work__img">
+                        <button class="galery" type="submit">Modificar</button>
                         <img src="img/7.jpg" alt=" diseño 3">
                     </div>
                     <div class="work__img">
+                        <button class="galery" type="submit">Modificar</button>
                         <img src="img/12.jpg" alt="diseño 4">
                     </div>
                 </div>
-
-                <button type="submit">Editar</button>
-
             </section>
     
         </main>

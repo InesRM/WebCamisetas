@@ -29,6 +29,7 @@ $border-color_1: #E04A34;
 $border-color_2: #E0E0E0;
 $border-color_3: #067c87;
 $border-color_4: #ffffff;
+$border-color_5: #151414;
 
 
 .header {
@@ -308,6 +309,24 @@ p{
 		border-top-left-radius: 2;
 	}
 }
+
+// button{
+// 	background-color: $background-color_2;
+// 	font-family: $font-family_1;
+// 	font-size: 20px;
+// 	color: $color_3;
+// 	white-space: nowrap;
+// 	border-bottom-left-radius: 2;
+// 	border-top-left-radius: 2;
+// 	border-bottom-right-radius: 5px;
+// 	border-top-right-radius: 6px;
+// 	border: 1px solid transparent;
+// 	outline: none;
+// 	cursor: pointer;
+// 	&:hover{
+// 		background-color: $background-color_3;
+// 	}
+// }
 
 
 

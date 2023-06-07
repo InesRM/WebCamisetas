@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import "normalize.css";
 .header {
   background-image: url("../img/camisetas-logo.png");
@@ -884,19 +883,29 @@ li.tooltip6:hover:before {
   color: #fcfcfc;
 }
 
-.btn-comprar {
-  font-weight: bold;
+.btn-shop {
+  display: flex;
+  margin: 0 40rem;
+  max-width: 40%;
+  border: 10px solid #E04A34;
   background-color: #ea8576;
   color: #fcfcfc;
   font-family: "Poiret One", cursive;
+  font-weight: bold;
   font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 50px;
 }
-.btn-comprar:hover {
-  background-color: #45a7e8;
+.btn-shop:hover {
+  background-color: #28746A;
   color: #fcfcfc;
+}
+
+.__comprar {
+  display: flex;
+  margin: 0 26rem;
+  max-width: 40%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 10px solid #E04A34;
 }
 
 ul {
@@ -945,6 +954,20 @@ ul {
 @media screen and (max-width: 1200px) {
   .benefits .benefits-grid {
     grid-template-columns: auto;
+  }
+  .btn-shop {
+    display: flex;
+    margin: 0 10rem;
+    max-width: 40%;
+    margin: auto;
+    border: 5px solid #E04A34;
+  }
+  .__comprar {
+    display: flex;
+    margin: 0 10rem;
+    max-width: 40%;
+    margin: auto;
+    border: 5px solid #E04A34;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -1604,7 +1627,7 @@ article:nth-child(4) {
   outline: none;
 }
 #prodetails .single-pro-details input {
-  width: 40px;
+  width: 50px;
   padding-left: 10px;
   font-size: 16px;
   margin-right: 10px;
@@ -1613,8 +1636,8 @@ article:nth-child(4) {
   outline: none;
 }
 #prodetails .single-pro-details .btn-comprar {
-  background: #45a7e8;
-  color: #fcfcfc;
+  background: #ea8576;
+  font-family: "Poiret One", cursive;
 }
 #prodetails .single-pro-details span {
   line-height: 25px;
@@ -1630,6 +1653,24 @@ article:nth-child(4) {
   cursor: pointer;
 }
 
+@media (max-width: 991px) {
+  #prodetails {
+    flex-direction: column;
+  }
+  #prodetails .single-pro-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #prodetails .single-pro-details {
+    width: 100%;
+  }
+  #prodetails .single-pro-details h4 {
+    padding: 20px 0 10px 0;
+  }
+  #prodetails .single-pro-details h2 {
+    font-size: 20px;
+  }
+}
 /* nosotros -------------------------------------------------*/
 .contenedor .contenedor-grid {
   max-width: 120rem;
@@ -1641,7 +1682,7 @@ article:nth-child(4) {
   grid-template-columns: repeat(2, 1fr);
   -moz-column-gap: 2rem;
        column-gap: 2rem;
-  margin: 0 28rem;
+  margin: 0 26rem;
   max-width: 40%;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -1655,12 +1696,9 @@ article:nth-child(4) {
   margin: 0 28rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  text-align: center;
-  font-family: "Poiret One", cursive;
-  font-size: 20px;
-  color: #031a1d;
+}
+.contenedor .nosotros_contenido .__texto {
   font-weight: bold;
-  line-height: 1.5;
 }
 .contenedor .bloques {
   display: grid;
@@ -1670,7 +1708,7 @@ article:nth-child(4) {
 }
 .contenedor .bloques .bloque {
   text-align: center;
-  margin: 0; /* para reducir el tamaño de los titulos */
+  margin: 0;
   padding: 2rem;
   text-align: center;
 }
@@ -1698,14 +1736,9 @@ article:nth-child(4) {
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: center;
-    font-family: "Poiret One", cursive;
-    font-size: 20px;
     color: #031a1d;
-    font-weight: bold;
-    line-height: 1.5;
   }
 }
-/* nosotros__imagen -------------------------------------------------*/
 /* bloques -------------------------------------------------*/
 .bloques {
   display: grid;
@@ -1835,8 +1868,6 @@ h2:hover {
 }
 
 h3 {
-  margin-top: 15px;
-  margin-bottom: 10px;
   margin: 10px;
   font-family: "Poiret One", cursive;
   font-size: 20px;

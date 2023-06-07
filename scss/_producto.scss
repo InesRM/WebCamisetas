@@ -23,7 +23,7 @@
 			}
 		}
 		input {
-			width: 40px;
+			width: 50px;
 			padding-left: 10px;
 			font-size: 16px;
 			margin-right: 10px;
@@ -33,8 +33,8 @@
 		}
 	
 		.btn-comprar {
-			background: $background-color_15;
-			color: $color_3;
+			background: $background-color_2;
+			font-family: $font-family_1;
 		
 	}
 		span {
@@ -50,3 +50,24 @@
 	flex-basis: 24%;
 	cursor: pointer;
 }
+
+@media  (max-width: 991px) {
+	#prodetails {
+		flex-direction: column;
+		.single-pro-image {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		.single-pro-details {
+			width: 100%;
+			h4 {
+				padding: 20px 0 10px 0;
+			}
+			h2 {
+				font-size: 20px;
+			}
+		}
+	}
+}
+	
+

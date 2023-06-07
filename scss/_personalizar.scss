@@ -1,8 +1,7 @@
 .__section{
     background-color: $background-color_4;
     font-family: $font-family_1;
-    font-size: 20px;
-   
+    font-size: 20px; 
     border: 2px solid $border-color_4;
     padding: 20px;
 
@@ -458,22 +457,36 @@ li.tooltip6:hover:before {
   }
  
 }
-
-.btn-comprar{
-  font-weight: bold;
+.btn-shop{
+  display:flex;
+  margin: 0 40rem;
+  max-width: 40%;
+  border: 10px solid $border-color_1;
   background-color: $background-color_2;
   color:$color_3;
   font-family: $font-family_1;
+  font-weight: bold;
   font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 50px;
+
+
   &:hover {
-    background-color: $color_9;
+    background-color: $color_10;
     color: $color_3;
   }
- 
+
 }
+.__comprar{
+  display:flex;
+  margin: 0 26rem;
+  max-width: 40%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 10px solid $border-color_1;
+
+  
+}
+
+
 //3. colores===============================
 ul {
   // list-style-type: none;
@@ -522,6 +535,21 @@ ul {
     .benefits-grid {
       grid-template-columns: auto;
     }
+  }
+
+  .btn-shop{
+    display:flex;
+    margin: 0 10rem;
+    max-width: 40%;
+    margin:auto;
+    border: 5px solid $border-color_1;
+  }
+  .__comprar{
+    display:flex;
+    margin: 0 10rem;
+    max-width: 40%;
+    margin:auto;
+    border: 5px solid $border-color_1;
   }
 }
 @media screen and (max-width: 1200px) {

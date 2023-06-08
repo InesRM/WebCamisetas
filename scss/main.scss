@@ -1,10 +1,10 @@
 @import "normalize.css";
 
-@import "general", "contact", "personalizar", "cuenta", "login", "configurar", "tienda", "cart", "producto", "about";
+@import "general", "contact", "personalizar", "cuenta", "login", "configurar", "tienda", "cart", "producto", "about", "concurso","condiciones","winners";
 
 .homePage {
 	background-color: $background-color_4;
-	height: 450px;
+	height: 250px;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -138,11 +138,11 @@ h2 {
 }
 
 h3 {
-	// margin-top: 15px;
-	// margin-bottom: 10px;
-	margin: 10px;
+	margin: 20px;
 	font-family: $font-family_1;
 	font-size: 20px;
+	// font-weight: bold;
+	text-align: center;
 
 }
 

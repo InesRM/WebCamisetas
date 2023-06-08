@@ -1,0 +1,161 @@
+.concurso {
+    background-color:$background-color_4;
+    display: flex;
+    padding: 0 400px;
+    border: 20px solid $border-color_4;
+    border-radius: 28px;
+    align-items: center;
+    color: $color_2;
+    // font-family: $font-family_1;
+
+    .concurso-right {
+        padding: 15px;
+      }
+
+      .about-header {
+        font-size: 35px;
+      
+      }
+     
+      .concurso-button {
+        margin-top: 25px;
+        background-color:$background-color_9;
+        color: $color_2;
+        height: 50px;
+        width: 250px;
+        border: 1px solid $border-color_4;
+        border-radius: 10px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      .concurso-button:hover {
+        cursor: pointer;
+      }
+
+  }
+
+  .concursantes{
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+  
+  
+  .concursantes-left {
+    padding: 0 20px;
+    padding-bottom: 0;
+  }
+
+  .concursantes-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // padding: 0 130px;
+  }
+  
+.concursatnes-text{
+  font-family: $font-family_1;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: justify;
+
+}
+  .concursantes-header{
+    font-family: $font-family_1;
+    font-weight: 300;
+    font-size: 60px;
+    margin: 0;
+  }
+
+  .concursantes-button{
+    background-color:$background-color_9;
+    color: $color_2;
+    height: 50px;
+    width: 250px;
+    border: 1px solid $border-color_4;
+    border-radius: 10px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-left: auto;
+  }
+  .concurso-button:hover {
+    cursor: pointer;
+  }
+}
+
+  
+
+  @media screen and (max-width: 768px) {
+    .concurso {
+      flex-direction: column;
+      padding: 0 20px;
+    }
+
+    .concurso-left {
+      padding: 0;
+    }
+
+    .concurso-right {
+      padding: 0;
+    }
+
+    .concurso-button {
+      margin-top: 25px;
+    }
+
+    .concurso-header {
+      font-size: 25px;
+    }
+
+    .concurso-text {
+      font-size: 15px;
+    }
+
+    .concurso-image {
+      width: 100%;
+    }
+
+    .concurso-image img {
+      width: 100%;
+    }
+    
+    .concursantes{
+      flex-direction: column;
+    }
+
+    .concursantes-left {
+      padding: 0;
+    }
+
+    .concursantes-right{
+      padding: 0;
+    }
+
+    .concursantes-header{
+      font-size: 25px;
+    }
+
+    .concursantes-button{
+      margin-top: 25px;
+    }
+
+    .concursantes-text{
+      font-size: 15px;
+    }
+
+    .concursantes-image{
+      width: 100%;
+    }
+
+    .concursantes-image img{
+      width: 100%;
+    }
+
+
+  }
+

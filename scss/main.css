@@ -532,273 +532,6 @@ select {
   transform: scaleX(-1);
 }
 
-.personalizar {
-  display: flex;
-  justify-content: center;
-}
-
-.wrapper {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-}
-
-.content {
-  flex: 1;
-  display: inline-block;
-  margin: 0 auto;
-  margin-top: 42px;
-  margin-right: 55px;
-}
-
-.container {
-  border: 3px solid #28746A;
-  height: 324px;
-  width: 335px;
-  margin: auto;
-  padding: 0px;
-  perspective: 1000px;
-  position: relative;
-}
-
-.container:hover .card {
-  transform: rotateY(180deg);
-}
-
-.card {
-  position: relative;
-  transform-style: preserve-3d;
-  transition: 0.6s;
-}
-
-.card .front {
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 30px;
-  height: 268px;
-  width: 280px;
-  z-index: 2;
-}
-
-.card .back {
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 30px;
-  height: 268px;
-  width: 280px;
-  transform: rotateY(180deg);
-}
-
-.footer {
-  margin: 0 auto;
-  width: 335px;
-  border-right: 3px solid #28746A;
-  border-left: 3px solid #28746A;
-  border-bottom: 3px solid #28746A;
-}
-
-ul.right {
-  margin: 0 auto;
-}
-
-ul.right li {
-  color: #45a7e8;
-  font-size: 20px;
-  margin: 0 auto;
-  width: 31px;
-  height: 31px;
-  border-left: 3px solid #45a7e8;
-  border-bottom: 3px solid #45a7e8;
-  margin-left: 261px;
-  list-style: none;
-  text-align: center;
-}
-
-.right li:hover {
-  background: #ea8576;
-  color: #fcfcfc;
-  cursor: pointer;
-}
-
-ul.tools {
-  margin: 0 auto;
-  padding-left: 0;
-  display: flex;
-  position: relative;
-}
-
-.tools li {
-  font-family: Arial;
-  font-size: 18px;
-  margin: 0 auto;
-  list-style: none;
-  display: inline-block;
-  width: 20%;
-  padding-top: 5px;
-  padding-left: 0;
-  text-align: center;
-  justify-content: space-between;
-}
-
-.tools li:last-of-type {
-  border-right: none;
-}
-
-li.tooltip1:hover:after {
-  margin: 0 auto;
-  width: 81px;
-  height: 181px;
-  bottom: 53px;
-  left: 123px;
-  color: #fcfcfc;
-  content: url(../Images/shirtsizes.jpg);
-  border-top: 2px solid #45a7e8;
-  border-right: 2px solid #45a7e8;
-  border-left: 2px solid #45a7e8;
-  position: absolute;
-  z-index: 98;
-}
-
-li.tooltip1:hover:before {
-  content: "";
-  border-style: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: #fcfcfc transparent transparent transparent;
-  position: absolute;
-  top: -3px;
-  border-style: solid;
-}
-
-li.tooltip2:hover:after {
-  margin: 0 auto;
-  width: 83px;
-  height: 83px;
-  bottom: 53px;
-  left: 190px;
-  color: #fcfcfc;
-  content: url(../Images/blueshirtback.jpg);
-  border-top: 2px solid #45a7e8;
-  border-right: 2px solid #45a7e8;
-  border-left: 2px solid #45a7e8;
-  position: absolute;
-  z-index: 98;
-}
-
-li.tooltip2:hover:before {
-  content: "";
-  margin: 0 auto;
-  border-style: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: #fcfcfc transparent transparent transparent;
-  position: absolute;
-  top: -3px;
-  border-style: solid;
-}
-
-li.tooltip3:hover:after {
-  margin: 0 auto;
-  width: 81px;
-  height: 181px;
-  bottom: 53px;
-  left: 123px;
-  color: #fcfcfc;
-  content: url(../Images/shirtsizes.jpg);
-  border-top: 2px solid #45a7e8;
-  border-right: 2px solid #45a7e8;
-  border-left: 2px solid #45a7e8;
-  position: absolute;
-  z-index: 98;
-}
-
-li.tooltip3:hover:before {
-  content: "";
-  border-style: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: #fcfcfc transparent transparent transparent;
-  position: absolute;
-  top: -3px;
-  border-style: solid;
-}
-
-li.tooltip4:hover:after {
-  margin: 0 auto;
-  width: 83px;
-  height: 83px;
-  bottom: 53px;
-  left: 190px;
-  color: #fcfcfc;
-  content: url(../Images/colorswatches.jpg);
-  border-top: 2px solid #45a7e8;
-  border-right: 2px solid #45a7e8;
-  border-left: 2px solid #45a7e8;
-  position: absolute;
-  z-index: 98;
-}
-
-li.tooltip4:hover:before {
-  content: "";
-  margin: 0 auto;
-  border-style: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: #fcfcfc transparent transparent transparent;
-  position: absolute;
-  top: -3px;
-  border-style: solid;
-}
-
-li.tooltip5:hover:after {
-  margin: 0 auto;
-  width: 81px;
-  height: 181px;
-  bottom: 53px;
-  left: 123px;
-  color: #fcfcfc;
-  content: url(../Images/shirtsizes.jpg);
-  border-top: 2px solid #45a7e8;
-  border-right: 2px solid #45a7e8;
-  border-left: 2px solid #45a7e8;
-  position: absolute;
-  z-index: 98;
-}
-
-li.tooltip5:hover:before {
-  content: "";
-  border-style: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: #fcfcfc transparent transparent transparent;
-  position: absolute;
-  top: -3px;
-  border-style: solid;
-}
-
-li.tooltip6:hover:after {
-  margin: 0 auto;
-  width: 83px;
-  height: 83px;
-  bottom: 53px;
-  left: 190px;
-  color: #fcfcfc;
-  content: url(../Images/colorswatches.jpg);
-  border-top: 2px solid #45a7e8;
-  border-right: 2px solid #45a7e8;
-  border-left: 2px solid #45a7e8;
-  position: absolute;
-  z-index: 98;
-}
-
-li.tooltip6:hover:before {
-  content: "";
-  margin: 0 auto;
-  border-style: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: #fcfcfc transparent transparent transparent;
-  position: absolute;
-  top: -3px;
-  border-style: solid;
-}
-
 .upload {
   display: flex;
   flex-direction: column;
@@ -1752,9 +1485,257 @@ article:nth-child(4) {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+.concurso {
+  background-color: white;
+  display: flex;
+  padding: 0 400px;
+  border: 20px solid #ffffff;
+  border-radius: 28px;
+  align-items: center;
+  color: #031a1d;
+}
+.concurso .concurso-right {
+  padding: 15px;
+}
+.concurso .about-header {
+  font-size: 35px;
+}
+.concurso .concurso-button {
+  margin-top: 25px;
+  background-color: #e5bdb7;
+  color: #031a1d;
+  height: 50px;
+  width: 250px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+}
+.concurso .concurso-button:hover {
+  cursor: pointer;
+}
+
+.concursantes {
+  display: flex;
+  flex-direction: row;
+}
+.concursantes .concursantes-left {
+  padding: 0 20px;
+  padding-bottom: 0;
+}
+.concursantes .concursantes-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.concursantes .concursatnes-text {
+  font-family: "Poiret One", cursive;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: justify;
+}
+.concursantes .concursantes-header {
+  font-family: "Poiret One", cursive;
+  font-weight: 300;
+  font-size: 60px;
+  margin: 0;
+}
+.concursantes .concursantes-button {
+  background-color: #e5bdb7;
+  color: #031a1d;
+  height: 50px;
+  width: 250px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-left: auto;
+}
+.concursantes .concurso-button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .concurso {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .concurso-left {
+    padding: 0;
+  }
+  .concurso-right {
+    padding: 0;
+  }
+  .concurso-button {
+    margin-top: 25px;
+  }
+  .concurso-header {
+    font-size: 25px;
+  }
+  .concurso-text {
+    font-size: 15px;
+  }
+  .concurso-image {
+    width: 100%;
+  }
+  .concurso-image img {
+    width: 100%;
+  }
+  .concursantes {
+    flex-direction: column;
+  }
+  .concursantes-left {
+    padding: 0;
+  }
+  .concursantes-right {
+    padding: 0;
+  }
+  .concursantes-header {
+    font-size: 25px;
+  }
+  .concursantes-button {
+    margin-top: 25px;
+  }
+  .concursantes-text {
+    font-size: 15px;
+  }
+  .concursantes-image {
+    width: 100%;
+  }
+  .concursantes-image img {
+    width: 100%;
+  }
+}
+.faq {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20%;
+}
+.faq .faq-header {
+  text-align: center;
+  margin-top: 100px;
+}
+.faq .question {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.faq .q {
+  font-weight: 700;
+  text-align: start;
+}
+.faq .a {
+  font-weight: 400;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 0;
+}
+.card__container {
+  display: grid;
+  gap: 1.5rem;
+}
+.card__glass {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 2.5rem;
+  background: linear-gradient(130deg, rgba(215, 109, 77, 0.9), rgba(222, 191, 150, 0.2));
+  box-shadow: inset 2px 2px 1px rgba(251, 251, 254, 0.3), inset -2px -2px 1px rgba(251, 251, 254, 0.2);
+  border-radius: 1.5rem;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.card__glass:hover .card__link {
+  transform: translateX(-1.5rem);
+}
+.card__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #F4F4FB;
+  margin-bottom: 1rem;
+}
+.card__data {
+  margin-bottom: 1.5rem;
+}
+.card__title {
+  color: #031a1d;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.card__profession {
+  color: #031a1d;
+  font-weight: 500;
+}
+.card__button {
+  display: inline-block;
+  background: linear-gradient(130deg, rgba(251, 251, 254, 0.9), rgba(251, 251, 254, 0.2));
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  color: #031a1d;
+  font-weight: 500;
+  transition: 0.4s;
+}
+.card__button:hover {
+  background: linear-gradient(130deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.4));
+}
+.card__social {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.card__link {
+  display: block;
+  font-size: 1.35rem;
+  color: #031a1d;
+  margin: 1rem 0;
+  transform: translateX(-5rem);
+}
+.card__link:nth-child(1) {
+  transition: 0.2s;
+}
+.card__link:nth-child(2) {
+  transition: 0.5s;
+}
+.card__link:nth-child(3) {
+  transition: 0.7s;
+}
+
+@media screen and (min-width: 568px) {
+  .card__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .bd-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card {
+    padding: 0;
+  }
+  .card__container {
+    height: 70vh;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+  }
+}
 .homePage {
   background-color: white;
-  height: 450px;
+  height: 250px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1868,9 +1849,10 @@ h2:hover {
 }
 
 h3 {
-  margin: 10px;
+  margin: 20px;
   font-family: "Poiret One", cursive;
   font-size: 20px;
+  text-align: center;
 }
 
 @media screen and (max-width: 868px) {

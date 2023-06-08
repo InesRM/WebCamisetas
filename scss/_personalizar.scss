@@ -83,283 +83,283 @@ select {
 }
 
 //===========esto no es de personalizar, pertenece a las tres camisetas que hay en la página de inicio========
-.personalizar {
-  display: flex;
-  justify-content: center;
-}
+// .personalizar {
+//   display: flex;
+//   justify-content: center;
+// }
 
-.wrapper {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-}
+// .wrapper {
+//   margin: 0 auto;
+//   display: flex;
+//   flex-direction: row;
+// }
 
-.content {
-  flex: 1;
-  display: inline-block;
-  margin: 0 auto;
-  margin-top: 42px;
-  margin-right: 55px;
-}
+// .content {
+//   flex: 1;
+//   display: inline-block;
+//   margin: 0 auto;
+//   margin-top: 42px;
+//   margin-right: 55px;
+// }
 
-.container {
-  border: 3px solid $color_10;
-  height: 324px;
-  width: 335px;
-  margin: auto;
-  padding: 0px;
-  perspective: 1000px;
-  position: relative;
-}
+// .container {
+//   border: 3px solid $color_10;
+//   height: 324px;
+//   width: 335px;
+//   margin: auto;
+//   padding: 0px;
+//   perspective: 1000px;
+//   position: relative;
+// }
 
-.container:hover .card {
-  transform: rotateY(180deg);
-}
+// .container:hover .card {
+//   transform: rotateY(180deg);
+// }
 
-.card {
-  position: relative;
-  transform-style: preserve-3d;
-  transition: 0.6s;
-}
-
-
-.card .front {
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 30px;
-  height: 268px;
-  width: 280px;
-  z-index: 2;
-}
-
-.card .back {
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 30px;
-  height: 268px;
-  width: 280px;
-  transform: rotateY(180deg);
-}
-
-.footer {
-  margin: 0 auto;
-  width: 335px;
-  border-right: 3px solid $color_10;
-  border-left: 3px solid $color_10;
-  border-bottom: 3px solid $color_10;
-}
-
-ul.right {
-  margin: 0 auto;
-}
-
-ul.right li {
-  color: $color_9;
-  font-size: 20px;
-  margin: 0 auto;
-  width: 31px;
-  height: 31px;
-  border-left: 3px solid $color_9;
-  border-bottom: 3px solid $color_9;
-  margin-left: 261px;
-  list-style: none;
-  text-align: center;
-  ;
-
-}
-
-.right li:hover {
-  background: $background-color_2;
-  color: $color_3;
-  cursor: pointer;
-}
+// .card {
+//   position: relative;
+//   transform-style: preserve-3d;
+//   transition: 0.6s;
+// }
 
 
-ul.tools {
-  margin: 0 auto;
-  padding-left: 0;
-  display: flex;
-  position: relative;
-}
+// .card .front {
+//   backface-visibility: hidden;
+//   position: absolute;
+//   top: 0;
+//   left: 30px;
+//   height: 268px;
+//   width: 280px;
+//   z-index: 2;
+// }
 
-.tools li {
-  font-family: Arial;
-  font-size: 18px;
-  margin: 0 auto;
-  list-style: none;
-  display: inline-block;
-  width: 20%;
-  padding-top: 5px;
-  padding-left: 0;
-  text-align: center;
-  justify-content: space-between;
+// .card .back {
+//   backface-visibility: hidden;
+//   position: absolute;
+//   top: 0;
+//   left: 30px;
+//   height: 268px;
+//   width: 280px;
+//   transform: rotateY(180deg);
+// }
 
-}
+// .footer {
+//   margin: 0 auto;
+//   width: 335px;
+//   border-right: 3px solid $color_10;
+//   border-left: 3px solid $color_10;
+//   border-bottom: 3px solid $color_10;
+// }
 
-.tools li:last-of-type {
-  border-right: none;
-}
+// ul.right {
+//   margin: 0 auto;
+// }
 
-li.tooltip1:hover:after {
-  margin: 0 auto;
-  width: 81px;
-  height: 181px;
-  bottom: 53px;
-  left: 123px;
-  color: $color_3;
-  content: url(../Images/shirtsizes.jpg);
-  border-top: 2px solid $color_9;
-  border-right: 2px solid $color_9;
-  border-left: 2px solid $color_9;
-  position: absolute;
+// ul.right li {
+//   color: $color_9;
+//   font-size: 20px;
+//   margin: 0 auto;
+//   width: 31px;
+//   height: 31px;
+//   border-left: 3px solid $color_9;
+//   border-bottom: 3px solid $color_9;
+//   margin-left: 261px;
+//   list-style: none;
+//   text-align: center;
+//   ;
 
-  z-index: 98;
-}
+// }
 
-li.tooltip1:hover:before {
-  content: "";
-  border-style: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: $color_3 transparent transparent transparent;
-  position: absolute;
-  top: -3px;
-  border-style: solid;
-}
-
-li.tooltip2:hover:after {
-  margin: 0 auto;
-  width: 83px;
-  height: 83px;
-  bottom: 53px;
-  left: 190px;
-  color: $color_3;
-  content: url(../Images/blueshirtback.jpg);
-  border-top: 2px solid $color_9;
-  border-right: 2px solid $color_9;
-  border-left: 2px solid $color_9;
-  position: absolute;
-  z-index: 98;
-}
-
-li.tooltip2:hover:before {
-  content: "";
-  margin: 0 auto;
-  border-style: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: $color_3 transparent transparent transparent;
-  position: absolute;
-  top: -3px;
-  border-style: solid;
-}
+// .right li:hover {
+//   background: $background-color_2;
+//   color: $color_3;
+//   cursor: pointer;
+// }
 
 
-li.tooltip3:hover:after {
-  margin: 0 auto;
-  width: 81px;
-  height: 181px;
-  bottom: 53px;
-  left: 123px;
-  color: $color_3;
-  content: url(../Images/shirtsizes.jpg);
-  border-top: 2px solid $color_9;
-  border-right: 2px solid $color_9;
-  border-left: 2px solid $color_9;
-  position: absolute;
+// ul.tools {
+//   margin: 0 auto;
+//   padding-left: 0;
+//   display: flex;
+//   position: relative;
+// }
 
-  z-index: 98;
-}
+// .tools li {
+//   font-family: Arial;
+//   font-size: 18px;
+//   margin: 0 auto;
+//   list-style: none;
+//   display: inline-block;
+//   width: 20%;
+//   padding-top: 5px;
+//   padding-left: 0;
+//   text-align: center;
+//   justify-content: space-between;
 
-li.tooltip3:hover:before {
-  content: "";
-  border-style: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: $color_3 transparent transparent transparent;
-  position: absolute;
-  top: -3px;
-  border-style: solid;
-}
+// }
 
-li.tooltip4:hover:after {
-  margin: 0 auto;
-  width: 83px;
-  height: 83px;
-  bottom: 53px;
-  left: 190px;
-  color: $color_3;
-  content: url(../Images/colorswatches.jpg);
-  border-top: 2px solid $color_9;
-  border-right: 2px solid $color_9;
-  border-left: 2px solid $color_9;
-  position: absolute;
+// .tools li:last-of-type {
+//   border-right: none;
+// }
 
-  z-index: 98;
-}
+// li.tooltip1:hover:after {
+//   margin: 0 auto;
+//   width: 81px;
+//   height: 181px;
+//   bottom: 53px;
+//   left: 123px;
+//   color: $color_3;
+//   content: url(../Images/shirtsizes.jpg);
+//   border-top: 2px solid $color_9;
+//   border-right: 2px solid $color_9;
+//   border-left: 2px solid $color_9;
+//   position: absolute;
 
-li.tooltip4:hover:before {
-  content: "";
-  margin: 0 auto;
-  border-style: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: $color_3 transparent transparent transparent;
-  position: absolute;
-  top: -3px;
-  border-style: solid;
-}
+//   z-index: 98;
+// }
 
-li.tooltip5:hover:after {
-  margin: 0 auto;
-  width: 81px;
-  height: 181px;
-  bottom: 53px;
-  left: 123px;
-  color: $color_3;
-  content: url(../Images/shirtsizes.jpg);
-  border-top: 2px solid $color_9;
-  border-right: 2px solid $color_9;
-  border-left: 2px solid $color_9;
-  position: absolute;
+// li.tooltip1:hover:before {
+//   content: "";
+//   border-style: solid;
+//   border-width: 10px 10px 0 10px;
+//   border-color: $color_3 transparent transparent transparent;
+//   position: absolute;
+//   top: -3px;
+//   border-style: solid;
+// }
 
-  z-index: 98;
-}
+// li.tooltip2:hover:after {
+//   margin: 0 auto;
+//   width: 83px;
+//   height: 83px;
+//   bottom: 53px;
+//   left: 190px;
+//   color: $color_3;
+//   content: url(../Images/blueshirtback.jpg);
+//   border-top: 2px solid $color_9;
+//   border-right: 2px solid $color_9;
+//   border-left: 2px solid $color_9;
+//   position: absolute;
+//   z-index: 98;
+// }
 
-li.tooltip5:hover:before {
-  content: "";
-  border-style: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: $color_3 transparent transparent transparent;
-  position: absolute;
-  top: -3px;
-  border-style: solid;
-}
+// li.tooltip2:hover:before {
+//   content: "";
+//   margin: 0 auto;
+//   border-style: solid;
+//   border-width: 10px 10px 0 10px;
+//   border-color: $color_3 transparent transparent transparent;
+//   position: absolute;
+//   top: -3px;
+//   border-style: solid;
+// }
 
-li.tooltip6:hover:after {
-  margin: 0 auto;
-  width: 83px;
-  height: 83px;
-  bottom: 53px;
-  left: 190px;
-  color: $color_3;
-  content: url(../Images/colorswatches.jpg);
-  border-top: 2px solid $color_9;
-  border-right: 2px solid $color_9;
-  border-left: 2px solid $color_9;
-  position: absolute;
 
-  z-index: 98;
-}
+// li.tooltip3:hover:after {
+//   margin: 0 auto;
+//   width: 81px;
+//   height: 181px;
+//   bottom: 53px;
+//   left: 123px;
+//   color: $color_3;
+//   content: url(../Images/shirtsizes.jpg);
+//   border-top: 2px solid $color_9;
+//   border-right: 2px solid $color_9;
+//   border-left: 2px solid $color_9;
+//   position: absolute;
 
-li.tooltip6:hover:before {
-  content: "";
-  margin: 0 auto;
-  border-style: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: $color_3 transparent transparent transparent;
-  position: absolute;
-  top: -3px;
-  border-style: solid;
-}
+//   z-index: 98;
+// }
+
+// li.tooltip3:hover:before {
+//   content: "";
+//   border-style: solid;
+//   border-width: 10px 10px 0 10px;
+//   border-color: $color_3 transparent transparent transparent;
+//   position: absolute;
+//   top: -3px;
+//   border-style: solid;
+// }
+
+// li.tooltip4:hover:after {
+//   margin: 0 auto;
+//   width: 83px;
+//   height: 83px;
+//   bottom: 53px;
+//   left: 190px;
+//   color: $color_3;
+//   content: url(../Images/colorswatches.jpg);
+//   border-top: 2px solid $color_9;
+//   border-right: 2px solid $color_9;
+//   border-left: 2px solid $color_9;
+//   position: absolute;
+
+//   z-index: 98;
+// }
+
+// li.tooltip4:hover:before {
+//   content: "";
+//   margin: 0 auto;
+//   border-style: solid;
+//   border-width: 10px 10px 0 10px;
+//   border-color: $color_3 transparent transparent transparent;
+//   position: absolute;
+//   top: -3px;
+//   border-style: solid;
+// }
+
+// li.tooltip5:hover:after {
+//   margin: 0 auto;
+//   width: 81px;
+//   height: 181px;
+//   bottom: 53px;
+//   left: 123px;
+//   color: $color_3;
+//   content: url(../Images/shirtsizes.jpg);
+//   border-top: 2px solid $color_9;
+//   border-right: 2px solid $color_9;
+//   border-left: 2px solid $color_9;
+//   position: absolute;
+
+//   z-index: 98;
+// }
+
+// li.tooltip5:hover:before {
+//   content: "";
+//   border-style: solid;
+//   border-width: 10px 10px 0 10px;
+//   border-color: $color_3 transparent transparent transparent;
+//   position: absolute;
+//   top: -3px;
+//   border-style: solid;
+// }
+
+// li.tooltip6:hover:after {
+//   margin: 0 auto;
+//   width: 83px;
+//   height: 83px;
+//   bottom: 53px;
+//   left: 190px;
+//   color: $color_3;
+//   content: url(../Images/colorswatches.jpg);
+//   border-top: 2px solid $color_9;
+//   border-right: 2px solid $color_9;
+//   border-left: 2px solid $color_9;
+//   position: absolute;
+
+//   z-index: 98;
+// }
+
+// li.tooltip6:hover:before {
+//   content: "";
+//   margin: 0 auto;
+//   border-style: solid;
+//   border-width: 10px 10px 0 10px;
+//   border-color: $color_3 transparent transparent transparent;
+//   position: absolute;
+//   top: -3px;
+//   border-style: solid;
+// }
 
 //=============FIN DE LAS TRES CAMISETAS DE LA PÁGINA DE INICIO==================
 

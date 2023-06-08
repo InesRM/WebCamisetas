@@ -1472,6 +1472,10 @@ article:nth-child(4) {
     color: #031a1d;
   }
 }
+.__concur {
+  margin-left: 300px;
+}
+
 /* bloques -------------------------------------------------*/
 .bloques {
   display: grid;

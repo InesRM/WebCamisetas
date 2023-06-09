@@ -10,9 +10,11 @@
         rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Patrick+Hand+SC' rel='stylesheet'
         type='text/css'>
+    <script src="https://use.fontawesome.com/3bc19f98ca.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
+    <script src="./js/javascript.js"></script>
 </head>
 
 <body>
@@ -22,7 +24,7 @@
                 <div class="left">
                     <img src="img/logo.jpg" alt="logotipo" class="logo">
                 </div>
-                <div class="mobileMenu">
+                <div class="col-xs-6 mobileMenu">
                     <div class="mobileDropdown">
                         <button class="mbtn">Menu</button>
                         <div class="mobileList">
@@ -71,70 +73,147 @@
                 </div>
             </div>
         </div>
-        <main class="l-main">
-            <section>
-                <div>
-                    <h1>Hola, aquí puedes configurar tu Galería de diseños y perfil</h1>
-                </div>
-            </section>
+    </div>
 
-            <section class="about-section ">
-                <h2 class="__title">Sobre Mí</h2>
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img class="perfil" src="img/myAvatar.png" alt="imagen de perfil">
-                        <button class="editar" type="submit">Editar</button>
-                        <div class="msg">
-                            <textarea name="editar" placeholder="Ocupación" name="mensaje"></textarea>
-                            <button class="editar" type="submit">Editar</button>
-                        </div>
-                        <div class="msg">
-                            <textarea name="editar" placeholder="nombre" name="mensaje"></textarea>
-                            <button class="editar" type="submit">Editar</button>
-                        </div>
-                        <div class="msg">
-                            <textarea name="editar" placeholder="password" name="mensaje"></textarea>
-                            <button class="editar" type="submit">Editar</button>
-                        </div>
+    <!-- ==== votar===========INICIO -->
+
+    <div class="container">
+        <div class="row">
+            <div>
+                <h1>Votaciones</h1>
+                <h2>¡Vota por tu diseño favorito!</h2>
+            </div>
+        </div>
+        <div class="button-reset">
+            <button class="btn reset">Borrar Votaciones</button>
+        </div>
+        
+        <div class="button-reset">
+            <button class="btn reset">Enviar Votaciones</button>
+    </div>
+    <section class="__section">
+            <div class="card__container bd-container">
+                <div class="card__glass">
+                    <img src="img/12.jpg" alt="" class="card__img">
+                    <div class="card__data">
+                        <h3 class="card__title">Alina</h3>
+                        <span class="card__profession">Web Developer</span>
                     </div>
-
-                    <div class="presentacion">
-                        <h3>Breve Presentación</h3>
-                        <div class="msg">
-                            <textarea name="descripcion" cols="30" rows="10" placeholder="Mi Descripcion"
-                                name="descripcion"></textarea>
-                        </div>
-                    </div>
-                    <button class="guardar" type="submit">Modificar Perfil</button>
-                </div>
-
-
-            </section>
-
-            <section class="work-section">
-                <h2>Diseños</h2>
-                <div class="work__container bd-grid">
-
-                    <div class="work__img">
-                        <button class="galery" type="submit">Modificar</button>
-                        <img src="img/10.jpg" alt="diseño 1">
-                    </div>
-                    <div class="work__img">
-                        <button class="galery" type="submit">Modificar</button>
-                        <img src="img/11.jpg" alt="diseño 2">
-                    </div>
-                    <div class="work__img">
-                        <button class="galery" type="submit">Modificar</button>
-                        <img src="img/7.jpg" alt=" diseño 3">
-                    </div>
-                    <div class="work__img">
-                        <button class="galery" type="submit">Modificar</button>
-                        <img src="img/12.jpg" alt="diseño 4">
+                    <section class="__section">
+                        <p class="vote-text">
+                            <span class="vote-count">0</span>
+                            votos
+                        </p>
+                        <button class="btn">Vota Aquí</button>
+                        </section>
+                    <div class="card__social">
+                        <a href="#" class="card__link"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="card__link"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="card__link"><i class='bx bxl-twitter'></i></a>
                     </div>
                 </div>
-            </section>
+                <div class="card__glass">
+                    <img src="img/winners/1.jpg" alt="" class="card__img">
+                    <div class="card__data">
+                        <h3 class="card__title">Robbi</h3>
+                        <span class="card__profession">Product Designer</span>
+                    </div>
+                    <section class="__section">
+                        <p class="vote-text">
+                            <span class="vote-count">0</span>
+                            votos
+                        </p>
+                        <button class="btn">Vota Aquí</button>
+                        </section>
+                    <div class="card__social">
+                        <a href="#" class="card__link"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="card__link"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="card__link"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
 
-        </main>
+                <div class="card__glass">
+                    <img src="img/14.jpg" alt="" class="card__img">
+                    <div class="card__data">
+                        <h3 class="card__title">Davidson</h3>
+                        <span class="card__profession">Ui/Ux Design</span>
+                    </div>
+                    <section class="__section">
+                        <p class="vote-text">
+                            <span class="vote-count">0</span>
+                            votos
+                        </p>
+                        <button class="btn">Vota Aquí</button>
+                        </section>
+                    <div class="card__social">
+                        <a href="#" class="card__link"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="card__link"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="card__link"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card__container bd-container">
+                <div class="card__glass">
+                    <img src="img/10.jpg" alt="" class="card__img">
+                    <div class="card__data">
+                        <h3 class="card__title">Mariola</h3>
+                        <span class="card__profession">Web Developer</span>
+                    </div>
+                    <section class="__section">
+                        <p class="vote-text">
+                            <span class="vote-count">0</span>
+                            votos
+                        </p>
+                        <button class="btn">Vota Aquí</button>
+                        </section>
+                    <div class="card__social">
+                        <a href="#" class="card__link"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="card__link"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="card__link"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+
+                <div class="card__glass">
+                    <img src="img/8.jpg" alt="" class="card__img">
+                    <div class="card__data">
+                        <h3 class="card__title">Bobbi</h3>
+                        <span class="card__profession">Product Designer</span>
+                    </div>
+                    <section class="__section">
+                        <p class="vote-text">
+                            <span class="vote-count">0</span>
+                            votos
+                        </p>
+                        <button class="btn">Vota Aquí</button>
+                        </section>
+                    <div class="card__social">
+                        <a href="#" class="card__link"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="card__link"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="card__link"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+
+                <div class="card__glass">
+                    <img src="img/7.jpg" alt="" class="card__img">
+                    <div class="card__data">
+                        <h3 class="card__title">Bart</h3>
+                        <span class="card__profession">Ui/Ux Design</span>
+                    </div>
+                    <section class="__section">
+                    <p class="vote-text">
+                        <span class="vote-count">0</span>
+                        votos
+                    </p>
+                    <button class="btn">Vota Aquí</button>
+                    </section>
+                    <div class="card__social">
+                        <a href="#" class="card__link"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="card__link"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="card__link"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- ====newsletter===========INICIO -->
         <div class="__section">
             <section class="newsletter">
@@ -199,6 +278,7 @@
             </div>
         </footer>
         <!-- ===footer===========FIN -->
+        <script src="js/vote.js"></script>
 </body>
 
 </html>

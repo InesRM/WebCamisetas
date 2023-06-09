@@ -234,6 +234,17 @@ p {
   border-top-left-radius: 2;
 }
 
+.star {
+  position: relative;
+  z-index: 1;
+  top: -81px;
+  right: -125px;
+}
+
+.star:hover {
+  cursor: pointer;
+}
+
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -1686,7 +1697,7 @@ article:nth-child(4) {
 }
 .card__button {
   display: inline-block;
-  background: linear-gradient(130deg, rgba(251, 251, 254, 0.9), rgba(251, 251, 254, 0.2));
+  background: linear-gradient(130deg, rgba(114, 226, 206, 0.9), rgba(240, 246, 239, 0.2));
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   color: #031a1d;
@@ -1737,6 +1748,36 @@ article:nth-child(4) {
     align-content: center;
   }
 }
+.vote-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #031a1d;
+}
+.vote-text .vote-count {
+  text-align: center;
+}
+
+.btn {
+  cursor: pointer;
+  width: auto;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin: 10px;
+  transition: all 0.5s linear;
+  border-color: #E04A34;
+  background: linear-gradient(130deg, rgba(215, 109, 77, 0.9), rgba(222, 191, 150, 0.2));
+  color: #031a1d;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Poiret One", cursive;
+}
+
+.button-reset {
+  display: inline-flex;
+  margin-left: 20px;
+  border-color: #067c87;
+}
+
 .homePage {
   background-color: white;
   height: 250px;

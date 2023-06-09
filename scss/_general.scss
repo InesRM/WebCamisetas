@@ -310,26 +310,16 @@ p{
 	}
 }
 
-// button{
-// 	background-color: $background-color_2;
-// 	font-family: $font-family_1;
-// 	font-size: 20px;
-// 	color: $color_3;
-// 	white-space: nowrap;
-// 	border-bottom-left-radius: 2;
-// 	border-top-left-radius: 2;
-// 	border-bottom-right-radius: 5px;
-// 	border-top-right-radius: 6px;
-// 	border: 1px solid transparent;
-// 	outline: none;
-// 	cursor: pointer;
-// 	&:hover{
-// 		background-color: $background-color_3;
-// 	}
-// }
-
-
-
+.star{
+	position: relative;
+	z-index: 1;
+	top: -81px;
+	right: -125px;
+  }
+  
+  .star:hover{
+	cursor: pointer;
+  }
    
 footer{
     display: flex;

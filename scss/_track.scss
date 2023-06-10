@@ -1,0 +1,212 @@
+.order{
+    font-family: $font-family_1;
+    font-size: 15px;
+
+    .dash__box{
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+    }
+
+    .dash__box--border{
+        border: 1px solid #eee;
+    }
+
+    .dash__box--bg-white{
+        background-color:$background-color_1;
+    }
+    .dash__box--radius{
+        border-radius: 5px;
+    }
+
+    .dash-l-r {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        margin:20px 0;
+        justify-content: space-between;
+    }
+
+    .manage-o__text-2 {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 20px 0; 
+
+    .manage-o__text {
+        font-size: 13px;
+        font-weight: 600;
+        margin: 20px 0;
+    }
+}  
+
+.timeline-row{
+    display: inline-flex;
+    // -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    .timeline-l-i{
+        justify-content: space-between;
+        position: relative;
+        border-radius: 6px;
+        border-top: 4px solid #ee2929;
+        justify-content: space-between;
+       
+    }
+
+}
+
+
+.manage-o__timeline {
+    padding-top: 40px;
+
+}
+
+.timeline-text {
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 13px;
+        text-transform: uppercase;
+        display: block;
+        font-weight: 600;
+        color: #333333;
+}
+
+.timeline-l-i.timeline-l-i--finish {
+    border-color: #6B5AED;
+}
+
+.manage-o__timeline [class*="col-"] {
+    padding: 0;
+    text-align: center;
+
+}
+
+.timeline-step {
+    position: relative;
+    margin-bottom: 20px;
+    
+}
+
+.timeline-l-i.timeline-l-i--finish .timeline-circle {
+    border-color: #6B5AED;
+}
+
+.timeline-l-i .timeline-circle {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: #ffffff;
+    border: 2px solid #8d8585;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.timeline-l-i.timeline-l-i--finish .timeline-circle {
+    border-color: #6B5AED;
+}
+
+
+// @media (max-width: 767px) {
+//     .order{
+//         .dash__box{
+//             padding: 10px;
+//         }
+//         .dash__box--border{
+//             border: 1px solid #eee;
+//         }
+//         .dash__box--bg-white{
+//             background-color:$background-color_1;
+//         }
+//         .dash__box--radius{
+//             border-radius: 5px;
+//         }
+//         .dash-l-r {
+//             display: -ms-flexbox;
+//             display: flex;
+//             -ms-flex-align: center;
+//             align-items: center;
+//             -ms-flex-pack: justify;
+//             margin:20px 0;
+//             justify-content: space-between;
+//         }
+//         .manage-o__text-2 {
+//             font-size: 14px;
+//             font-weight: 600;
+//             margin: 20px 0;
+//         }
+//         .manage-o__text {
+//             font-size: 13px;
+//             font-weight: 600;
+
+// .timeline-l-i{
+//     position: relative;
+//     border-radius: 3px;
+//     border-top: 3px solid #eee;
+// }
+
+// .manage-o__timeline {
+//     padding-top: 40px;
+// }
+
+// .timeline-text {
+//     margin-top: 20px;
+//     font-size: 13px;
+//     text-transform: uppercase;
+//     display: block;
+//     font-weight: 600;
+//     color: #333333;
+// }
+// .timeline-l-i.timeline-l-i--finish {
+//     border-color: #6B5AED;
+// }
+
+// .manage-o__timeline [class*="col-"] {
+//     padding: 0;
+//     text-align: center;
+// }
+
+// .timeline-l-i.timeline-l-i--finish .timeline-circle {
+//     border-color: #6B5AED;
+// }  
+
+// .timeline-l-i .timeline-circle {
+//     position: absolute;
+//     width: 18px;
+//     height: 18px;
+//     background: #ffffff;
+//     border: 2px solid #eee;
+//     margin: auto;
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+// }
+
+// .timeline-l-i.timeline-l-i--finish .timeline-circle {
+//     border-color: #6B5AED;
+// }
+
+
+
+
+        
+      
+
+}
+
+    
+
+
+
+
+
+
+

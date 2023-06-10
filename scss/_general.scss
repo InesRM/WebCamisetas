@@ -83,6 +83,7 @@ body {
 				// padding-top: 35px;
 				padding-left: 10px;
 				padding-right: 10px;
+				font-weight: bold;
 
 				&:hover {
 					background-color: $background-color_2;
@@ -92,26 +93,6 @@ body {
 		}
 	}
 
-	li {
-		display: inline;
-		list-style: none;
-		padding: 40px;
-
-		a {
-			color: $color_3;
-			font-family: $font-family_1;
-			font-size: 20px;
-			text-decoration: none;
-			// padding-top: 35px;
-			padding-left: 10px;
-			padding-right: 10px;
-
-			&:hover {
-				background-color: $background-color_2;
-				color: $color_5;
-			}
-		}
-	}
 }
 
 .navbar {
@@ -151,7 +132,7 @@ body {
 
 	.mbtn {
 		background-color: $background-color_2;
-		color: white;
+		color: $color_3;
 	}
 
 	.mobileList {
@@ -210,10 +191,11 @@ body {
 			display: flex;
             flex-direction: column;
             position: absolute;
+			margin-left: 60px;
             top: 275px;
             width: 50%;
 			padding: 0.8em 0;
-			align-self: start;	
+			// align-self: start;	
 		}
 
 	}
@@ -261,14 +243,14 @@ body {
 }	
 p{
 	font-family: $font-family_1;
-	font-size: 20px;
+	// font-size: 20px;
 	color: $color_3;
 }
 
 .newsletter{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     align-items: center;
     padding: 20px;
     background-repeat: no-repeat;
@@ -280,13 +262,9 @@ p{
 		width: 40%;
 	}
 	h3{
-		font-size: 22px;
+		font-size: 20px;
 		font-weight: 700;
 		color:$color_8;
-	}
-	p{
-		font-size: 19px;
-		font-weight: 600;
 	}
 	input{
 		height: 2.125rem;
@@ -299,27 +277,19 @@ p{
 		border-bottom-right-radius: 5px;
 		border-top-right-radius: 6px;
 	}
-	button{
-		background-color:$background-color_2;
-		font-family: $font-family_1;
-		font-size: 20px;
-		color: $color_3;
-		white-space: nowrap;
-		border-bottom-left-radius: 2;
-		border-top-left-radius: 2;
+	.suscripcion{
+		input{
+			width: 150px;
+		}
+
+		.btn{
+			width: 100px;
+			height: 40px;
+			font-size: 15px;
+		}
 	}
 }
 
-.star{
-	position: relative;
-	z-index: 1;
-	top: -81px;
-	right: -125px;
-  }
-  
-  .star:hover{
-	cursor: pointer;
-  }
    
 footer{
     display: flex;
@@ -387,6 +357,36 @@ footer a:hover{
 }
 
 }
+.btn {
+    cursor: pointer;
+    width: auto;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin:10px;
+    transition: all 0.5s linear;
+    border-color: $border-color_3;
+    background:linear-gradient(130deg, 
+    rgba(13, 175, 161, 0.822), 
+    rgba(199, 229, 237, 0.925));
+    color: $color_3;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: $font-family_1;
+
+	&:hover {
+		&:hover{
+            background: linear-gradient(130deg, 
+                  rgba(255, 255, 255, 1), 
+                  rgba(31, 30, 30, 0.216));
+			color:$color_2;	  
+        }
+	}
+
+}
+a{
+	text-decoration: none;
+	
+}
 
 
 
@@ -414,24 +414,28 @@ footer a:hover{
 		}
 		
 		.newsletter{
+			padding: 10px;
+			background-position: 10% 15%;
+			height: 90px;
+			margin:10px;
+
 			
 			.form{
-				display: flex;
-				width: 100%;
-				flex-direction: column;
-				align-items: center;
+				width: 20%;
+
 			}
 			h3{
-				font-size: 18px;
-				font-weight: 700;
-				color:$color_8;
+				display: none;
 			}
 			p{
 				font-size: 17px;
-				font-weight: 600;
+				font-weight: 400;
 			}
 			
 		}
+	}
+	h3{
+		font-size: 20px;	
 	}
 
 @media (max-width: 1098px) {

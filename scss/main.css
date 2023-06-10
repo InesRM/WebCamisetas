@@ -48,25 +48,9 @@ body {
   text-decoration: none;
   padding-left: 10px;
   padding-right: 10px;
+  font-weight: bold;
 }
 .nav ul li a:hover {
-  background-color: #ea8576;
-  color: #7a7a7a;
-}
-.nav li {
-  display: inline;
-  list-style: none;
-  padding: 40px;
-}
-.nav li a {
-  color: #fcfcfc;
-  font-family: "Poiret One", cursive;
-  font-size: 20px;
-  text-decoration: none;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.nav li a:hover {
   background-color: #ea8576;
   color: #7a7a7a;
 }
@@ -103,7 +87,7 @@ body {
 }
 .mobileDropdown .mbtn {
   background-color: #ea8576;
-  color: white;
+  color: #fcfcfc;
 }
 .mobileDropdown .mobileList li {
   display: inline-block;
@@ -143,10 +127,10 @@ body {
   display: flex;
   flex-direction: column;
   position: absolute;
+  margin-left: 60px;
   top: 275px;
   width: 50%;
   padding: 0.8em 0;
-  align-self: start;
 }
 
 .section-p1 {
@@ -187,14 +171,12 @@ body {
 
 p {
   font-family: "Poiret One", cursive;
-  font-size: 20px;
   color: #fcfcfc;
 }
 
 .newsletter {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
   padding: 20px;
   background-repeat: no-repeat;
@@ -206,13 +188,9 @@ p {
   width: 40%;
 }
 .newsletter h3 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   color: #041e42;
-}
-.newsletter p {
-  font-size: 19px;
-  font-weight: 600;
 }
 .newsletter input {
   height: 2.125rem;
@@ -224,25 +202,13 @@ p {
   border-bottom-right-radius: 5px;
   border-top-right-radius: 6px;
 }
-.newsletter button {
-  background-color: #ea8576;
-  font-family: "Poiret One", cursive;
-  font-size: 20px;
-  color: #fcfcfc;
-  white-space: nowrap;
-  border-bottom-left-radius: 2;
-  border-top-left-radius: 2;
+.newsletter .suscripcion input {
+  width: 150px;
 }
-
-.star {
-  position: relative;
-  z-index: 1;
-  top: -81px;
-  right: -125px;
-}
-
-.star:hover {
-  cursor: pointer;
+.newsletter .suscripcion .btn {
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
 }
 
 footer {
@@ -300,6 +266,29 @@ footer .copyright {
   text-align: center;
 }
 
+.btn {
+  cursor: pointer;
+  width: auto;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin: 10px;
+  transition: all 0.5s linear;
+  border-color: #067c87;
+  background: linear-gradient(130deg, rgba(13, 175, 161, 0.822), rgba(199, 229, 237, 0.925));
+  color: #fcfcfc;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Poiret One", cursive;
+}
+.btn:hover:hover {
+  background: linear-gradient(130deg, rgb(255, 255, 255), rgba(31, 30, 30, 0.216));
+  color: #031a1d;
+}
+
+a {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
   .nav {
     display: none;
@@ -319,22 +308,27 @@ footer .copyright {
     font-size: 20px;
     border-radius: 5px;
   }
+  .newsletter {
+    padding: 10px;
+    background-position: 10% 15%;
+    height: 90px;
+    margin: 10px;
+  }
   .newsletter .form {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
+    width: 20%;
   }
   .newsletter h3 {
-    font-size: 18px;
-    font-weight: 700;
-    color: #041e42;
+    display: none;
   }
   .newsletter p {
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 400;
   }
 }
+h3 {
+  font-size: 20px;
+}
+
 @media (max-width: 1098px) {
   .nav ul li {
     padding: 0%;
@@ -374,15 +368,15 @@ footer .copyright {
   border: 0px;
   border-bottom: 2px solid #fcfcfc;
   padding: 10px;
-  color: #c5ecfd;
+  color: #fcfcfc;
   width: 100%;
 }
 .div_input .input::-moz-placeholder, .div_input textarea::-moz-placeholder {
-  color: #c5ecfd;
+  color: #fcfcfc;
 }
 .div_input .input::placeholder,
 .div_input textarea::placeholder {
-  color: #c5ecfd;
+  color: #fcfcfc;
 }
 
 #formulario_es {
@@ -401,7 +395,7 @@ footer .copyright {
   padding: 0 4rem;
 }
 #formulario_es form .title_form {
-  color: #c5ecfd;
+  color: #fcfcfc;
   text-align: center;
   font-size: 3.5rem;
 }
@@ -474,8 +468,6 @@ footer .copyright {
 }
 .__section {
   background-color: white;
-  font-family: "Poiret One", cursive;
-  font-size: 20px;
   border: 2px solid #ffffff;
   padding: 20px;
 }
@@ -497,13 +489,6 @@ tr.neat th {
   width: auto;
   padding: 2px;
   border: 3px solid #28746A;
-}
-
-#swap {
-  border: none;
-  background-color: #f7eff1;
-  display: inline-block;
-  cursor: pointer;
 }
 
 div.outfitdisplay table {
@@ -567,18 +552,6 @@ select {
   font-weight: bold;
   font-family: "Poiret One", cursive;
 }
-.upload .btn-upload {
-  width: 150px;
-  height: 40px;
-  margin-left: 90px;
-  background-color: #ea8576;
-  color: #fcfcfc;
-  border-radius: 5px;
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  font-family: "Poiret One", cursive;
-}
 
 .benefits {
   background-color: #e5bdb7;
@@ -603,18 +576,6 @@ select {
 .benefits .image:hover {
   transform: rotate(9deg) scale(1.1);
 }
-.benefits .btn-galeria {
-  justify-content: center;
-  width: 150px;
-  height: 60px;
-  background-color: #45a7e8;
-  color: #fcfcfc;
-  border-radius: 5px;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 20px;
-  padding: 2%;
-}
 
 .btn-m {
   font-weight: bold;
@@ -627,20 +588,12 @@ select {
   color: #fcfcfc;
 }
 
-.btn-shop {
+.__pedido {
   display: flex;
-  margin: 0 40rem;
+  margin: 0 26rem;
   max-width: 40%;
-  border: 10px solid #E04A34;
-  background-color: #ea8576;
-  color: #fcfcfc;
-  font-family: "Poiret One", cursive;
-  font-weight: bold;
-  font-size: 20px;
-}
-.btn-shop:hover {
-  background-color: #28746A;
-  color: #fcfcfc;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .__comprar {
@@ -676,7 +629,7 @@ ul {
 .image_colores img {
   width: 400px;
   display: block;
-  background-color: var(--color);
+  background-color: #f7eff1;
 }
 
 .colors {
@@ -690,7 +643,6 @@ ul {
 .colors ul li {
   width: 30px;
   height: 30px;
-  /* background-color:var(--color) ; */
   display: inline-block;
   cursor: pointer;
 }
@@ -712,6 +664,12 @@ ul {
     max-width: 40%;
     margin: auto;
     border: 5px solid #E04A34;
+  }
+  .__pedido {
+    display: flex;
+    margin: 0 10rem;
+    max-width: 40%;
+    margin: auto;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -995,8 +953,6 @@ ul {
   }
   .login__img {
     display: flex;
-    width: 800px;
-    height: 588px;
     border-radius: 1rem;
   }
   .login__img img {
@@ -1040,24 +996,9 @@ ul {
   box-sizing: border-box;
   border: 2px solid #151414;
   border-radius: 4px;
-  background-color: #f8f8f8;
+  background-color: #fcfcfc;
   font-size: 16px;
   resize: none;
-}
-
-.guardar {
-  width: 70%;
-  background-color: #e5bdb7;
-  font-family: "Poiret One", cursive;
-  font-weight: bold;
-  font-size: 15px;
-  border: 2px solid #031a1d;
-  border-radius: 10%;
-  padding: 5px;
-}
-.guardar:hover {
-  background-color: #067c87;
-  color: white;
 }
 
 .editar {
@@ -1072,7 +1013,7 @@ ul {
 }
 .editar:hover {
   background-color: #067c87;
-  color: white;
+  color: #fcfcfc;
 }
 
 .work-section {
@@ -1087,22 +1028,6 @@ ul {
   border-radius: 20px;
   transition: transform 0.5s ease;
   cursor: pointer;
-}
-.work-section .work__container .galery {
-  max-width: 100px;
-  background-color: #e5bdb7;
-  font-family: "Poiret One", cursive;
-  font-size: 20px;
-  border: 2px solid #151414;
-  border-radius: 10%;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 30px;
-}
-.work-section .work__container .galery:hover {
-  background-color: #067c87;
-  color: white;
-  transform: scale(1.1);
 }
 
 @media screen and (max-width: 724px) {
@@ -1128,13 +1053,10 @@ img {
   height: auto;
 }
 
-a {
-  color: #fcfcfc;
-  font-weight: bold;
-  text-decoration: none;
+.__shop {
+  background-color: white;
 }
-
-.main {
+.__shop .main {
   padding: 2rem 0;
 }
 
@@ -1233,12 +1155,6 @@ article:nth-child(4) {
   font-size: 20px;
   color: #fcfcfc;
   margin-bottom: 0.25rem;
-}
-
-.mas {
-  width: 80px;
-  margin: 10px;
-  background-color: #a5ccd2;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1694,18 +1610,7 @@ article:nth-child(4) {
 .card__profession {
   color: #031a1d;
   font-weight: 500;
-}
-.card__button {
-  display: inline-block;
-  background: linear-gradient(130deg, rgba(114, 226, 206, 0.9), rgba(240, 246, 239, 0.2));
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
-  color: #031a1d;
-  font-weight: 500;
-  transition: 0.4s;
-}
-.card__button:hover {
-  background: linear-gradient(130deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.4));
+  font-family: "Poiret One", cursive;
 }
 .card__social {
   position: absolute;
@@ -1743,7 +1648,7 @@ article:nth-child(4) {
     padding: 0;
   }
   .card__container {
-    height: 70vh;
+    height: 80vh;
     grid-template-columns: repeat(3, 1fr);
     align-content: center;
   }
@@ -1757,25 +1662,41 @@ article:nth-child(4) {
   text-align: center;
 }
 
-.btn {
-  cursor: pointer;
-  width: auto;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  margin: 10px;
-  transition: all 0.5s linear;
-  border-color: #E04A34;
-  background: linear-gradient(130deg, rgba(215, 109, 77, 0.9), rgba(222, 191, 150, 0.2));
-  color: #031a1d;
-  font-weight: bold;
-  font-size: 1.5rem;
-  font-family: "Poiret One", cursive;
-}
-
 .button-reset {
   display: inline-flex;
   margin-left: 20px;
   border-color: #067c87;
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 1rem;
+  }
+  .vote-text {
+    font-size: 1rem;
+  }
+}
+.div_main {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  margin-right: 100px;
+  gap: 20px;
+}
+.div_main .div_main__box1 {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.div_main .div_main__box1 .img_width {
+  width: 400px;
+}
+.div_main .p1_main {
+  color: #031a1d;
+  text-align: center;
+  margin: 10px;
+  font-weight: bold;
 }
 
 .homePage {

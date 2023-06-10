@@ -1,0 +1,27 @@
+.div_main {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 20px;
+
+    .div_main__box1 {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+
+
+        .img_width {
+            width: 400px;
+        }
+    }
+
+    .p1_main {
+        color: $color_2;
+        text-align: center;
+        margin:10px;
+        font-weight: bold;
+    }
+
+}

@@ -41,11 +41,11 @@
 		border: 0px;
 		border-bottom: 2px solid $color_3;
 		padding: 10px;
-		color: #c5ecfd;
+		color: $color_3;
 		width: 100%;
 
 		&::placeholder {
-			color: #c5ecfd;
+			color: $color_3;
 		}
 	}
 }
@@ -68,7 +68,7 @@
 		// margin: 0 auto;
 		// text-align: center;
 		.title_form {
-			color: #c5ecfd;
+			color: $color_3;
 			text-align: center;
 			font-size: 3.5rem;
 		}

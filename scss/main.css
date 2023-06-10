@@ -1946,6 +1946,47 @@ article:nth-child(4) {
   border-color: #6B5AED;
 }
 
+.faq__heading {
+  font-weight: 700;
+  font-size: 13px;
+  color: #3f3b3b;
+  margin-bottom: 6px;
+}
+.faq__text {
+  font-size: 13px;
+  color: #031a1d;
+}
+.faq__list {
+  border-top: 1px solid #eee;
+  padding: 14px 0;
+}
+.faq__list:last-child {
+  border-bottom: 1px solid #eee;
+}
+.faq__question {
+  display: block;
+  position: relative;
+  padding: 8px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3f3b3b;
+}
+
+.faq__question:before {
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 8px;
+  transform: rotate(180deg);
+  right: 12px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.faq__question.collapsed:before {
+  transform: rotate(0deg);
+}
+
 .homePage {
   background-color: white;
   height: 250px;

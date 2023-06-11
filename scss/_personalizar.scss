@@ -164,31 +164,31 @@ select {
 }
 
 
-//3. colores===============================
+//3. colores============CAMISETA INICIO==================
 ul {
-  // list-style-type: none;
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 /* End Global Rules  */
-.colores{
+.container{
   width: 90%;
   margin: auto;
   display: flex;
   flex-direction: column;
 }
-.image_colores{
+.image_container{
   width: 100%;
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.image_colores img{
+.image_container img{
   width: 400px;
   display: block;
-  background-color: $background-color_1;
+  background-color: var(--color);
 }
 .colors{
   display: flex;
@@ -200,11 +200,11 @@ ul {
 .colors ul li{
  width: 30px;
  height: 30px;
+ /* background-color:var(--color) ; */
  display: inline-block;
  cursor: pointer;
 
 }
-
 
 @media screen and (max-width: 1200px) {
   .benefits {

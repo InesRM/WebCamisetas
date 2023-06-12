@@ -104,7 +104,6 @@ select {
   }
   
   }
-
 .benefits {
   background-color: $background-color_9;
 
@@ -204,6 +203,14 @@ ul {
  display: inline-block;
  cursor: pointer;
 
+}
+
+@media screen and (max-width:768px){
+  .btn-m{
+   
+   font-size: 13px;
+   
+  }
 }
 
 @media screen and (max-width: 1200px) {

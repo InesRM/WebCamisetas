@@ -179,6 +179,7 @@
         &__forms {
             width: 348px;
             justify-self: center;
+            margin: 40px;
         }
     }
 }
@@ -213,5 +214,10 @@
     @media screen and (min-width: 768px) {
         --normal-font-size: 1rem;
         --small-font-size: .875rem;
+       
+        }
+        .login__content {
+            display: grid;
+            margin-bottom: 50px;
+        }
     }
-}

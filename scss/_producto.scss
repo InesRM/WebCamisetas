@@ -18,6 +18,8 @@
 			display: inline-block;
 			padding: 5px 10px;
 			margin-bottom: 10px;
+			font-family: $font-family_1;
+			font-weight: bold;
 			&:focus {
 				outline: none;
 			}
@@ -27,6 +29,7 @@
 			padding-left: 10px;
 			font-size: 16px;
 			margin-right: 10px;
+
 			&:focus {
 				outline: none;
 			}
@@ -55,8 +58,9 @@
 	#prodetails {
 		flex-direction: column;
 		.single-pro-image {
-			width: 100%;
+			width: 80%;
 			margin-bottom: 20px;
+			margin-left: 50px;
 		}
 		.single-pro-details {
 			width: 100%;

@@ -657,6 +657,11 @@ ul {
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  .btn-m {
+    font-size: 13px;
+  }
+}
 @media screen and (max-width: 1200px) {
   .benefits .benefits-grid {
     grid-template-columns: auto;
@@ -950,6 +955,7 @@ ul {
   .login__forms {
     width: 348px;
     justify-self: center;
+    margin: 40px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -979,6 +985,10 @@ ul {
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
   }
+}
+.login .login__content {
+  display: grid;
+  margin-bottom: 50px;
 }
 
 .about-section .__title {
@@ -1292,6 +1302,8 @@ article:nth-child(4) {
   display: inline-block;
   padding: 5px 10px;
   margin-bottom: 10px;
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
 }
 #prodetails .single-pro-details select:focus {
   outline: none;
@@ -1328,8 +1340,9 @@ article:nth-child(4) {
     flex-direction: column;
   }
   #prodetails .single-pro-image {
-    width: 100%;
+    width: 80%;
     margin-bottom: 20px;
+    margin-left: 50px;
   }
   #prodetails .single-pro-details {
     width: 100%;
@@ -1581,7 +1594,7 @@ article:nth-child(4) {
 .card {
   position: relative;
   overflow: hidden;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 .card__container {
   display: grid;
@@ -1643,11 +1656,6 @@ article:nth-child(4) {
   transition: 0.7s;
 }
 
-@media screen and (min-width: 568px) {
-  .card__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 @media screen and (min-width: 768px) {
   .bd-container {
     margin-left: auto;
@@ -1660,6 +1668,11 @@ article:nth-child(4) {
     height: 80vh;
     grid-template-columns: repeat(3, 1fr);
     align-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card__container {
+    margin-bottom: 30px;
   }
 }
 .vote-text {
@@ -1675,6 +1688,7 @@ article:nth-child(4) {
   display: inline-flex;
   margin-left: 20px;
   border-color: #067c87;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 768px) {
@@ -1916,9 +1930,9 @@ article:nth-child(4) {
   padding-top: 40px;
 }
 .order .timeline-text {
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
   font-size: 13px;
   text-transform: uppercase;
   display: block;
@@ -1927,10 +1941,6 @@ article:nth-child(4) {
 }
 .order .timeline-l-i.timeline-l-i--finish {
   border-color: #6B5AED;
-}
-.order .manage-o__timeline [class*=col-] {
-  padding: 0;
-  text-align: center;
 }
 .order .timeline-step {
   position: relative;
@@ -1954,15 +1964,43 @@ article:nth-child(4) {
 .order .timeline-l-i.timeline-l-i--finish .timeline-circle {
   border-color: #6B5AED;
 }
+@media (max-width: 767px) {
+  .order .timeline-l-i {
+    width: 100%;
+  }
+  .order .timeline-l-i .timeline-circle {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border: 2px solid #8d8585;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin-left: 10px;
+  }
+  .order .timeline-text {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    color: #333333;
+  }
+}
 
 .faq__heading {
   font-weight: 700;
-  font-size: 13px;
+  font-size: 18px;
   color: #3f3b3b;
   margin-bottom: 6px;
 }
 .faq__text {
-  font-size: 13px;
+  font-size: 18px;
   color: #031a1d;
 }
 .faq__list {
@@ -1976,7 +2014,7 @@ article:nth-child(4) {
   display: block;
   position: relative;
   padding: 8px 0;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: #3f3b3b;
 }
@@ -2021,11 +2059,12 @@ article:nth-child(4) {
   letter-spacing: 1px;
 }
 .instructions .instructionsText {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.instructions .instructionsText li {
   font-family: "Poiret One", cursive;
-  margin-left: 40px;
+  font-size: 20px;
 }
 .instructions:hover {
   background-color: #f7eff1;
@@ -2114,7 +2153,6 @@ h2:hover {
 h3 {
   margin: 20px;
   font-family: "Poiret One", cursive;
-  font-size: 20px;
   text-align: center;
 }
 
